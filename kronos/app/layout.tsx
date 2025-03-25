@@ -30,6 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/title_logo.png" />
+      </head>
       <body className={`${orbitron.variable} ${rajdhani.variable}`}>
         {children}
       </body>
