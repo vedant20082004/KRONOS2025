@@ -7,11 +7,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Cpu, Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navigationItems = [
   { name: "HOME", path: "/", section: "hero" },
   { name: "ABOUT", path: "/#about", section: "about" },
-  { name: "EVENTS", path: "/events", section: "events" },
+  { name: "EVENTS", path: "/events", section: null },
   { name: "SPEAKERS", path: "/#speakers", section: "speakers" },
   { name: "SCHEDULE", path: "/#schedule", section: "schedule" },
   { name: "SPONSORS", path: "/#sponsors", section: "sponsors" },
@@ -70,11 +71,13 @@ export default function Navbar({ activeSection = "hero" }: NavbarProps) {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="relative w-10 h-10 flex items-center justify-center">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 animate-pulse-slow"></div>
-            <div className="absolute inset-1 rounded-full bg-gray-900"></div>
-            <div className="absolute inset-2 rounded-full border-2 border-purple-500/50"></div>
-            <div className="absolute inset-3 rounded-full bg-purple-500/20 animate-pulse"></div>
-            <Cpu className="relative z-10 w-4 h-4 text-white" />
+            <Image
+              src="/title_logo.png" // Path to the image in the public folder
+              alt="Kronos Logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
           </div>
           <Link href="/">
             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 animate-text-shimmer font-orbitron tracking-wider">
@@ -86,7 +89,7 @@ export default function Navbar({ activeSection = "hero" }: NavbarProps) {
         <nav className="hidden md:flex items-center gap-6">
           {navigationItems.map((item) => {
             const isActive = item.section
-              ? active === item.section
+              ? active === item.section && pathname === "/"
               : pathname === item.path;
 
             return (
@@ -139,7 +142,7 @@ export default function Navbar({ activeSection = "hero" }: NavbarProps) {
         <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
           {navigationItems.map((item) => {
             const isActive = item.section
-              ? active === item.section
+              ? active === item.section && pathname === "/"
               : pathname === item.path;
 
             return (
