@@ -266,15 +266,15 @@ export default function Home() {
         `}</style>
 
         <div className="max-w-7xl mx-auto py-12">
-          <h1 className="text-center text-7xl font-bold tracking-[0.5em] mb-12 text-[#9c6bdf]">
+          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[0.2em] sm:tracking-[0.3em] md:tracking-[0.5em] mb-8 sm:mb-10 md:mb-12 text-[#9c6bdf]">
             SCHEDULE
           </h1>
 
-          <div className="flex justify-center gap-6 mb-16">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
             <Button
               variant="ghost"
               className={cn(
-                "text-white relative px-8 transition-all duration-300 overflow-hidden hover:bg-[rgba(156,107,223,0.2)]",
+                "text-white relative px-6 sm:px-8 transition-all duration-300 overflow-hidden hover:bg-[rgba(156,107,223,0.2)]",
                 activeCategory === "pre" && "bg-[rgba(156,107,223,0.1)]"
               )}
               onClick={() => setActiveCategory("pre")}
@@ -287,7 +287,7 @@ export default function Home() {
             <Button
               variant="ghost"
               className={cn(
-                "text-white relative px-8 transition-all duration-300 overflow-hidden hover:bg-[rgba(156,107,223,0.2)]",
+                "text-white relative px-6 sm:px-8 transition-all duration-300 overflow-hidden hover:bg-[rgba(156,107,223,0.2)]",
                 activeCategory === "main" && "bg-[rgba(156,107,223,0.1)]"
               )}
               onClick={() => setActiveCategory("main")}
@@ -299,55 +299,27 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="relative max-w-4xl mx-auto min-h-[400px]">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-gradient-to-b from-[#9c6bdf] via-[#6b7adf] to-[#9c6bdf]">
-              <div className="absolute inset-0 opacity-50 blur-[2px]" />
+          <div className="relative max-w-full sm:max-w-4xl mx-auto min-h-[300px] sm:min-h-[400px]">
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[1px] sm:w-[2px] bg-gradient-to-b from-[#9c6bdf] via-[#6b7adf] to-[#9c6bdf]">
+              <div className="absolute inset-0 opacity-50 blur-[1px] sm:blur-[2px]" />
             </div>
 
-            <div className="space-y-16">
+            <div className="space-y-8 sm:space-y-12">
               {events
                 .filter((event) => event.category === activeCategory)
                 .map((event, index) => (
                   <div
                     key={event.id}
                     className={cn(
-                      "flex items-start",
-                      index % 2 === 0 ? "justify-start" : "justify-end",
+                      "flex flex-col sm:flex-row items-start",
+                      index % 2 === 0 ? "sm:justify-start" : "sm:justify-end",
                       "opacity-0 animate-[movedown_1s_linear_forwards]"
                     )}
                     style={{ animationDelay: `${index * 0.5}s` }}
                   >
-                    <div
-                      className="absolute left-1/2 transform -translate-x-1/2"
-                      style={{ top: "28px" }}
-                    >
-                      <div className="relative timeline-bullet">
-                        <div
-                          className={cn(
-                            "absolute -inset-2 rounded-full",
-                            "bg-gradient-to-r",
-                            event.gradient,
-                            "opacity-20 blur-[2px]"
-                          )}
-                        />
-                        <div
-                          className={cn(
-                            "w-6 h-6 rounded-full",
-                            "bg-gradient-to-r",
-                            event.gradient,
-                            "relative z-10",
-                            "border-2 border-white/20",
-                            "shadow-lg shadow-[#9c6bdf]/20",
-                            "transition-transform duration-300 hover:scale-125"
-                          )}
-                        />
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white rounded-full" />
-                      </div>
-                    </div>
-
                     <Card
                       className={cn(
-                        "w-[calc(50%-3rem)] p-8 relative card-hover group",
+                        "w-full sm:w-[calc(50%-1.5rem)] p-6 sm:p-8 relative card-hover group",
                         "bg-gradient-to-br from-[rgba(0,0,0,0.8)] to-transparent",
                         "border border-white/10 backdrop-blur-xl",
                         "rounded-xl overflow-hidden"
@@ -369,28 +341,19 @@ export default function Home() {
                       <div className="relative z-10">
                         <h2
                           className={cn(
-                            "text-2xl font-bold mb-3 tracking-wider bg-gradient-to-r bg-clip-text text-transparent",
+                            "text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 tracking-wide sm:tracking-wider bg-gradient-to-r bg-clip-text text-transparent",
                             event.gradient
                           )}
                         >
                           {event.title}
                         </h2>
-                        <small className="text-sm font-medium text-white/60 block mb-4 tracking-wider">
+                        <small className="text-xs sm:text-sm font-medium text-white/60 block mb-2 sm:mb-4 tracking-wide sm:tracking-wider">
                           {event.date}
                         </small>
-                        <p className="text-white/90 leading-relaxed">
+                        <p className="text-white/90 text-sm sm:text-base leading-relaxed">
                           {event.description}
                         </p>
                       </div>
-
-                      <div
-                        className={cn(
-                          "absolute top-8 w-0 h-0 z-20",
-                          index % 2 === 0
-                            ? "right-[-20px] border-l-[20px] border-l-black/80 border-y-[20px] border-y-transparent"
-                            : "left-[-20px] border-r-[20px] border-r-black/80 border-y-[20px] border-y-transparent"
-                        )}
-                      />
                     </Card>
                   </div>
                 ))}

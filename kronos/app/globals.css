@@ -345,3 +345,9 @@
   font-weight: 600;
   letter-spacing: 0.05em;
 }
+
+@media (max-width: 768px) {
+  .slider-container {
+    display: block !important; /* Ensure the slider is visible on mobile */
+  }
+}

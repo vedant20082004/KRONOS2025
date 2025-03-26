@@ -10,7 +10,7 @@ const ContactUs: React.FC = () => {
 
       <div className="flex flex-col md:flex-row gap-12">
         {/* Map Section */}
-        <div className="relative rounded-lg overflow-hidden flex-1 bg-gray-900/50 shadow-lg border border-purple-500/20">
+        <div className="relative rounded-lg overflow-hidden flex-1 bg-gray-900/50 shadow-lg border border-purple-500/20 hover:shadow-purple-500/50 transition-shadow duration-300">
           <div className="absolute top-0 left-0 bg-gray-900/80 backdrop-blur-sm text-gray-200 z-10 p-6 w-full md:w-[425px] flex justify-between items-center border-b border-purple-500/30">
             <div>
               <h3 className="text-lg font-semibold tracking-wide uppercase">
@@ -20,37 +20,31 @@ const ContactUs: React.FC = () => {
                 Gwalior, Madhya Pradesh
               </p>
             </div>
-            <button className="text-purple-400 hover:text-pink-400 transition-colors duration-300 flex items-center gap-2 uppercase tracking-wide text-sm">
+            <button className="text-purple-400 hover:text-pink-400 transition-colors duration-300 flex items-center gap-2 uppercase tracking-wide text-sm bg-gray-800/50 px-3 py-2 rounded-lg shadow-md hover:shadow-pink-500/50">
               <MapPin size={16} />
               Directions
             </button>
           </div>
 
-          <div className="absolute top-20 left-0 z-10 bg-gray-900/80 backdrop-blur-sm px-4 py-2 rounded-md shadow-md border border-purple-500/20">
-            <a
-              href="#"
-              className="text-purple-400 hover:text-pink-400 transition-colors duration-300 text-sm uppercase tracking-wide"
-            >
-              View larger map
-            </a>
+          {/* Responsive iframe container */}
+          <div className="relative w-full h-0 pb-[56.25%] md:pb-[75%] lg:pb-[50%]">
+            <iframe
+              className="absolute inset-0 w-full h-full min-h-[300px] filter invert-[0.85] hue-rotate-180 brightness-[0.85] contrast-[1.1] rounded-lg"
+              title="map"
+              src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=ITM+Gwalior+Madhya+Pradesh&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+              frameBorder="0"
+            ></iframe>
           </div>
-
-          <iframe
-            className="absolute inset-0 w-full h-full filter invert-[0.85] hue-rotate-180 brightness-[0.85] contrast-[1.1]"
-            title="map"
-            src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=ITM+Gwalior+Madhya+Pradesh&ie=UTF8&t=&z=14&iwloc=B&output=embed"
-            frameBorder="0"
-          ></iframe>
 
           <div className="absolute bottom-28 w-full text-center text-white z-10">
             <p className="text-sm mb-2 text-gray-300 font-['Inter',_sans-serif]">
               Use ctrl + scroll to zoom the map
             </p>
             <div className="flex justify-center gap-2">
-              <button className="w-10 h-10 bg-gray-900/80 backdrop-blur-sm text-white text-xl rounded border border-purple-500/30 hover:border-pink-500/50 transition-colors duration-300">
+              <button className="w-10 h-10 bg-gray-900/80 backdrop-blur-sm text-white text-xl rounded-full border border-purple-500/30 hover:border-pink-500/50 hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-300">
                 <Plus className="mx-auto" size={18} />
               </button>
-              <button className="w-10 h-10 bg-gray-900/80 backdrop-blur-sm text-white text-xl rounded border border-purple-500/30 hover:border-pink-500/50 transition-colors duration-300">
+              <button className="w-10 h-10 bg-gray-900/80 backdrop-blur-sm text-white text-xl rounded-full border border-purple-500/30 hover:border-pink-500/50 hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-300">
                 <Minus className="mx-auto" size={18} />
               </button>
             </div>

@@ -11,9 +11,8 @@ import Image from "next/image";
 
 const navigationItems = [
   { name: "HOME", path: "/", section: "hero" },
-  { name: "ABOUT", path: "/#about", section: "about" },
+  { name: "ABOUT", path: "/about", section: null },
   { name: "EVENTS", path: "/events", section: null },
-  { name: "SPEAKERS", path: "/#speakers", section: "speakers" },
   { name: "SCHEDULE", path: "/schedule", section: null },
   { name: "SPONSORS", path: "/#sponsors", section: "sponsors" },
   { name: "CONTACT", path: "/contact", section: null },

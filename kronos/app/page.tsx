@@ -214,23 +214,13 @@ export default function KronosTechFest() {
     useEffect(() => {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 3000); // Change image every 5 seconds
+      }, 3000); // Change image every 3 seconds
 
       return () => clearInterval(interval);
     }, [images.length]);
 
-    const handlePrev = () => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      );
-    };
-
-    const handleNext = () => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-
     return (
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-[300px] md:h-[500px] sm:h-[300px]">
         {images.map((image, index) => (
           <div
             key={index}
@@ -243,7 +233,8 @@ export default function KronosTechFest() {
               alt={`Slider image ${index + 1}`}
               width={1920}
               height={1080}
-              className="absolute w-full h-full object-cover"
+              className="w-full h-full object-cover"
+              priority
             />
           </div>
         ))}
@@ -319,16 +310,18 @@ export default function KronosTechFest() {
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 pt-2">
-                <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
-                  Register Now
-                </Button>
-                <Button
+                <Link href="/events">
+                  <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
+                    Explore Events
+                  </Button>
+                </Link>
+                {/* <Button
                   variant="outline"
-                  className="border-purple-500/50 text-white hover:bg-purple-950/30 transition-all duration-300 hover:border-purple-500 group"
+                  className="border-purple-500/50 text-white hover:bg-purple-950/30 hover:text-grey transition-all duration-300 hover:border-purple-500 group"
                 >
                   Explore Events
                   <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                </Button>
+                </Button> */}
               </div>
             </div>
             <div className="md:w-1/2 mt-10 md:mt-0 relative animate-fade-in-up animation-delay-300">
@@ -391,7 +384,7 @@ export default function KronosTechFest() {
               designed to inspire, educate, and transform.
             </p>
           </div>
-          // Update the event tabs to match the screenshot
+
           <div className="flex justify-center gap-4 mb-8">
             <Button
               variant="outline"
