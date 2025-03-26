@@ -204,6 +204,8 @@ export default function KronosTechFest() {
       "/slider-1.jpg",
       "/slider-2.jpg",
       "/slider-3.jpg",
+      "/slider-4.jpg",
+      "/slider-5.jpg",
       // Add more image paths as needed
     ];
 
@@ -212,7 +214,7 @@ export default function KronosTechFest() {
     useEffect(() => {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 5000); // Change image every 5 seconds
+      }, 3000); // Change image every 5 seconds
 
       return () => clearInterval(interval);
     }, [images.length]);
@@ -245,20 +247,6 @@ export default function KronosTechFest() {
             />
           </div>
         ))}
-
-        {/* Manual Controls */}
-        <button
-          onClick={handlePrev}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition"
-        >
-          &#8249;
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition"
-        >
-          &#8250;
-        </button>
       </div>
     );
   }

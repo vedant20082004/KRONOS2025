@@ -14,7 +14,7 @@ const navigationItems = [
   { name: "ABOUT", path: "/#about", section: "about" },
   { name: "EVENTS", path: "/events", section: null },
   { name: "SPEAKERS", path: "/#speakers", section: "speakers" },
-  { name: "SCHEDULE", path: "/#schedule", section: "schedule" },
+  { name: "SCHEDULE", path: "/schedule", section: null },
   { name: "SPONSORS", path: "/#sponsors", section: "sponsors" },
   { name: "CONTACT", path: "/contact", section: null },
   { name: "DEVELOPERS", path: "/developers", section: null },
