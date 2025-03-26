@@ -306,7 +306,7 @@ export default function KronosTechFest() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <MapPin className="w-4 h-4 text-purple-500" />
-                  <span>Tech City Arena</span>
+                  <span>GDSC Office</span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 pt-2">
@@ -575,6 +575,125 @@ export default function KronosTechFest() {
             <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 group">
               View All Speakers
               <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section
+        id="sponsors"
+        ref={sectionRefs.sponsors}
+        className="relative z-10 py-20"
+      >
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-block px-3 py-1 rounded-full bg-purple-900/20 border border-purple-500/30 text-purple-500 text-xs font-medium mb-4 backdrop-blur-sm">
+              OUR PARTNERS
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Sponsors & Partners
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto mt-4">
+              Kronos Tech Fest is made possible by these innovative companies
+              shaping the future of technology.
+            </p>
+          </div>
+
+          <div className="space-y-12">
+            {/* Platinum Sponsors */}
+            <div className="animate-fade-in-up">
+              <h3 className="text-xl font-bold mb-6 text-center">
+                Platinum Sponsors
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+                {[1, 2, 3].map((i) => (
+                  <div
+                    key={i}
+                    className="bg-gradient-to-b from-gray-900 to-gray-800 border border-purple-500/20 rounded-xl p-8 flex items-center justify-center transition-all duration-300 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 group"
+                  >
+                    <div className="relative">
+                      {/* Tech scan lines */}
+                      <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(147,112,219,0.03)_50%)] bg-[length:100%_4px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                      <Image
+                        src="/brand_logo_w.png"
+                        alt={`Sponsor ${i}`}
+                        width={200}
+                        height={80}
+                        className="max-h-16 w-auto transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Gold Sponsors */}
+            <div className="animate-fade-in-up animation-delay-300">
+              <h3 className="text-xl font-bold mb-6 text-center">
+                Gold Sponsors
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {[1, 2, 3, 4].map((i) => (
+                  <div
+                    key={i}
+                    className="bg-gradient-to-b from-gray-900 to-gray-800 border border-purple-500/20 rounded-xl p-6 flex items-center justify-center transition-all duration-300 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 group"
+                  >
+                    <div className="relative">
+                      {/* Tech scan lines */}
+                      <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(147,112,219,0.03)_50%)] bg-[length:100%_4px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                      <Image
+                        src="/brand_logo_w.png"
+                        alt={`Sponsor ${i + 3}`}
+                        width={150}
+                        height={60}
+                        className="max-h-12 w-auto transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Silver Sponsors */}
+            <div className="animate-fade-in-up animation-delay-500">
+              <h3 className="text-xl font-bold mb-6 text-center">
+                Silver Sponsors
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <div
+                    key={i}
+                    className="bg-gradient-to-b from-gray-900 to-gray-800 border border-purple-500/20 rounded-xl p-4 flex items-center justify-center transition-all duration-300 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 group"
+                  >
+                    <div className="relative">
+                      {/* Tech scan lines */}
+                      <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(147,112,219,0.03)_50%)] bg-[length:100%_4px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                      <Image
+                        src="/brand_logo_w.png"
+                        alt={`Sponsor ${i + 7}`}
+                        width={120}
+                        height={50}
+                        className="max-h-10 w-auto transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-16 animate-fade-in animation-delay-700">
+            <h3 className="text-xl font-bold mb-4">Become a Sponsor</h3>
+            <p className="text-gray-400 max-w-2xl mx-auto mb-6">
+              Join these innovative companies in supporting the future of
+              technology at Kronos Tech Fest.
+            </p>
+            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
+              Download Sponsor Deck
             </Button>
           </div>
         </div>

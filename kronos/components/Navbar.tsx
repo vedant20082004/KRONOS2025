@@ -14,9 +14,9 @@ const navigationItems = [
   { name: "ABOUT", path: "/about", section: null },
   { name: "EVENTS", path: "/events", section: null },
   { name: "SCHEDULE", path: "/schedule", section: null },
-  { name: "SPONSORS", path: "/#sponsors", section: "sponsors" },
   { name: "CONTACT", path: "/contact", section: null },
-  { name: "DEVELOPERS", path: "/developers", section: null },
+  { name: "OUR TEAM", path: "/team", section: null },
+  { name: "DEVELOPER", path: "/developers", section: null },
 ];
 
 interface NavbarProps {
