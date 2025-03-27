@@ -360,7 +360,7 @@ export default function TeamPage() {
         {
           name: "Pulak Jain",
           role: "Co-coordinator ",
-          image: `/pulak.jpEg`,
+          image: `/pulak.jpeg`,
         },
       ],
     },
