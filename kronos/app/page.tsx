@@ -306,7 +306,7 @@ export default function KronosTechFest() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <MapPin className="w-4 h-4 text-purple-500" />
-                  <span>ITM GOI</span>
+                  <span>Institute of Technology and Management Gwalior</span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 pt-2">
