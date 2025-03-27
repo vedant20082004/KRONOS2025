@@ -459,7 +459,7 @@ Gear up for an intense coding marathon! Collaborate, innovate, and bring your id
   {
     id: "MAIN-011",
     title: "FASHION SHOW",
-    description: `Fashion Show 👗 (Glam-Aura) | Kronos'25
+    description: `Fashion Show 👗 (Fashion Runway) | Kronos'25
 
 Step into a world of elegance and style! Witness a mesmerizing fashion showcase featuring:
 
