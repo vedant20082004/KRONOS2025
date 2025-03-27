@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 
 export default function Countdown() {
   const [countdown, setCountdown] = useState({
-    days: 42,
-    hours: 18,
-    minutes: 24,
-    seconds: 56,
+    days: 29,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
   });
 
   useEffect(() => {

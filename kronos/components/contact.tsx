@@ -65,11 +65,11 @@ const ContactUs: React.FC = () => {
                 EMAIL
               </h2>
               <a
-                href="mailto:example@email.com"
+                href="mailto:kronos@itmgoi.in"
                 className="text-purple-400 hover:text-pink-400 transition-colors duration-300 text-sm flex items-center gap-1 font-['Inter',_sans-serif]"
               >
                 <Mail size={14} />
-                example@email.com
+                kronos@itmgoi.in
               </a>
               <h2 className="text-xs font-semibold mt-4 mb-2 tracking-widest uppercase bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
                 PHONE

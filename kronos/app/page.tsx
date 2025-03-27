@@ -306,7 +306,7 @@ export default function KronosTechFest() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <MapPin className="w-4 h-4 text-purple-500" />
-                  <span>GDSC Office</span>
+                  <span>ITM GOI</span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 pt-2">
@@ -385,17 +385,6 @@ export default function KronosTechFest() {
             </p>
           </div>
 
-          <div className="flex justify-center gap-4 mb-8">
-            <Button
-              variant="outline"
-              className="bg-transparent border border-purple-500/50 text-white hover:bg-purple-950/30 transition-all duration-300 hover:border-purple-500 font-orbitron tracking-wider"
-            >
-              PRE EVENT
-            </Button>
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 font-orbitron tracking-wider">
-              MAIN EVENT
-            </Button>
-          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -479,10 +468,12 @@ export default function KronosTechFest() {
             ))}
           </div>
           <div className="text-center mt-12 animate-fade-in animation-delay-500">
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 group">
-              View All Events
-              <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </Button>
+            <Link href="/events">
+              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 group">
+                View All Events
+                <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -569,13 +560,6 @@ export default function KronosTechFest() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="text-center mt-12 animate-fade-in animation-delay-500">
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 group">
-              View All Speakers
-              <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </Button>
           </div>
         </div>
       </section>

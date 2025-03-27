@@ -141,80 +141,6 @@ const DeveloperTeam: React.FC = () => {
             <div className="team-member">
               <div className="member-photo-container">
                 <img
-                  src="WhatsApp Image 2025-03-21 at 15.32.27_1b41afa2.jpg"
-                  alt="Aryaman Bhatnagar"
-                  className="member-photo"
-                />
-              </div>
-              <div className="member-info">
-                <h3 className="member-name">Aryaman Bhatnagar</h3>
-                <p className="member-role">Developer</p>
-                <div className="social-links">
-                  <a
-                    href="https://github.com/AryamanBhatngar"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGithub />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/aryaman-bhatnagar-abgwl20122003/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/bhatnagar4re"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaInstagram />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="team-member">
-              <div className="member-photo-container">
-                <img
-                  src="WhatsApp Image 2025-03-21 at 15.32.27_ce70aa96.jpg"
-                  alt="Ronak Verma"
-                  className="member-photo"
-                />
-              </div>
-              <div className="member-info">
-                <h3 className="member-name">Ronak Verma</h3>
-                <p className="member-role">Developer</p>
-                <div className="social-links">
-                  <a
-                    href="https://github.com/Techkidd24"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGithub />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/ronak-verma/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/awesome_techkidd"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaInstagram />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="team-member">
-              <div className="member-photo-container">
-                <img
                   src="WhatsApp Image 2025-03-21 at 15.32.26_c672c12c.jpg"
                   alt="Vedant Pisal"
                   className="member-photo"
@@ -240,6 +166,80 @@ const DeveloperTeam: React.FC = () => {
                   </a>
                   <a
                     href="https://www.instagram.com/_.vedant20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagram />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="team-member">
+              <div className="member-photo-container">
+                <img
+                  src="WhatsApp Image 2025-03-14 at 11.26.25_42aaba9c[1].jpg"
+                  alt="Kartik Sharma"
+                  className="member-photo"
+                />
+              </div>
+              <div className="member-info">
+                <h3 className="member-name">Kartik Sharma</h3>
+                <p className="member-role">Developer</p>
+                <div className="social-links">
+                  <a
+                    href="https://github.com/sharmaxkartik"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/sharmaxkartik"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/wickedkartik"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagram />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="team-member">
+              <div className="member-photo-container">
+                <img
+                  src="WhatsApp Image 2025-03-21 at 15.34.16_9d399998.jpg"
+                  alt="Kuldeep Singh Bhadouriya"
+                  className="member-photo"
+                />
+              </div>
+              <div className="member-info">
+                <h3 className="member-name">Kuldeep Singh Bhadouriya</h3>
+                <p className="member-role">Developer</p>
+                <div className="social-links">
+                  <a
+                    href="https://github.com/Kuldeep-bhadouriya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/kuldeep-singh-bhadouriya-68a748311"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/wtf.kuldeepz"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -363,31 +363,31 @@ const DeveloperTeam: React.FC = () => {
             <div className="team-member">
               <div className="member-photo-container">
                 <img
-                  src="WhatsApp Image 2025-03-21 at 15.34.16_9d399998.jpg"
-                  alt="Kuldeep Singh Bhadouriya"
+                  src="WhatsApp Image 2025-03-21 at 15.32.27_1b41afa2.jpg"
+                  alt="Aryaman Bhatnagar"
                   className="member-photo"
                 />
               </div>
               <div className="member-info">
-                <h3 className="member-name">Kuldeep Singh Bhadouriya</h3>
+                <h3 className="member-name">Aryaman Bhatnagar</h3>
                 <p className="member-role">Developer</p>
                 <div className="social-links">
                   <a
-                    href="https://github.com/Kuldeep-bhadouriya"
+                    href="https://github.com/AryamanBhatngar"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaGithub />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/kuldeep-singh-bhadouriya-68a748311"
+                    href="https://www.linkedin.com/in/aryaman-bhatnagar-abgwl20122003/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaLinkedinIn />
                   </a>
                   <a
-                    href="https://www.instagram.com/wtf.kuldeepz"
+                    href="https://www.instagram.com/bhatnagar4re"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -400,31 +400,31 @@ const DeveloperTeam: React.FC = () => {
             <div className="team-member">
               <div className="member-photo-container">
                 <img
-                  src="WhatsApp Image 2025-03-14 at 11.26.25_42aaba9c[1].jpg"
-                  alt="Kartik Sharma"
+                  src="WhatsApp Image 2025-03-21 at 15.32.27_ce70aa96.jpg"
+                  alt="Ronak Verma"
                   className="member-photo"
                 />
               </div>
               <div className="member-info">
-                <h3 className="member-name">Kartik Sharma</h3>
+                <h3 className="member-name">Ronak Verma</h3>
                 <p className="member-role">Developer</p>
                 <div className="social-links">
                   <a
-                    href="https://github.com/sharmaxkartik"
+                    href="https://github.com/Techkidd24"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaGithub />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/sharmaxkartik"
+                    href="https://www.linkedin.com/in/ronak-verma/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaLinkedinIn />
                   </a>
                   <a
-                    href="https://www.instagram.com/wickedkartik"
+                    href="https://www.instagram.com/awesome_techkidd"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

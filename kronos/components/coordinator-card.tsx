@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
-import type { Coordinator } from "../lib/types";
+import type { Coordinator } from "@/lib/types";
 import { motion } from "framer-motion";
 
 interface CoordinatorCardProps {
@@ -71,11 +71,11 @@ export default function CoordinatorCard({
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0ic2NhbmxpbmVzIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDAgMSBMIDEwMCAxIE0gMCAzIEwgMTAwIDMgTSAwIDUgTCAxMDAgNSBNIDAgNyBMIDEwMCA3IE0gMCA5IEwgMTAwIDkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwZiIgc3Ryb2tlLXdpZHRoPSIwLjIiIHN0cm9rZS1vcGFjaXR5PSIwLjMiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjc2NhbmxpbmVzKSIgLz48L3N2Zz4=')] opacity-20 mix-blend-overlay"></div>
         </motion.div>
 
-        <h4 className="text-xl font-medium text-white mb-1 font-['Orbitron']">
+        <h4 className="text-xl font-medium text-white mb-1 font-['Orbitron'] text-center">
           {coordinator.name}
         </h4>
 
-        <p className={`text-${accentColor}-400 text-sm mb-5`}>
+        <p className={`text-${accentColor}-400 text-sm mb-5 text-center`}>
           {coordinator.role}
         </p>
 
@@ -93,9 +93,9 @@ export default function CoordinatorCard({
             <div
               className={`w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover/item:bg-${accentColor}-900/50 transition-colors`}
             >
-              <Mail size={14} className={`text-${accentColor}-400`} />
+              <Mail size={15} className={`text-${accentColor}-400`} />
             </div>
-            <span className="text-sm break-all font-mono">
+            <span className="text-[14px] break-all font-mono">
               {coordinator.email}
             </span>
           </div>
