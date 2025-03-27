@@ -31,9 +31,10 @@ const ContactUs: React.FC = () => {
             <iframe
               className="absolute inset-0 w-full h-full min-h-[300px] filter invert-[0.85] hue-rotate-180 brightness-[0.85] contrast-[1.1] rounded-lg"
               title="map"
-              src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=ITM+Gwalior+Madhya+Pradesh&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+              src="https://www.google.co.in/maps/place/ITM+Gwalior/@26.1473765,78.185461,907m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3976c4964532abdd:0xe71fa0450b77e0a5!8m2!3d26.1473717!4d78.1880359!16s%2Fg%2F11b807ywkr?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
               frameBorder="0"
             ></iframe>
+            {/* https://www.google.co.in/maps/place/ITM+Gwalior/@26.1473765,78.185461,907m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3976c4964532abdd:0xe71fa0450b77e0a5!8m2!3d26.1473717!4d78.1880359!16s%2Fg%2F11b807ywkr?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D */}
           </div>
 
           <div className="absolute bottom-28 w-full text-center text-white z-10">
