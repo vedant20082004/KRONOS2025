@@ -4,7 +4,7 @@ export const preEvents: Event[] = [
   
   {
     id: "PRE-001",
-    title: "HOLI PARTY",
+    title: "RANG RUSH",
     description:
       `🎉 RANG RUSH – A Splash of Colors & Unforgettable Memories! 🌈✨
 
