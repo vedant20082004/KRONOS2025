@@ -191,7 +191,7 @@ export default function Home() {
                     <Twitter className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/thekronosclub"
                     className="text-gray-400 hover:text-purple-400 transition-colors p-2 bg-[#1a1c2e] rounded-full hover:scale-110 transform duration-300"
                   >
                     <Instagram className="w-5 h-5" />

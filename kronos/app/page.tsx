@@ -490,7 +490,7 @@ export default function KronosTechFest() {
               TECH VISIONARIES
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">
-              Meet Our Speakers
+              Meet Our Past Speakers
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
               Learn from the brightest minds and industry leaders who are
@@ -498,27 +498,24 @@ export default function KronosTechFest() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            className={`flex ${
+              [
+                {
+                  name: "Piyush Mishra",
+                  role: "Indian Actor and Singer",
+                  bio: "Piyush Mishra is an Indian actor, singer, lyricist, playwright, musician, and screenwriter",
+                },
+              ].length === 1
+                ? "justify-center"
+                : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            }`}
+          >
             {[
               {
-                name: "Dr. Sarah Chen",
-                role: "AI Research Director, TechCorp",
-                bio: "Leading expert in machine learning and neural networks with over 15 years of experience.",
-              },
-              {
-                name: "Mark Johnson",
-                role: "CTO, Future Systems",
-                bio: "Visionary tech leader pioneering advancements in quantum computing and blockchain.",
-              },
-              {
-                name: "Elena Rodriguez",
-                role: "Founder, NextGen VR",
-                bio: "Revolutionary in virtual reality technology with multiple patents in immersive experiences.",
-              },
-              {
-                name: "James Wilson",
-                role: "Security Expert, CyberShield",
-                bio: "Renowned cybersecurity specialist protecting Fortune 500 companies from emerging threats.",
+                name: "Piyush Mishra",
+                role: "Indian Actor and Singer",
+                bio: "Piyush Mishra is an Indian actor, singer, lyricist, playwright, musician, and screenwriter",
               },
             ].map((speaker, index) => (
               <div
@@ -540,7 +537,7 @@ export default function KronosTechFest() {
                   <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(147,112,219,0.05)_50%)] bg-[length:100%_4px] z-10 pointer-events-none"></div>
 
                   <Image
-                    src="/brand_logo_w.png"
+                    src="/piyushmishra.jpg"
                     alt={speaker.name}
                     width={500}
                     height={500}

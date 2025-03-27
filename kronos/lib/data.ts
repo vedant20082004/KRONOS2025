@@ -480,11 +480,11 @@ Step into a world of elegance and style! Witness a mesmerizing fashion showcase 
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "Sadaf Ali ",
-      role: "MBA | 1st year",
-      avatar: "/sadaf.png?height=200&width=200",
-      phone: "9165487502",
-      email: "sadafyt09@gmail.com",
+      name: "Sabhya Chauhan ",
+      role: "MBA | 2nd year",
+      avatar: "/sabhya.png?height=200&width=200",
+      phone: "7582933198",
+      email: "sabhyahere@gmail.com",
     },
   },
   {
