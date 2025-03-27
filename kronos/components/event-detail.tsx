@@ -158,7 +158,7 @@ export default function EventDetail({
               >
                 LOCATION
               </h3>
-              <p className="text-slate-300/90">{event.venue}</p>
+              <p className="text-slate-300/90 text-xl">{event.venue}</p>
             </div>
 
             <div className="mb-6">
@@ -174,7 +174,7 @@ export default function EventDetail({
                   <div
                     className={`w-2 h-2 rounded-full bg-${accentColor}-400`}
                   ></div>
-                  <span className="text-slate-300 font-mono">
+                  <span className="text-slate-300 font-mono text-xl">
                     {event.timing || `${event.startTime} - ${event.endTime}`}
                   </span>
                 </div>
@@ -261,9 +261,9 @@ export default function EventDetail({
         </div>
 
         {/* HUD elements */}
-        {/* <div className="absolute bottom-3 left-3 text-xs text-slate-500 font-mono">
+        <div className="absolute bottom-3 left-3 text-xs text-slate-500 font-mono">
           EVENT_ID: {event.id}
-        </div> */}
+        </div>
       </motion.div>
     </motion.div>
   );
