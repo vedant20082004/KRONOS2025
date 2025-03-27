@@ -261,9 +261,9 @@ export default function EventDetail({
         </div>
 
         {/* HUD elements */}
-        <div className="absolute bottom-3 left-3 text-xs text-slate-500 font-mono">
-          EVENT_ID: {event.id}
-        </div>
+        {/* <div className="absolute bottom-3 left-3 text-xs text-slate-500 font-mono"> */}
+        {/* EVENT_ID: {event.id} */}
+        {/* </div> */}
       </motion.div>
     </motion.div>
   );
