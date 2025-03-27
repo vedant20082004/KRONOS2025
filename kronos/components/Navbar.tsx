@@ -112,10 +112,6 @@ export default function Navbar({ activeSection = "hero" }: NavbarProps) {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
-            Register Now
-          </Button>
-
           <button
             className="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/50 text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
