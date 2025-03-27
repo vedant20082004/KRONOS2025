@@ -1,105 +1,84 @@
+# KRONOS Event Website
 
-# KRONOS - React App 🌐
+## Overview
 
-KRONOS is a modern web application built with **React.js**, designed to showcase and manage events for the KRONOS Tech Fest 2025. This app provides an interactive and user-friendly interface for participants, organizers, and visitors.
+KRONOS is a tech event featuring various workshops, hackathons, and competitions. This project is a Next.js-based website designed to provide event details, schedules, speaker information, registration, and sponsor details.
 
----
+## Features
 
-## 🚀 **Features**
-- **Event Listings**: View all events, workshops, and competitions.
-- **Registration**: Easy sign-up for events with a user-friendly form.
-- **Schedule**: Interactive schedule with filters and categories.
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.
+- **Event Details Page**: Overview of the event, themes, and schedules.
+- **Speaker Profiles**: Detailed information on speakers and panelists.
+- **Workshop & Hackathon Listings**: Description, rules, and registration links.
+- **Sponsor Section**: Showcase sponsors and partners.
 
----
 
-## 🛠️ **Tech Stack**
-- **Frontend**: React.js
-- **Styling**: CSS3 / Tailwind CSS (or any other library you're using)
-- **State Management**: React Context API / Redux (if applicable)
-- **Routing**: React Router
-- **API Integration**: Axios / Fetch API
 
----
+## Tech Stack
 
-## 🚨 **Prerequisites**
-Before running the app, ensure you have the following installed:
-- Node.js (v16 or higher)
-- npm (v8 or higher)
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MySQL
+- **Authentication**: NextAuth.js
+- **Hosting**: Vercel (Frontend), Railway/Heroku (Backend)
 
----
+## Installation
 
-## 🛠️ **Setup and Installation**
+### Prerequisites
+
+- Node.js >= 16.x
+- MySQL database setup
+
+### Steps
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/kronos-react-app.git
+   git clone https://github.com/vedant20082004/kronos2025-.git
+   cd kronos-event
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd kronos-react-app
-   ```
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    npm install
    ```
-4. Start the development server:
+3. Configure environment variables:
+   Create a `.env.local` file and add:
+   ```env
+   DATABASE_URL=mysql://user:password@localhost:3306/kronos
+   NEXTAUTH_SECRET=your-secret-key
+   NEXT_PUBLIC_API_URL=http://localhost:3000/api
+   ```
+4. Run the development server:
    ```bash
-   npm start
+   npm run dev
    ```
-5. Open your browser and visit:
-   ```
-   http://localhost:3000
-   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the app.
 
----
+## Deployment
 
-## 📂 **Project Structure**
-```
-kronos-react-app/
-├── public/              # Static assets
-├── src/                 # Source code
-│   ├── components/      # Reusable components
-│   ├── pages/           # Page components
-│   ├── styles/          # CSS or styling files
-│   ├── App.js           # Main app component
-│   └── index.js         # Entry point
-├── package.json         # Dependencies and scripts
-└── README.md            # Project documentation
-```
+- **Frontend**: Deploy using [Vercel](https://vercel.com/)
+- **Backend**: Deploy using [Railway](https://railway.app/) or [Heroku](https://www.heroku.com/)
 
----
+## Contribution Guidelines
 
-## 🤝 **Contributing**
-Contributions are welcome! If you'd like to contribute to KRONOS, follow these steps:
 1. Fork the repository.
 2. Create a new branch:
    ```bash
-   git checkout -b feature/your-feature-name
+   git checkout -b feature-branch
    ```
 3. Commit your changes:
    ```bash
-   git commit -m "Add your message here"
+   git commit -m "Add new feature"
    ```
-4. Push to the branch:
+4. Push the branch:
    ```bash
-   git push origin feature/your-feature-name
+   git push origin feature-branch
    ```
 5. Open a pull request.
 
----
+## License
 
-## 📄 **License**
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
----
+## Contact
 
-## 🙏 **Acknowledgments**
-- [React.js Documentation](https://reactjs.org/)
-- [Create React App](https://create-react-app.dev/)
-- [KRONOS 2025](https://www.instagram.com/thekronosclub/)
-
----
-
-Happy coding! 🚀
-```
+For any queries, reach out at [VEDANT PISAL DESHMUKH](mailto\:vedantpisaldeshmukh@gmail.com)
 
