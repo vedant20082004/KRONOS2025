@@ -53,14 +53,7 @@ A huge thank you to everyone who joined and made this event an absolute blast! �
     id: "PRE-003",
     title: "BEYOND THE LENS ",
     description:
-      `Step into the world of creativity and storytelling! Beyond the Lens challenges you to craft the most compelling, visually stunning reels that leave a lasting impact.
-
-🎥 Theme: Unleash your imagination – from cinematic storytelling to trending transitions!
-⏳ Duration: Keep it short, make it powerful!
-🏆 Judging Criteria: Creativity, Editing Skills, and Engagement Factor
-🔥 Prizes for the Best Creators!
-
-Lights, Camera, Edit! Are you ready to go Beyond the Lens? 🌟`,
+      `Beyond the Lens is a reel and photography competition where creativity meets perspective. Showcase your storytelling skills through stunning visuals and compelling edits. Whether you capture moments through a lens or craft engaging reels, this is your chance to shine. Register now and let your creativity speak!`,
     image: "/beyondthelens.jpeg?height=400&width=600",
     date: "APRIL 01, 2025",
     venue: "VSB",
@@ -68,11 +61,11 @@ Lights, Camera, Edit! Are you ready to go Beyond the Lens? 🌟`,
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "DAVID KIM",
-      role: "Biomimicry Lead",
-      avatar: "/placeholder.svg?height=200&width=200",
-      phone: "+1 (555) 456-7890",
-      email: "david.kim@kronos.design",
+      name: "Sanidhya Tiwari",
+      role: "B.Tech | 3rd year",
+      avatar: "/sanidhya.png?height=200&width=200",
+      phone: "9109740619",
+      email: "sanidhyatiwari1510@gmail.com",
     },
   },
   {
@@ -174,26 +167,25 @@ Gear up, take your stance, and let the battle for cricket supremacy begin! 🏏�
     id: "PRE-007",
     title: "FOOTBALL",
     description:
-      `Lace up your boots and hit the field for the ultimate football showdown at KRONOS 2025! Dribble, pass, and score your way to glory in this high-energy competition.
+      `⚽Football Showdown at Powerplay Turf by Suri! 🏆
 
-🔥 Format: Knockout tournament – only the best will rise!
-⚡ Team Up: Gather your squad and dominate the pitch!
-🎯 Judging Criteria: Skill, Teamwork, and Strategy
-🏆 Prizes Await the Champions!
+The stage is set, and 14+ teams are ready to compete in an intense knockout tournament where only the best will rise to the top! With every match being a do-or-die battle, teams must bring their A-game, skill, and teamwork to stay in the race for the championship.
 
-The whistle blows, the crowd roars—are you ready to chase victory? ⚽🔥`,
+🏅 Glory isn’t the only prize—winners will take home exciting rewards! 🏅
+
+Who will seize the moment, outplay the competition, and claim the ultimate title? Let the games begin!`,
     image: "/football.jpeg?height=400&width=600",
     date: "APRIL 09, 2025",
-    venue: "Sports Arena at ITM GOI",
+    venue: "Powerplay Turf by Suri, jhansi road, Gwalior",
     timing: "02:00 PM - 05:00 PM",
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "XYZ",
-      role: "AA | 2nd year",
-      avatar: "/placeholder-logo.png?height=200&width=200",
-      phone: "6263592176",
-      email: "Jay.mukha13@gmail.com",
+      name: "Shivam Sharma",
+      role: "B.Tech | 2nd year",
+      avatar: "/shivam.jpg?height=200&width=200",
+      phone: "9329739742",
+      email: "30002461213shivam@gmail.com",
     },
   },
   {
@@ -440,11 +432,11 @@ Get ready for a journey across space, science, and speculation—because the uni
     category: "tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "DR. SAMUEL CHEN",
-      role: "Consciousness Research Lead",
-      avatar: "/placeholder.svg?height=200&width=200",
-      phone: "+1 (555) 123-7890",
-      email: "samuel.c@kronos.mind",
+      name: "Muskan Gupta ",
+      role: "B.Tech | 2nd year",
+      avatar: "/muskan.png?height=200&width=200",
+      phone: "7985132160",
+      email: "muskanguptagupta81@gmail.com",
     },
   },
   {
@@ -459,11 +451,11 @@ Get ready for a journey across space, science, and speculation—because the uni
     category: "tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "Aryaman Bhatnagar ",
+      name: "Devansh Sharma ",
       role: "B.Tech | 3rd year",
-      avatar: "/aryaman.png?height=200&width=200",
-      phone: "09039385683",
-      email: "aryamanb10@gmail.com",
+      avatar: "/devansh.png?height=200&width=200",
+      phone: "8889325999",
+      email: "er.devanshsharma@gmail.com",
     },
   },
   {
@@ -496,14 +488,32 @@ This is your moment to turn ideas into reality and startups into success! Are yo
     id: "MAIN-009",
     title: "FIESTA",
     description:
-      `Get ready for a night of non-stop fun, music, and electrifying vibes! KRONOS Fiesta is where the campus comes alive with dance, music, colors, and endless entertainment!
+      `A fiesta is a festive celebration, often associated with Spanish and Latin American cultures. It typically includes music, dance, food, parades, and various cultural or religious activities. Fiestas can be national, regional, or community-based, and they often commemorate historical events, saints, or cultural traditions.
 
-🔥 Groove to the beats with DJ & live performances
-🎭 Exciting activities & carnival vibes
-💃 Dance, laugh, and celebrate with your squad
-🎆 Unforgettable memories & pure fun!
+Key Points About Fiesta:
 
-This isn’t just a party—it’s a celebration of energy, joy, and the KRONOS spirit! Are you ready to light up the night? 🎉🚀`,
+1. Cultural Significance – Represents local traditions, heritage, and historical events.
+
+
+2. Entertainment – Includes music, dance, performances, and fireworks.
+
+
+3. Food & Drinks – Traditional and regional delicacies are a major highlight.
+
+
+4. Community Participation – Brings people together in celebration and unity.
+
+
+5. Religious or Secular – Some fiestas are religious, honoring saints, while others are cultural or historical.
+
+
+6. Parades & Processions – Often feature colorful displays, costumes, and floats.
+
+
+7. Games & Competitions – Sports, contests, and street performances add excitement.
+
+
+8. Duration – Can last a day, a week, or even longer, depending on the scale.`,
     image: "/fiesta.jpg?height=400&width=600",
     date: "APRIL 08, 2025",
     venue: "LIBRARY GARDEN",
@@ -511,11 +521,11 @@ This isn’t just a party—it’s a celebration of energy, joy, and the KRONOS 
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "OLIVIA MARTINEZ",
-      role: "Futurist & Social Theorist",
-      avatar: "/placeholder.svg?height=200&width=200",
-      phone: "+1 (555) 567-8901",
-      email: "olivia.m@kronos.futures",
+      name: "Yadyamini Saxena ",
+      role: "MBA | 2025",
+      avatar: "/yadyamini.png?height=200&width=200",
+      phone: "09039788950",
+      email: "saxenayadyamini@gmail.com",
     },
   },
 
@@ -524,14 +534,7 @@ This isn’t just a party—it’s a celebration of energy, joy, and the KRONOS 
     id: "MAIN-010",
     title: "COSPLAY",
     description:
-      `Step into a world where fantasy meets reality! Whether you're a superhero, anime icon, mythical creature, or gaming legend, it's time to bring your favorite characters to life!
-
-🔥 Showcase your creativity with stunning costumes
-🎤 Walk the ramp & strike a pose
-🏆 Exciting prizes for the best cosplayers
-📸 Epic photo ops & fan moments
-
-Suit up, transform, and own the stage—because at KRONOS Cosplay Carnival, YOU are the character! 🎭🚀`,
+      `People will dress up as a character and will have fun. Interested participants will be participating in a fashion show type of small show and whosoever would dress the best will be the winner.`,
     image: "/cosplay.jpg?height=400&width=600",
     date: "APRIL 08, 2025",
     venue: "ITM GOI CAMPUS",
@@ -539,11 +542,11 @@ Suit up, transform, and own the stage—because at KRONOS Cosplay Carnival, YOU 
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "OLIVIA MARTINEZ",
-      role: "Futurist & Social Theorist",
-      avatar: "/placeholder.svg?height=200&width=200",
-      phone: "+1 (555) 567-8901",
-      email: "olivia.m@kronos.futures",
+      name: "Surbhi Tiwari ",
+      role: "B.Tech | 3rd year",
+      avatar: "/surbhi.png?height=200&width=200",
+      phone: "8770515260",
+      email: "surbhixkira@gmail.com",
     },
   },
   {
@@ -615,26 +618,33 @@ One special "Best Creativity" winner will be awarded a cash prize`,
     id: "MAIN-013",
     title: "BAND",
     description:
-      `Get ready to feel the rhythm, vibe to the beats, and lose yourself in the music as a sensational band takes over the KRONOS stage! 🎤🎸
+      `GOONJ | KRONOS 2025
 
-🔥 Electrifying live performance that will set the night on fire!
-🎶 Heart-thumping music, soulful melodies & high-energy beats
-💃 Sing, dance & vibe with your squad
-🎆 An unforgettable musical experience awaits!
+GOONJ – Battle of Bands & Rap Cipher🎸🎤  
 
-Brace yourself for a night of pure musical magic! Are you ready to rock with us? 🎵🔥🚀`,
+Goonj is the ultimate musical face-off, where rock, metal, and hip-hop collide on one stage.  
+
+🎵 Battle of Bands – Perform as a band and compete with electrifying riffs, powerful vocals, and intense drum solos.  
+
+🎤 Rap Cipher – Go solo and showcase your lyrical fire, flow, and stage presence in a high-energy rap battle.  
+
+!!! EXCITING PRIZES !!!
+
+Whether you’re a group performer or a solo artist, Goonj offers the perfect stage to unleash your talent.  
+
+🔥 Are you ready to own the stage?🔥`,
     image: "/band.jpeg?height=400&width=600",
     date: "APRIL 09, 2025",
-    venue: "NAAD AMPHITHEATRE",
+    venue: "Newton Block ",
     timing: "02:00 PM - 05:00 PM",
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "OLIVIA MARTINEZ",
-      role: "Futurist & Social Theorist",
-      avatar: "/placeholder.svg?height=200&width=200",
-      phone: "+1 (555) 567-8901",
-      email: "olivia.m@kronos.futures",
+      name: "Utkarsh Shrivastava",
+      role: "B.Tech | 3rd year",
+      avatar: "/utkarshshrivastav.png?height=200&width=200",
+      phone: "6266102748",
+      email: "ushrivastava325@gmail.com",
     },
   },
 
