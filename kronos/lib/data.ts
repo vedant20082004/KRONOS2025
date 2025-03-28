@@ -214,6 +214,31 @@ Think you’ve got what it takes? Lock in, power up, and dominate the table! �
       email: "Jay.mukha13@gmail.com",
     },
   },
+  {
+    id: "PRE-009",
+    title: "ITM GOT TALENT",
+    description:
+      `No filters, no mercy—just pure, unfiltered roast comedy! Get ready for a night of savage humor, sharp comebacks, and epic burns as participants take the stage to roast and get roasted!
+
+🔥 Brace yourself for non-stop laughter!
+😂 Only the wittiest will survive!
+🏆 Prizes for the ultimate Roast Masters!
+
+Think you’ve got the guts to dish it out and take it? Grab the mic and let the roasting begin! 🔥🎤😆`,
+    image: "/itmgottalent.jpeg?height=400&width=600",
+    date: "21-22 April ,2025",
+    venue: "VSB",
+    timing: "02:00 PM - 03:00 PM",
+    category: "non-tech",
+    registerLink: "https://forms.google.com/neural-workshop",
+    coordinator: {
+      name: "OLIVIA MARTINEZ",
+      role: "Futurist & Social Theorist",
+      avatar: "/placeholder.svg?height=200&width=200",
+      phone: "+1 (555) 567-8901",
+      email: "olivia.m@kronos.futures",
+    },
+  },
 ]
 
 export const mainEvents: Event[] = [
