@@ -240,7 +240,7 @@ export default function TeamPage() {
         {
           name: "Vedant Pisal",
           role: "Co-coordinator",
-          image: `vedant.jpg`,
+          image: `tech-vedant.jpg`,
         },
       ],
     },
