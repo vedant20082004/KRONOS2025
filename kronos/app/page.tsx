@@ -678,9 +678,11 @@ export default function KronosTechFest() {
               Join these innovative companies in supporting the future of
               technology at Kronos Tech Fest.
             </p>
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
-              Download Sponsor Deck
-            </Button>
+            <Link href="https://drive.google.com/file/d/1f-ZGJsn3BNd6VJ3X551p0xs7SCezE5qV/view?usp=sharing">
+              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
+                Download Sponsor Deck
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
