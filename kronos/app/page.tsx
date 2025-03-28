@@ -1,22 +1,12 @@
-"use client";
+"use client"
 
-import { useEffect, useState, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import {
-  Calendar,
-  MapPin,
-  ChevronRight,
-  Clock,
-  Users,
-  Zap,
-  Cpu,
-  Globe,
-  ArrowRight,
-} from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Countdown from "@/components/Countdown";
+import { useEffect, useState, useRef } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Calendar, MapPin, ChevronRight, ArrowRight } from "lucide-react"
+import Navbar from "@/components/Navbar"
+import Countdown from "@/components/Countdown"
 
 // Predefined values for floating particles
 const particleData = [
@@ -146,18 +136,18 @@ const particleData = [
     animation: "float-particle 20s linear infinite",
     animationDelay: "3.9s",
   },
-];
+]
 
 export default function KronosTechFest() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [countdown, setCountdown] = useState({
     days: 42,
     hours: 18,
     minutes: 24,
     seconds: 56,
-  });
-  const [activeSection, setActiveSection] = useState("hero");
+  })
+  const [activeSection, setActiveSection] = useState("hero")
   const sectionRefs = {
     hero: useRef(null),
     about: useRef(null),
@@ -165,36 +155,33 @@ export default function KronosTechFest() {
     speakers: useRef(null),
     schedule: useRef(null),
     sponsors: useRef(null),
-  };
+  }
 
   // Handle scroll events
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 50)
 
       // Determine active section
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = window.scrollY + 100
 
       for (const section in sectionRefs) {
-        const element = sectionRefs[section].current;
+        const element = sectionRefs[section].current
         if (element) {
-          const offsetTop = element.offsetTop;
-          const height = element.offsetHeight;
+          const offsetTop = element.offsetTop
+          const height = element.offsetHeight
 
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + height
-          ) {
-            setActiveSection(section);
-            break;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + height) {
+            setActiveSection(section)
+            break
           }
         }
       }
-    };
+    }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   // Countdown timer
 
@@ -207,17 +194,17 @@ export default function KronosTechFest() {
       "/slider-4.jpg",
       "/slider-5.jpg",
       // Add more image paths as needed
-    ];
+    ]
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0)
 
     useEffect(() => {
       const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 3000); // Change image every 3 seconds
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+      }, 3000) // Change image every 3 seconds
 
-      return () => clearInterval(interval);
-    }, [images.length]);
+      return () => clearInterval(interval)
+    }, [images.length])
 
     return (
       <div className="relative w-full h-[300px] md:h-[500px] sm:h-[300px]">
@@ -229,7 +216,7 @@ export default function KronosTechFest() {
             }`}
           >
             <Image
-              src={image}
+              src={image || "/placeholder.svg"}
               alt={`Slider image ${index + 1}`}
               width={1920}
               height={1080}
@@ -239,7 +226,7 @@ export default function KronosTechFest() {
           </div>
         ))}
       </div>
-    );
+    )
   }
 
   return (
@@ -254,7 +241,7 @@ export default function KronosTechFest() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(147,112,219,0.1),transparent_70%)] animate-move-slow-reverse"></div>
 
         {/* Tech grid pattern */}
-        <div className="absolute inset-0 bg-[url('/slider-1.jpg')] bg-cover opacity-10"></div>
+        <div className="absolute inset-0 bg-[image('/slider-1.jpg')] bg-cover opacity-10"></div>
 
         {/* Floating particles */}
         <div className="absolute inset-0 overflow-hidden">
@@ -295,9 +282,8 @@ export default function KronosTechFest() {
                 </span>
               </h1>
               <p className="text-gray-400 max-w-md">
-                Experience the future of technology at the most anticipated tech
-                festival of the year. Powered by innovation, driven by
-                brilliance.
+                Experience the future of technology at the most anticipated tech festival of the year. Powered by
+                innovation, driven by brilliance.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-sm text-gray-400">
@@ -366,11 +352,7 @@ export default function KronosTechFest() {
       <Countdown />
 
       {/* Events Section */}
-      <section
-        id="events"
-        ref={sectionRefs.events}
-        className="relative z-10 py-20"
-      >
+      <section id="events" ref={sectionRefs.events} className="relative z-10 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-block px-3 py-1 rounded-full bg-purple-900/20 border border-purple-500/30 text-purple-500 text-xs font-medium mb-4 backdrop-blur-sm">
@@ -380,8 +362,8 @@ export default function KronosTechFest() {
               EVENTS
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
-              Dive into a world of innovation with our carefully curated events
-              designed to inspire, educate, and transform.
+              Dive into a world of innovation with our carefully curated events designed to inspire, educate, and
+              transform.
             </p>
           </div>
 
@@ -479,22 +461,15 @@ export default function KronosTechFest() {
       </section>
 
       {/* Speakers Section */}
-      <section
-        id="speakers"
-        ref={sectionRefs.speakers}
-        className="relative z-10 py-20"
-      >
+      <section id="speakers" ref={sectionRefs.speakers} className="relative z-10 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-block px-3 py-1 rounded-full bg-purple-900/20 border border-purple-500/30 text-purple-500 text-xs font-medium mb-4 backdrop-blur-sm">
               TECH VISIONARIES
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Meet Our Past Speakers
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Meet Our Past Speakers</h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
-              Learn from the brightest minds and industry leaders who are
-              shaping the future of technology.
+              Learn from the brightest minds and industry leaders who are shaping the future of technology.
             </p>
           </div>
 
@@ -562,33 +537,38 @@ export default function KronosTechFest() {
       </section>
 
       {/* Sponsors Section */}
-      <section
-        id="sponsors"
-        ref={sectionRefs.sponsors}
-        className="relative z-10 py-20"
-      >
+      <section id="sponsors" ref={sectionRefs.sponsors} className="relative z-10 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-block px-3 py-1 rounded-full bg-purple-900/20 border border-purple-500/30 text-purple-500 text-xs font-medium mb-4 backdrop-blur-sm">
               OUR PARTNERS
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Sponsors & Partners
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Sponsors & Partners</h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
-              Kronos Tech Fest is made possible by these innovative companies
-              shaping the future of technology.
+              Kronos Tech Fest is made possible by these innovative companies shaping the future of technology.
             </p>
           </div>
 
           <div className="space-y-12">
             {/* Platinum Sponsors */}
             <div className="animate-fade-in-up">
-              <h3 className="text-xl font-bold mb-6 text-center">
-                Platinum Sponsors
-              </h3>
+              <h3 className="text-xl font-bold mb-6 text-center">Platinum Sponsors</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                {[1, 2, 3].map((i) => (
+                {[
+                  {
+                    name: "Google",
+                    image: "https://images.yourstory.com/cs/images/companies/lenskaart-33-1587990847871.png?fm=png&auto=formatar=1:1&mode=fill&fill=solid",
+                  },
+                  {
+                    name: "Microsoft",
+                    image: "https://logos-marcas.com/wp-content/uploads/2021/03/Honda-Logotipo-2000-presente.jpg",
+                  },
+                  {
+                    name: "Amazon",
+                
+                    image: "https://tse3.mm.bing.net/th?id=OIP.TLxP6eAGKN4bWUZ0aF46zwHaHa&pid=Api&P=0&h=180",
+                  },
+                ].map((sponsor, i) => (
                   <div
                     key={i}
                     className="bg-gradient-to-b from-gray-900 to-gray-800 border border-purple-500/20 rounded-xl p-8 flex items-center justify-center transition-all duration-300 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 group"
@@ -598,11 +578,11 @@ export default function KronosTechFest() {
                       <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(147,112,219,0.03)_50%)] bg-[length:100%_4px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                       <Image
-                        src="/brand_logo_w.png"
-                        alt={`Sponsor ${i}`}
+                        src={sponsor.image || "/placeholder.svg"}
+                        alt={sponsor.name}
                         width={200}
                         height={80}
-                        className="max-h-16 w-auto transition-transform duration-300 group-hover:scale-110"
+                        className="max-h-16 w-auto transition-transform duration-300 group-hover:scale-110 object-contain"
                       />
                     </div>
                   </div>
@@ -612,11 +592,28 @@ export default function KronosTechFest() {
 
             {/* Gold Sponsors */}
             <div className="animate-fade-in-up animation-delay-300">
-              <h3 className="text-xl font-bold mb-6 text-center">
-                Gold Sponsors
-              </h3>
+              <h3 className="text-xl font-bold mb-6 text-center">Gold Sponsors</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {[1, 2, 3, 4].map((i) => (
+                {[
+                  {
+                    name: "IBM",
+                    image: "https://tse2.mm.bing.net/th?id=OIP.rmApNlkmt1XV52d2RWl1ggHaEK&pid=Api&P=0&h=180",
+                  },
+                  {
+                    name: "Intel",
+                    image: "https://tse1.mm.bing.net/th?id=OIP.KDPTy05azia6fr42nA689gHaD4&pid=Api&P=0&h=180",
+                  },
+                  {
+                    name: "Oracle",
+                 
+                    image: "https://tse2.mm.bing.net/th?id=OIP.kkvPd39_KtkGavl6rbrgNAHaE8&pid=Api&P=0&h=180",
+                  },
+                  {
+                    name: "Cisco",
+                   
+                    image: "https://tse3.mm.bing.net/th?id=OIP.tO-AQAR5s_MUgpoPDrT7BQAAAA&pid=Api&P=0&h=180",
+                  },
+                ].map((sponsor, i) => (
                   <div
                     key={i}
                     className="bg-gradient-to-b from-gray-900 to-gray-800 border border-purple-500/20 rounded-xl p-6 flex items-center justify-center transition-all duration-300 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 group"
@@ -626,11 +623,11 @@ export default function KronosTechFest() {
                       <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(147,112,219,0.03)_50%)] bg-[length:100%_4px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                       <Image
-                        src="/brand_logo_w.png"
-                        alt={`Sponsor ${i + 3}`}
+                        src={sponsor.image || "/placeholder.svg"}
+                        alt={sponsor.name}
                         width={150}
                         height={60}
-                        className="max-h-12 w-auto transition-transform duration-300 group-hover:scale-110"
+                        className="max-h-12 w-auto transition-transform duration-300 group-hover:scale-110 object-contain"
                       />
                     </div>
                   </div>
@@ -640,11 +637,30 @@ export default function KronosTechFest() {
 
             {/* Silver Sponsors */}
             <div className="animate-fade-in-up animation-delay-500">
-              <h3 className="text-xl font-bold mb-6 text-center">
-                Silver Sponsors
-              </h3>
+              <h3 className="text-xl font-bold mb-6 text-center">Silver Sponsors</h3>
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                {[1, 2, 3, 4, 5].map((i) => (
+                {[
+                  {
+                    name: "Adobe",
+                    image: "https://tse4.mm.bing.net/th?id=OIP.K1op1wSh4Iv0l0ib8skRwwHaEK&pid=Api&P=0&h=180",
+                  },
+                  {
+                    name: "Nvidia",
+                    image: "https://tse1.mm.bing.net/th?id=OIP.bYVxvwq-4t530u24ooiadAHaDA&pid=Api&P=0&h=180",
+                  },
+                  {
+                    name: "Salesforce",
+                    image: "https://tse3.mm.bing.net/th?id=OIP.8-9dRYU-fKR5arZeCcJnSAHaDr&pid=Api&P=0&h=180",
+                  },
+                  {
+                    name: "SAP",
+                    image: "https://tse4.mm.bing.net/th?id=OIP.-erQrffKB1yp91EKAnKrhAAAAA&pid=Api&P=0&h=180",
+                  },
+                  {
+                    name: "VMware",
+                    image: "https://tse2.mm.bing.net/th?id=OIP.84yghb8dXKRfsliVHAM-ZQHaB7&pid=Api&P=0&h=180",
+                  },
+                ].map((sponsor, i) => (
                   <div
                     key={i}
                     className="bg-gradient-to-b from-gray-900 to-gray-800 border border-purple-500/20 rounded-xl p-4 flex items-center justify-center transition-all duration-300 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 group"
@@ -654,11 +670,11 @@ export default function KronosTechFest() {
                       <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(147,112,219,0.03)_50%)] bg-[length:100%_4px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                       <Image
-                        src="/brand_logo_w.png"
-                        alt={`Sponsor ${i + 7}`}
+                        src={sponsor.image || "/placeholder.svg"}
+                        alt={sponsor.name}
                         width={120}
                         height={50}
-                        className="max-h-10 w-auto transition-transform duration-300 group-hover:scale-110"
+                        className="max-h-10 w-auto transition-transform duration-300 group-hover:scale-110 object-contain"
                       />
                     </div>
                   </div>
@@ -670,8 +686,7 @@ export default function KronosTechFest() {
           <div className="text-center mt-16 animate-fade-in animation-delay-700">
             <h3 className="text-xl font-bold mb-4">Become a Sponsor</h3>
             <p className="text-gray-400 max-w-2xl mx-auto mb-6">
-              Join these innovative companies in supporting the future of
-              technology at Kronos Tech Fest.
+              Join these innovative companies in supporting the future of technology at Kronos Tech Fest.
             </p>
             <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-none shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
               Download Sponsor Deck
@@ -680,5 +695,6 @@ export default function KronosTechFest() {
         </div>
       </section>
     </div>
-  );
+  )
 }
+

@@ -272,45 +272,50 @@ export default function Home() {
 
           {/* Footer */}
           <footer className="bg-black/80 backdrop-blur-md py-16 px-4 border-t border-purple-900/30">
-            <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="max-w-7xl mx-auto ">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12 content-evenly">
                 <div>
                   <div className="mb-6">
-                    <img src="/brand_logo_w.png" alt="KRONOS'25" className="h-8" />
+                    <img src="/brand_logo_w.png" alt="KRONOS'25" className="h-10 " />
                   </div>
-                  <p className="text-gray-300 mb-6">
-                    KRONOS is the annual techno-cultural festival of ITM University, the biggest youth festival of
+                  <p className="text-gray-300 text-[20px] mb-6">
+                    KRONOS is the annual techno-cultural festival of ITM University, <br></br>the biggest youth festival of
                     central India.
                   </p>
                   <div className="flex space-x-4">
-                    <Link
-                      href="#"
+                    <a
+                      href="https://www.facebook.com/share/168WTPYfCP/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-400 hover:text-purple-400 transition-colors p-2 bg-[#1a1c2e] rounded-full hover:scale-110 transform duration-300"
                     >
-                      <Facebook className="w-5 h-5" />
-                    </Link>
-                    <Link
-                      href="#"
+                      <Facebook className="w-5 h-5" /></a>
+                    <a
+                      href="https://x.com/techfestkonos?s=09"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-400 hover:text-purple-400 transition-colors p-2 bg-[#1a1c2e] rounded-full hover:scale-110 transform duration-300"
                     >
-                      <Twitter className="w-5 h-5" />
-                    </Link>
-                    <Link
+                      <Twitter className="w-5 h-5" /></a>
+                    <a
                       href="https://www.instagram.com/thekronosclub"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-400 hover:text-purple-400 transition-colors p-2 bg-[#1a1c2e] rounded-full hover:scale-110 transform duration-300"
                     >
-                      <Instagram className="w-5 h-5" />
-                    </Link>
-                    <Link
-                      href="#"
+                      <Instagram className="w-5 h-5" /></a>
+                    <a
+                      href="https://www.youtube.com/@KronosITMGwalior"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-400 hover:text-purple-400 transition-colors p-2 bg-[#1a1c2e] rounded-full hover:scale-110 transform duration-300"
                     >
-                      <Youtube className="w-5 h-5" />
-                    </Link>
+                      <Youtube className="w-5 h-5" /></a>
+
                   </div>
                 </div>
 
-                <div>
+                {/* <div>
                   <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
                   <ul className="space-y-2">
                     <li>
@@ -344,9 +349,9 @@ export default function Home() {
                       </Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
 
-                <div>
+                {/* <div>
                   <h3 className="text-xl font-semibold mb-4">Events</h3>
                   <ul className="space-y-2">
                     <li>
@@ -375,14 +380,14 @@ export default function Home() {
                       </Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-                  <div className="space-y-3">
+                  <h3 className="text-xl font-semibold mb-4 text-[24px]">Contact Us</h3>
+                  <div className="space-y-3 text-[20px]">
                     <p className="text-gray-300">GDSC Office, Nuemman block, 2nd Gwalior, Madhya Pradesh, India</p>
-                    <p className="text-gray-300">+91 1234567890</p>
-                    <p className="text-gray-300">info@kronos.itm.edu</p>
+                    <p className="text-gray-300">+91 7471168868</p>
+                    <p className="text-gray-300">kronos@itmgoi.in</p>
                   </div>
                 </div>
               </div>

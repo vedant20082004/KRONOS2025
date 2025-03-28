@@ -213,6 +213,7 @@ export default function Home() {
   const [isChangingCategory, setIsChangingCategory] = useState(false)
   const [animatedEvents, setAnimatedEvents] = useState<number[]>([])
   const timelineRef = useRef<HTMLDivElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null)
 
   // Handle category change with animation
   const handleCategoryChange = (category: string) => {
@@ -256,212 +257,139 @@ export default function Home() {
     }
   }
 
-  // Add particle background effect
+  // Canvas background animation (similar to team page)
   useEffect(() => {
-    const canvas = document.getElementById("particles-canvas") as HTMLCanvasElement
+    const canvas = canvasRef.current
     if (!canvas) return
 
     const ctx = canvas.getContext("2d")
     if (!ctx) return
 
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
-
-    const particles: any[] = []
-    const particleCount = 100
-    const maxDistance = 150
-
-    // Create particles with more properties
-    for (let i = 0; i < particleCount; i++) {
-      particles.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        radius: Math.random() * 2 + 0.5,
-        baseColor: Math.random() > 0.5 ? "#9c6bdf" : "#ec4899", // Purple or pink
-        alpha: Math.random() * 0.5 + 0.1,
-        speedX: Math.random() * 0.5 - 0.25,
-        speedY: Math.random() * 0.5 - 0.25,
-        pulseSpeed: Math.random() * 0.02 + 0.01,
-        pulseDirection: 1,
-        orbitAngle: Math.random() * Math.PI * 2,
-        orbitSpeed: (Math.random() * 0.2 + 0.1) * (Math.random() > 0.5 ? 1 : -1),
-        orbitRadius: Math.random() * 3 + 1,
-        baseX: 0,
-        baseY: 0,
-      })
+    // Set canvas dimensions
+    const setCanvasDimensions = () => {
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
     }
 
-    // Add mouse interaction
-    let mouseX = 0
-    let mouseY = 0
-    const mouseRadius = 150
-    let mouseActive = false
+    setCanvasDimensions()
+    window.addEventListener("resize", setCanvasDimensions)
 
-    canvas.addEventListener("mousemove", (e) => {
-      mouseX = e.clientX
-      mouseY = e.clientY
-      mouseActive = true
+    // Particle class
+    class Particle {
+      x: number
+      y: number
+      size: number
+      speedX: number
+      speedY: number
+      color: string
+      alpha: number
+      alphaSpeed: number
 
-      // Create ripple effect on mouse move
-      for (let i = 0; i < 3; i++) {
-        particles.push({
-          x: mouseX,
-          y: mouseY,
-          radius: Math.random() * 2 + 2,
-          baseColor: Math.random() > 0.5 ? "#9c6bdf" : "#ec4899",
-          alpha: 0.8,
-          speedX: (Math.random() - 0.5) * 2,
-          speedY: (Math.random() - 0.5) * 2,
-          pulseSpeed: 0.05,
-          pulseDirection: -1, // Always fade out
-          orbitAngle: 0,
-          orbitSpeed: 0,
-          orbitRadius: 0,
-          baseX: mouseX,
-          baseY: mouseY,
-          isRipple: true,
-        })
+      constructor() {
+        this.x = Math.random() * canvas.width
+        this.y = Math.random() * canvas.height
+        this.size = Math.random() * 3 + 0.5
+        this.speedX = (Math.random() - 0.5) * 0.3
+        this.speedY = (Math.random() - 0.5) * 0.3
+        this.color = this.getRandomColor()
+        this.alpha = Math.random() * 0.5 + 0.1
+        this.alphaSpeed = Math.random() * 0.01 + 0.005
       }
-    })
 
-    canvas.addEventListener("mouseleave", () => {
-      mouseActive = false
-    })
+      getRandomColor() {
+        const colors = [
+          "rgba(168, 85, 247, 0.7)", // Purple
+          "rgba(236, 72, 153, 0.7)", // Pink
+          "rgba(255, 255, 255, 0.7)", // White
+        ]
+        return colors[Math.floor(Math.random() * colors.length)]
+      }
 
-    // Store base positions
-    for (let i = 0; i < particleCount; i++) {
-      particles[i].baseX = particles[i].x
-      particles[i].baseY = particles[i].y
-    }
+      update() {
+        this.x += this.speedX
+        this.y += this.speedY
 
-    // Create wave effect
-    let waveAngle = 0
-
-    function animate() {
-      requestAnimationFrame(animate)
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-
-      // Update wave angle
-      waveAngle += 0.01
-
-      // Update and draw particles
-      for (let i = 0; i < particles.length; i++) {
-        const p = particles[i]
-
-        // Handle ripple particles differently
-        if (p.isRipple) {
-          p.alpha += p.pulseSpeed * p.pulseDirection
-          p.radius += 0.5
-
-          if (p.alpha <= 0) {
-            particles.splice(i, 1)
-            i--
-            continue
-          }
-
-          ctx.beginPath()
-          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2)
-          ctx.strokeStyle = p.baseColor.replace(")", `, ${p.alpha})`).replace("rgb", "rgba")
-          ctx.stroke()
-
-          p.x += p.speedX
-          p.y += p.speedY
-
-          continue
+        // Bounce off edges
+        if (this.x > canvas.width || this.x < 0) {
+          this.speedX = -this.speedX
+        }
+        if (this.y > canvas.height || this.y < 0) {
+          this.speedY = -this.speedY
         }
 
-        // Regular particles
-        // Pulse alpha
-        p.alpha += p.pulseSpeed * p.pulseDirection
-        if (p.alpha > 0.7 || p.alpha < 0.1) {
-          p.pulseDirection *= -1
+        // Pulsate alpha
+        this.alpha += this.alphaSpeed
+        if (this.alpha > 0.7 || this.alpha < 0.1) {
+          this.alphaSpeed = -this.alphaSpeed
         }
+      }
 
-        // Orbit around base position
-        p.orbitAngle += p.orbitSpeed
-        p.x = p.baseX + Math.cos(p.orbitAngle) * p.orbitRadius
-        p.y = p.baseY + Math.sin(p.orbitAngle) * p.orbitRadius
-
-        // Add wave effect
-        p.y += Math.sin(waveAngle + p.baseX * 0.01) * 2
-
-        // Mouse interaction
-        if (mouseActive) {
-          const dx = mouseX - p.x
-          const dy = mouseY - p.y
-          const distance = Math.sqrt(dx * dx + dy * dy)
-
-          if (distance < mouseRadius) {
-            const force = (mouseRadius - distance) / mouseRadius
-            const angle = Math.atan2(dy, dx)
-            p.x -= Math.cos(angle) * force * 2
-            p.y -= Math.sin(angle) * force * 2
-          }
-        }
-
-        // Draw particle
+      draw() {
+        if (!ctx) return
         ctx.beginPath()
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2)
-        ctx.fillStyle = p.baseColor.replace(")", `, ${p.alpha})`).replace("rgb", "rgba")
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
+        ctx.fillStyle = this.color.replace("0.7", this.alpha.toString())
         ctx.fill()
-
-        // Keep particles within canvas
-        if (p.x < 0 || p.x > canvas.width) {
-          p.baseX = Math.random() * canvas.width
-          p.x = p.baseX
-        }
-        if (p.y < 0 || p.y > canvas.height) {
-          p.baseY = Math.random() * canvas.height
-          p.y = p.baseY
-        }
       }
+    }
 
-      // Connect particles with lines
-      for (let a = 0; a < particles.length; a++) {
-        for (let b = a; b < particles.length; b++) {
-          if (particles[a].isRipple || particles[b].isRipple) continue
+    // Create particles
+    const particlesArray: Particle[] = []
+    const numberOfParticles = Math.min(100, Math.floor((window.innerWidth * window.innerHeight) / 10000))
 
-          const dx = particles[a].x - particles[b].x
-          const dy = particles[a].y - particles[b].y
+    for (let i = 0; i < numberOfParticles; i++) {
+      particlesArray.push(new Particle())
+    }
+
+    // Connect particles with lines
+    function connect() {
+      if (!ctx) return
+      const maxDistance = 150
+      for (let a = 0; a < particlesArray.length; a++) {
+        for (let b = a; b < particlesArray.length; b++) {
+          const dx = particlesArray[a].x - particlesArray[b].x
+          const dy = particlesArray[a].y - particlesArray[b].y
           const distance = Math.sqrt(dx * dx + dy * dy)
 
           if (distance < maxDistance) {
-            const opacity = (1 - distance / maxDistance) * 0.3
-            const gradient = ctx.createLinearGradient(particles[a].x, particles[a].y, particles[b].x, particles[b].y)
-
-            gradient.addColorStop(0, particles[a].baseColor.replace(")", `, ${opacity})`).replace("rgb", "rgba"))
-            gradient.addColorStop(1, particles[b].baseColor.replace(")", `, ${opacity})`).replace("rgb", "rgba"))
-
-            ctx.strokeStyle = gradient
+            const opacity = 1 - distance / maxDistance
+            ctx.strokeStyle = `rgba(168, 85, 247, ${opacity * 0.2})`
             ctx.lineWidth = 1
             ctx.beginPath()
-            ctx.moveTo(particles[a].x, particles[a].y)
-            ctx.lineTo(particles[b].x, particles[b].y)
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y)
+            ctx.lineTo(particlesArray[b].x, particlesArray[b].y)
             ctx.stroke()
           }
         }
       }
     }
 
-    animate()
+    // Animation loop
+    function animate() {
+      if (!ctx || !canvas) return
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-    const handleResize = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
+      // Draw gradient background
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height)
+      gradient.addColorStop(0, "rgba(10, 10, 20, 1)")
+      gradient.addColorStop(1, "rgba(0, 0, 0, 1)")
+      ctx.fillStyle = gradient
+      ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      // Reset base positions on resize
-      for (let i = 0; i < particles.length; i++) {
-        if (!particles[i].isRipple) {
-          particles[i].baseX = Math.random() * canvas.width
-          particles[i].baseY = Math.random() * canvas.height
-        }
+      // Update and draw particles
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update()
+        particlesArray[i].draw()
       }
+
+      connect()
+      requestAnimationFrame(animate)
     }
 
-    window.addEventListener("resize", handleResize)
+    animate()
 
     return () => {
-      window.removeEventListener("resize", handleResize)
+      window.removeEventListener("resize", setCanvasDimensions)
     }
   }, [])
 
@@ -469,13 +397,18 @@ export default function Home() {
     <>
       <Navbar />
       <main className="min-h-screen bg-[#0f1117] text-white p-5 relative overflow-hidden">
-        {/* Dynamic background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1117] via-[#1a1332] to-[#0f1117] opacity-80 gradient-shift z-0"></div>
+        {/* Canvas Background */}
+        <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-0" style={{ position: "fixed" }} />
 
-        {/* Animated grid lines */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(156,107,223,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(156,107,223,0.05)_1px,transparent_1px)] bg-[size:40px_40px] z-0"></div>
+        {/* Animated Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10 pointer-events-none"></div>
 
-        <canvas id="particles-canvas" className="absolute inset-0 z-0 opacity-70"></canvas>
+        {/* Floating Geometric Shapes */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-5">
+          <div className="absolute w-96 h-96 rounded-full bg-purple-500/10 blur-3xl animate-blob top-1/4 -left-48"></div>
+          <div className="absolute w-96 h-96 rounded-full bg-pink-500/10 blur-3xl animate-blob animation-delay-2000 top-3/4 -right-48"></div>
+          <div className="absolute w-80 h-80 rounded-full bg-purple-700/10 blur-3xl animate-blob animation-delay-4000 top-1/2 left-1/3"></div>
+        </div>
 
         <style jsx global>{`
           @keyframes movedown {
@@ -519,26 +452,6 @@ export default function Home() {
             100% {
               opacity: 1;
               transform: translateX(0px);
-            }
-          }
-
-          @keyframes pulse {
-            0%, 100% {
-              transform: scale(1);
-              opacity: 1;
-            }
-            50% {
-              transform: scale(1.2);
-              opacity: 0.8;
-            }
-          }
-
-          @keyframes glow {
-            0%, 100% {
-              box-shadow: 0 0 25px rgba(156, 107, 223, 0.3);
-            }
-            50% {
-              box-shadow: 0 0 40px rgba(156, 107, 223, 0.6);
             }
           }
 
@@ -591,20 +504,13 @@ export default function Home() {
             }
           }
 
-          .timeline-bullet {
-            animation: pulse 2s infinite, glow 3s infinite;
+          @keyframes blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(20px, -20px) scale(1.1); }
+            50% { transform: translate(0, 20px) scale(1); }
+            75% { transform: translate(-20px, -20px) scale(0.9); }
           }
 
-          .card-hover {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          }
-
-          .card-hover:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(156, 107, 223, 0.2),
-              0 0 20px rgba(156, 107, 223, 0.1);
-          }
-          
           .animate-timeline-appear {
             animation: fadeIn 0.8s forwards;
           }
@@ -636,6 +542,18 @@ export default function Home() {
             animation: rotate 20s linear infinite;
           }
 
+          .animate-blob {
+            animation: blob 10s infinite;
+          }
+          
+          .animation-delay-2000 {
+            animation-delay: 2s;
+          }
+          
+          .animation-delay-4000 {
+            animation-delay: 4s;
+          }
+
           @keyframes text-glow {
             0%, 100% {
               text-shadow: 0 0 8px rgba(156, 107, 223, 0.5);
@@ -645,42 +563,23 @@ export default function Home() {
             }
           }
 
-          @keyframes border-pulse {
-            0%, 100% {
-              border-color: rgba(156, 107, 223, 0.7);
-            }
-            50% {
-              border-color: rgba(236, 72, 153, 0.7);
-            }
-          }
-
-          @keyframes gradient-shift {
-            0% {
-              background-position: 0% 50%;
-            }
-            50% {
-              background-position: 100% 50%;
-            }
-            100% {
-              background-position: 0% 50%;
-            }
-          }
-
           .text-glow-purple {
             animation: text-glow 2s infinite;
           }
 
-          .border-pulse {
-            animation: border-pulse 4s infinite;
+          .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           }
 
-          .gradient-shift {
-            background-size: 200% 200%;
-            animation: gradient-shift 5s ease infinite;
+          .card-hover:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(156, 107, 223, 0.2),
+              0 0 20px rgba(156, 107, 223, 0.1),
+              0 0 0 1px rgba(156, 107, 223, 0.1);
           }
         `}</style>
 
-        <div className="max-w-7xl mx-auto py-12 relative z-10">
+        <div className="max-w-7xl mx-auto py-12 relative z-20">
           {/* Decorative elements */}
           <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-purple-500/10 blur-3xl rotate-animation"></div>
           <div
@@ -839,8 +738,9 @@ export default function Home() {
               isChangingCategory ? "category-fade-out" : "category-fade-in",
             )}
           >
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[1px] sm:w-[2px] bg-gradient-to-b from-[#9c6bdf] via-[#6b7adf] to-[#9c6bdf]">
-              <div className="absolute inset-0 opacity-50 blur-[1px] sm:blur-[2px]" />
+            {/* Static vertical timeline line without animations */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[1px] sm:w-[2px] bg-slate-600">
+              <div className="absolute inset-0 opacity-50 blur-[1px] bg-slate-500"></div>
             </div>
 
             <div className="space-y-8 sm:space-y-12">
@@ -866,55 +766,75 @@ export default function Home() {
                       style={{ animationDelay: `${index * 0.15}s` }}
                       onAnimationEnd={() => handleEventAppear(event.id)}
                     >
-                      {/* Timeline bullet */}
-                      <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#9c6bdf] timeline-bullet z-10"></div>
+                      {/* Static timeline bullet without animations */}
+                      <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-slate-500 z-10 flex items-center justify-center">
+                        <div className="w-3 h-3 rounded-full bg-slate-300"></div>
+                      </div>
 
                       <Card
                         className={cn(
                           "w-full sm:w-[calc(50%-1.5rem)] p-6 sm:p-8 relative card-hover group",
-                          "bg-gradient-to-br from-[rgba(0,0,0,0.8)] to-transparent",
-                          "border border-white/10 backdrop-blur-xl",
-                          "rounded-xl overflow-hidden",
+                          "bg-gradient-to-br from-slate-800 to-slate-900",
+                          "border border-slate-700 hover:border-slate-600",
+                          "rounded-xl overflow-hidden shadow-lg shadow-slate-900/50",
+                          "backdrop-blur-xl transition-all duration-500",
                           animationClass,
                         )}
                       >
                         <div
                           className={cn(
-                            "absolute inset-0 bg-gradient-to-r opacity-20 group-hover:opacity-30 transition-opacity duration-700",
+                            "absolute inset-0 bg-gradient-to-r opacity-10 group-hover:opacity-20 transition-opacity duration-700",
                             event.gradient,
                           )}
                         />
-                        <div className={cn("absolute top-0 left-0 w-full h-1 bg-gradient-to-r", event.gradient)} />
 
-                        {/* Animated corner accent */}
-                        <div className="absolute top-0 right-0 w-12 h-12 overflow-hidden">
-                          <div
-                            className={cn(
-                              "absolute top-0 right-0 w-16 h-16 rotate-45 translate-x-8 -translate-y-8 bg-gradient-to-r",
-                              event.gradient,
-                              "opacity-70 group-hover:opacity-100 transition-opacity duration-500",
-                            )}
-                          ></div>
+                        {/* Top border */}
+                        <div className={cn("absolute top-0 left-0 w-full h-1 bg-slate-600")} />
+
+                        {/* Corner accents - all four corners */}
+                        <div className="absolute top-0 left-0 w-8 h-8 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          <div className="absolute top-0 left-0 w-2 h-8 bg-slate-500"></div>
+                          <div className="absolute top-0 left-0 w-8 h-2 bg-slate-500"></div>
                         </div>
+
+                        <div className="absolute top-0 right-0 w-8 h-8 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          <div className="absolute top-0 right-0 w-2 h-8 bg-slate-500"></div>
+                          <div className="absolute top-0 right-0 w-8 h-2 bg-slate-500"></div>
+                        </div>
+
+                        <div className="absolute bottom-0 left-0 w-8 h-8 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          <div className="absolute bottom-0 left-0 w-2 h-8 bg-slate-500"></div>
+                          <div className="absolute bottom-0 left-0 w-8 h-2 bg-slate-500"></div>
+                        </div>
+
+                        <div className="absolute bottom-0 right-0 w-8 h-8 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          <div className="absolute bottom-0 right-0 w-2 h-8 bg-slate-500"></div>
+                          <div className="absolute bottom-0 right-0 w-8 h-2 bg-slate-500"></div>
+                        </div>
+
+                        {/* Tech scan lines */}
+                        <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(148,163,184,0.03)_50%)] bg-[length:100%_4px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                         <div className="relative z-10">
                           <h2
                             className={cn(
-                              "text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 tracking-wide sm:tracking-wider bg-gradient-to-r bg-clip-text text-transparent transform transition-transform duration-500 group-hover:scale-105 origin-left",
-                              event.gradient,
+                              "text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 tracking-wide sm:tracking-wider text-slate-200 transform transition-transform duration-500 group-hover:scale-105 origin-left",
                             )}
                           >
                             {event.title}
                           </h2>
-                          <small className="text-xs sm:text-sm font-medium text-white/60 block mb-2 sm:mb-4 tracking-wide sm:tracking-wider transform transition-all duration-500 group-hover:text-white/90">
-                            {event.date}
-                          </small>
-                          <p className="text-white/90 text-sm sm:text-base leading-relaxed transform transition-all duration-500 group-hover:translate-x-1">
+                          <div className="flex items-center gap-2 mb-2 sm:mb-4">
+                            <div className="w-4 h-4 rounded-full bg-slate-600"></div>
+                            <small className="text-xs sm:text-sm font-medium text-slate-400 block tracking-wide sm:tracking-wider transform transition-all duration-500 group-hover:text-slate-300">
+                              {event.date}
+                            </small>
+                          </div>
+                          <p className="text-slate-300 text-sm sm:text-base leading-relaxed transform transition-all duration-500 group-hover:text-slate-200 group-hover:translate-x-1">
                             {event.description}
                           </p>
 
                           {/* Animated reveal line */}
-                          <div className="w-0 h-[1px] bg-gradient-to-r from-white/0 via-white/50 to-white/0 mt-4 group-hover:w-full transition-all duration-700"></div>
+                          <div className="w-0 h-[1px] bg-slate-600 mt-4 group-hover:w-full transition-all duration-700"></div>
                         </div>
                       </Card>
                     </div>
