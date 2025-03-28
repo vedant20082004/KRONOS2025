@@ -394,6 +394,7 @@ export default function KronosTechFest() {
                 badgeColor: "bg-purple-600/90",
                 day: "Day 1",
                 time: "MARCH 09, 2025",
+                image: "/holiparty.jpeg", // Unique image for this event
               },
               {
                 title: "BEYOND THE LENS",
@@ -402,6 +403,7 @@ export default function KronosTechFest() {
                 badgeColor: "bg-pink-600/90",
                 day: "Day 2",
                 time: "APRIL 01, 2025",
+                image: "/beyondthelens.jpeg", // Unique image for this event
               },
               {
                 title: "AD-MAD",
@@ -410,6 +412,7 @@ export default function KronosTechFest() {
                 badgeColor: "bg-purple-600/90",
                 day: "Day 3",
                 time: "APRIL 07, 2025",
+                image: "/admad.jpeg", // Unique image for this event
               },
             ].map((event, index) => (
               <div
@@ -419,7 +422,7 @@ export default function KronosTechFest() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/placeholder.svg"
+                    src={event.image} // Use the unique image here
                     alt={event.title}
                     width={500}
                     height={300}
@@ -456,13 +459,15 @@ export default function KronosTechFest() {
                       <span className="event-date">{event.time}</span>
                     </div>
                   </div>
-                  <Button
-                    variant="outline"
-                    className="w-full border-purple-500/30 text-white hover:bg-purple-950/30 group-hover:border-purple-500/70 transition-all duration-300"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
+                  <Link href="/events">
+                    <Button
+                      variant="outline"
+                      className="w-full border-purple-500/30 text-white hover:bg-purple-950/30 group-hover:border-purple-500/70 transition-all duration-300"
+                    >
+                      Learn More
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             ))}
