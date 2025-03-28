@@ -621,11 +621,11 @@ Let the music take control—Are you ready to dance the night away? 🎶🚀🔥
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "DR. SOPHIA PATEL",
-      role: "Neurotech Research Director",
-      avatar: "/placeholder.svg?height=200&width=200",
-      phone: "+1 (555) 456-7890",
-      email: "sophia.p@kronos.neuro",
+      name: "Utkarsh Mishra",
+      role: "B.Tech | 4th year",
+      avatar: "/utkarshmishra.jpg?height=200&width=200",
+      phone: "07471168868",
+      email: "utkarshmis302@gmail.com",
     },
   },
 ]
