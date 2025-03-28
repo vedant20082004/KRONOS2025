@@ -495,7 +495,7 @@ export default function KronosTechFest() {
               TECH VISIONARIES
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">
-              Meet Our Past Speakers
+              Meet Our Past Celebrity
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
               Learn from the brightest minds and industry leaders who are
@@ -504,23 +504,62 @@ export default function KronosTechFest() {
           </div>
 
           <div
-            className={`flex ${
-              [
-                {
-                  name: "Piyush Mishra",
-                  role: "Indian Actor and Singer",
-                  bio: "Piyush Mishra is an Indian actor, singer, lyricist, playwright, musician, and screenwriter",
-                },
-              ].length === 1
-                ? "justify-center"
-                : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-            }`}
+            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6`}
           >
             {[
               {
                 name: "Piyush Mishra",
                 role: "Indian Actor and Singer",
                 bio: "Piyush Mishra is an Indian actor, singer, lyricist, playwright, musician, and screenwriter",
+                image: "/piyushmishra.jpg",
+              },
+              {
+                name: "Ankit Tiwari",
+                role: "Indian playback singer",
+                bio: "Ankit Tiwari is an Indian playback singer, live performer, music director, composer.",
+                image: "/ankit-tiwari.jpg",
+              },
+              {
+                name: "Papon",
+                role: "Indian playback singer and composer",
+                bio: "Angaraag Mahanta, known by his stagename Papon, is an Indian playback singer and composer from Assam.",
+                image: "/papon.jpg",
+              },
+              {
+                name: "Jubin Nautiyal",
+                role: "Indian playback singer",
+                bio: "Jubin Nautiyal is an Indian playback singer and live performer.",
+                image: "/jubnialnutial.jpg",
+              },
+              {
+                name: "Kunal Bojewar",
+                role: "Singer",
+                bio: "Kunal Bojewar, is an intense Singer, Composer and a power-packed Performer.",
+                image: "/kunal.jpg",
+              },
+              {
+                name: "Arijit Singh",
+                role: "Indian playback singer",
+                bio: "Arijit Singh is an Indian playback singer.",
+                image: "/Arijit-Singh.png",
+              },
+              {
+                name: "Neeti Mohan",
+                role: "Indian Singer",
+                bio: "Neeti Mohan Sharma is an Indian singer.",
+                image: "/neeti-mohan.jpg",
+              },
+              {
+                name: "KK",
+                role: "Indian Playback Singer",
+                bio: "Krishnakumar Kunnath, popularly known as KK, was an Indian playback singer.",
+                image: "/kk.jpg",
+              },
+              {
+                name: "Shilpa Rao",
+                role: "Indian Singer",
+                bio: "Shilpa Rao is an Indian singer who primarily records songs in Hindi language.",
+                image: "/shilpa-rao.jpg",
               },
             ].map((speaker, index) => (
               <div
@@ -542,7 +581,7 @@ export default function KronosTechFest() {
                   <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(147,112,219,0.05)_50%)] bg-[length:100%_4px] z-10 pointer-events-none"></div>
 
                   <Image
-                    src="/piyushmishra.jpg"
+                    src={speaker.image}
                     alt={speaker.name}
                     width={500}
                     height={500}
