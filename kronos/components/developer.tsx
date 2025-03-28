@@ -215,7 +215,7 @@ const DeveloperTeam: React.FC = () => {
             <div className="team-member">
               <div className="member-photo-container">
                 <img
-                  src="WhatsApp Image 2025-03-21 at 15.32.26_c672c12c.jpg"
+                  src="vedant.jpg"
                   alt="Vedant Pisal"
                   className="member-photo"
                 />
