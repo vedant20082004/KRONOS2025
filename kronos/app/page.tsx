@@ -504,7 +504,7 @@ export default function KronosTechFest() {
                 name: "Papon",
                 role: "Indian playback singer and composer",
                 bio: "Angaraag Mahanta, known by his stagename Papon, is an Indian playback singer and composer from Assam.",
-                image: "/papon.jpg",
+                image: "/Papon.jpg",
               },
               {
                 name: "Jubin Nautiyal",
