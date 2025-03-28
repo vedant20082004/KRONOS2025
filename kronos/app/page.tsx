@@ -288,7 +288,7 @@ export default function KronosTechFest() {
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <Calendar className="w-4 h-4 text-purple-500" />
-                  <span>April 15-17, 2025</span>
+                  <span>April 25 - 27, 2025</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <MapPin className="w-4 h-4 text-purple-500" />
