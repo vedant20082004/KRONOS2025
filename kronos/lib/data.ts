@@ -412,7 +412,7 @@ One special "Best Creativity" winner will be awarded a cash prize`,
   },
   {
     id: "MAIN-013",
-    title: "BAND",
+    title: "GOONJ",
     description:
       `GOONJ | KRONOS 2025
 
