@@ -232,11 +232,11 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "OLIVIA MARTINEZ",
-      role: "Futurist & Social Theorist",
-      avatar: "/placeholder.svg?height=200&width=200",
-      phone: "+1 (555) 567-8901",
-      email: "olivia.m@kronos.futures",
+      name: "Utkarsh Mishra",
+      role: "B.Tech | 4th year",
+      avatar: "/utkarshmishra.jpg?height=200&width=200",
+      phone: "07471168868",
+      email: "utkarshmis302@gmail.com",
     },
   },
 ]
