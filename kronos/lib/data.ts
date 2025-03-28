@@ -270,6 +270,155 @@ Final Round 🔧
     },
   },
   {
+    id: "MAIN-009",
+    title: "FIESTA",
+    description:
+      `A fiesta is a festive celebration, often associated with Spanish and Latin American cultures. It typically includes music, dance, food, parades, and various cultural or religious activities. Fiestas can be national, regional, or community-based, and they often commemorate historical events, saints, or cultural traditions.
+
+Key Points About Fiesta:
+
+1. Cultural Significance – Represents local traditions, heritage, and historical events.
+
+
+2. Entertainment – Includes music, dance, performances, and fireworks.
+
+
+3. Food & Drinks – Traditional and regional delicacies are a major highlight.
+
+
+4. Community Participation – Brings people together in celebration and unity.`,
+    image: "/fiesta.jpg?height=400&width=600",
+    date: "08 April, 2025",
+    venue: "LIBRARY GARDEN",
+    timing: "12:00 PM - 07:00 PM",
+    category: "non-tech",
+    registerLink: "https://forms.google.com/neural-workshop",
+    coordinator: {
+      name: "Yadyamini Saxena ",
+      role: "MBA | 2025",
+      avatar: "/yadyamini.png?height=200&width=200",
+      phone: "09039788950",
+      email: "saxenayadyamini@gmail.com",
+    },
+  },
+  {
+    id: "MAIN-010",
+    title: "COSPLAY",
+    description:
+      `People will dress up as a character and will have fun. Interested participants will be participating in a fashion show type of small show and whosoever would dress the best will be the winner.`,
+    image: "/cosplay.jpg?height=400&width=600",
+    date: "08 April, 2025",
+    venue: "ITM GOI CAMPUS",
+    timing: "12:00 PM - 07:00 PM",
+    category: "non-tech",
+    registerLink: "https://forms.google.com/neural-workshop",
+    coordinator: {
+      name: "Surbhi Tiwari ",
+      role: "B.Tech | 3rd year",
+      avatar: "/surbhi.png?height=200&width=200",
+      phone: "8770515260",
+      email: "surbhixkira@gmail.com",
+    },
+  },
+  {
+    id: "MAIN-011",
+    title: "FASHION RUNWAY",
+    description:
+      `Fashion Show(Fashion Runway)|| Kronos 2025
+Get ready to immerse yourself in a world of elegance, creativity, and trendsetting designs at Fashion Runway . Step into a world of glamour, style, and innovation at Fashion Runway , where fashion meets art on the grand runway
+
+👸🤴 Themed Runway walks 
+
+🏆 Exciting Prizes - For the best showcase 
+
+🎊 Registrations open!
+
+💥Join us for an unforgettable evening of fashion, music, and sophistication`,
+    image: "/faishonshow.jpeg?height=400&width=600",
+    date: "09 April, 2025",
+    venue: "NAAD AMPHITHEATRE",
+    timing: "06:00 PM - 08:00 PM",
+    category: "non-tech",
+    registerLink: "https://forms.google.com/neural-workshop",
+    coordinator: {
+      name: "Sabhya Chauhan  ",
+      role: "MBA | 2nd year",
+      avatar: "/sabhya.png?height=200&width=200",
+      phone: "7582933198",
+      email: "sabhyahere@gmail.com",
+    },
+  },
+  {
+    id: "MAIN-012",
+    title: "CHROMAVERSE",
+    description:
+      `🎨ChromaVerse | Kronos 2025
+Unleash your creativity in our ultimate art and design competition! Participate in five thrilling events:
+
+Face Painting – Transform faces into stunning artistic expressions.
+
+Digital Art – Bring your imagination to life using digital tools.
+
+Newspaper Art – Craft masterpieces using only newspapers.
+
+T-Shirt Painting – Design wearable art with your creativity.
+
+Canvas Drawing – Create breathtaking sketches and paintings.
+
+
+🏆 Prizes & Recognition:
+
+Five event winners will receive exclusive goodies.
+
+One special "Best Creativity" winner will be awarded a cash prize`,
+    image: "/chromaverse.jpeg?height=400&width=600",
+    date: "APRIL 09, 2025",
+    venue: "NAAD AMPHITHEATRE",
+    timing: "12:00 PM - 03:00 PM",
+    category: "non-tech",
+    registerLink: "https://forms.google.com/neural-workshop",
+    coordinator: {
+      name: "Vaishnavi Bhadauria",
+      role: "B.Tech  | 3rd Year",
+      avatar: "/vaishnavi.png?height=200&width=200",
+      phone: "8423411460",
+      email: "bhadauriavaishnavi3@gmail.com",
+    },
+  },
+  {
+    id: "MAIN-013",
+    title: "BAND",
+    description:
+      `GOONJ | KRONOS 2025
+
+GOONJ – Battle of Bands & Rap Cipher🎸🎤  
+
+Goonj is the ultimate musical face-off, where rock, metal, and hip-hop collide on one stage.  
+
+🎵 Battle of Bands – Perform as a band and compete with electrifying riffs, powerful vocals, and intense drum solos.  
+
+🎤 Rap Cipher – Go solo and showcase your lyrical fire, flow, and stage presence in a high-energy rap battle.  
+
+!!! EXCITING PRIZES !!!
+
+Whether you’re a group performer or a solo artist, Goonj offers the perfect stage to unleash your talent.  
+
+🔥 Are you ready to own the stage?🔥`,
+    image: "/band.jpeg?height=400&width=600",
+    date: "25-26 April, 2025",
+    venue: "Newton Block ",
+    timing: "02:00 PM - 05:00 PM",
+    category: "non-tech",
+    registerLink: "https://forms.google.com/neural-workshop",
+    coordinator: {
+      name: "Utkarsh Shrivastava",
+      role: "B.Tech | 3rd year",
+      avatar: "/utkarshshrivastav.png?height=200&width=200",
+      phone: "6266102748",
+      email: "ushrivastava325@gmail.com",
+    },
+  },
+  {
     id: "MAIN-003",
     title: "TREASURE HUNT",
     description:
@@ -425,155 +574,9 @@ This is your moment to turn ideas into reality and startups into success! Are yo
       email: "sophia.p@kronos.neuro",
     },
   },
-  {
-    id: "MAIN-009",
-    title: "FIESTA",
-    description:
-      `A fiesta is a festive celebration, often associated with Spanish and Latin American cultures. It typically includes music, dance, food, parades, and various cultural or religious activities. Fiestas can be national, regional, or community-based, and they often commemorate historical events, saints, or cultural traditions.
-
-Key Points About Fiesta:
-
-1. Cultural Significance – Represents local traditions, heritage, and historical events.
-
-
-2. Entertainment – Includes music, dance, performances, and fireworks.
-
-
-3. Food & Drinks – Traditional and regional delicacies are a major highlight.
-
-
-4. Community Participation – Brings people together in celebration and unity.`,
-    image: "/fiesta.jpg?height=400&width=600",
-    date: "08 April, 2025",
-    venue: "LIBRARY GARDEN",
-    timing: "12:00 PM - 07:00 PM",
-    category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
-    coordinator: {
-      name: "Yadyamini Saxena ",
-      role: "MBA | 2025",
-      avatar: "/yadyamini.png?height=200&width=200",
-      phone: "09039788950",
-      email: "saxenayadyamini@gmail.com",
-    },
-  },
-  {
-    id: "MAIN-010",
-    title: "COSPLAY",
-    description:
-      `People will dress up as a character and will have fun. Interested participants will be participating in a fashion show type of small show and whosoever would dress the best will be the winner.`,
-    image: "/cosplay.jpg?height=400&width=600",
-    date: "08 April, 2025",
-    venue: "ITM GOI CAMPUS",
-    timing: "12:00 PM - 07:00 PM",
-    category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
-    coordinator: {
-      name: "Surbhi Tiwari ",
-      role: "B.Tech | 3rd year",
-      avatar: "/surbhi.png?height=200&width=200",
-      phone: "8770515260",
-      email: "surbhixkira@gmail.com",
-    },
-  },
-  {
-    id: "MAIN-011",
-    title: "FASHION RUNWAY",
-    description:
-      `Fashion Show(Fashion Runway)|| Kronos 2025
-Get ready to immerse yourself in a world of elegance, creativity, and trendsetting designs at Fashion Runway . Step into a world of glamour, style, and innovation at Fashion Runway , where fashion meets art on the grand runway
-
-👸🤴 Themed Runway walks 
-
-🏆 Exciting Prizes - For the best showcase 
-
-🎊 Registrations open!
-
-💥Join us for an unforgettable evening of fashion, music, and sophistication`,
-    image: "/faishonshow.jpeg?height=400&width=600",
-    date: "09 April, 2025",
-    venue: "NAAD AMPHITHEATRE",
-    timing: "06:00 PM - 08:00 PM",
-    category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
-    coordinator: {
-      name: "Sabhya Chauhan  ",
-      role: "MBA | 2nd year",
-      avatar: "/sabhya.png?height=200&width=200",
-      phone: "7582933198",
-      email: "sabhyahere@gmail.com",
-    },
-  },
-  {
-    id: "MAIN-012",
-    title: "CHROMAVERSE",
-    description:
-      `🎨ChromaVerse | Kronos 2025
-Unleash your creativity in our ultimate art and design competition! Participate in five thrilling events:
-
-Face Painting – Transform faces into stunning artistic expressions.
-
-Digital Art – Bring your imagination to life using digital tools.
-
-Newspaper Art – Craft masterpieces using only newspapers.
-
-T-Shirt Painting – Design wearable art with your creativity.
-
-Canvas Drawing – Create breathtaking sketches and paintings.
-
-
-🏆 Prizes & Recognition:
-
-Five event winners will receive exclusive goodies.
-
-One special "Best Creativity" winner will be awarded a cash prize`,
-    image: "/chromaverse.jpeg?height=400&width=600",
-    date: "APRIL 09, 2025",
-    venue: "NAAD AMPHITHEATRE",
-    timing: "12:00 PM - 03:00 PM",
-    category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
-    coordinator: {
-      name: "Vaishnavi Bhadauria",
-      role: "B.Tech  | 3rd Year",
-      avatar: "/vaishnavi.png?height=200&width=200",
-      phone: "8423411460",
-      email: "bhadauriavaishnavi3@gmail.com",
-    },
-  },
-  {
-    id: "MAIN-013",
-    title: "BAND",
-    description:
-      `GOONJ | KRONOS 2025
-
-GOONJ – Battle of Bands & Rap Cipher🎸🎤  
-
-Goonj is the ultimate musical face-off, where rock, metal, and hip-hop collide on one stage.  
-
-🎵 Battle of Bands – Perform as a band and compete with electrifying riffs, powerful vocals, and intense drum solos.  
-
-🎤 Rap Cipher – Go solo and showcase your lyrical fire, flow, and stage presence in a high-energy rap battle.  
-
-!!! EXCITING PRIZES !!!
-
-Whether you’re a group performer or a solo artist, Goonj offers the perfect stage to unleash your talent.  
-
-🔥 Are you ready to own the stage?🔥`,
-    image: "/band.jpeg?height=400&width=600",
-    date: "25-26 April, 2025",
-    venue: "Newton Block ",
-    timing: "02:00 PM - 05:00 PM",
-    category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
-    coordinator: {
-      name: "Utkarsh Shrivastava",
-      role: "B.Tech | 3rd year",
-      avatar: "/utkarshshrivastav.png?height=200&width=200",
-      phone: "6266102748",
-      email: "ushrivastava325@gmail.com",
-    },
-  },
+  
+  
+ 
   {
     id: "MAIN-014",
     title: "DJ NIGHT",
