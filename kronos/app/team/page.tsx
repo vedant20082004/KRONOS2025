@@ -360,7 +360,7 @@ export default function TeamPage() {
         {
           name: "Pulak Jain",
           role: "Co-coordinator ",
-          image: `/WhatsApp Image 2025-03-27 at 2.14.34 PM.jpEg`,
+          image: `/pulak.jpeg`,
         },
       ],
     },
