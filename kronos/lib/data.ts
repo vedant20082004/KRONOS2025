@@ -486,13 +486,18 @@ Think you have what it takes? Gather your squad and get ready to crack the code,
     id: "MAIN-004",
     title: "AI-DEBATE ZONE",
     description:
-      `The ultimate battle of intelligence is here! Witness the clash of minds as humans take on AI and AI challenges AI in a war of words, logic, and wit. Who will reign supreme—human intuition or artificial intelligence?
+      `💡 InnovateX | KRONOS 2025
+Unleash your creativity and problem-solving skills! Compete in an intense innovation sprint to develop groundbreaking ideas in:
 
-🔥 AI vs Human: Can humans outsmart machines?
-⚡ AI vs AI: Watch algorithms go head-to-head in a battle of reasoning!
-🏆 Prizes for the Sharpest Minds!
+🚀 Technology & AI (Innovate for a smarter world!)
+🌍 Sustainability & Environment (Create solutions for a greener future!)
+🏥 Healthcare & Well-being (Revolutionize the health sector!)
+📈 Business & Fintech (Disrupt industries with your startup ideas!)
 
-Get ready for thought-provoking debates, bold arguments, and a glimpse into the future of intelligence! 🚀💡`,
+🧠 Surprise Challenge (Expect the unexpected!)
+
+🔓 Registrations Open!
+🏆 Exciting Prizes for the Best Ideas!`,
     image: "/aidebate.jpeg?height=400&width=600",
     date: "APRIL 26, 2025",
     venue: "Neuman Block Lab",
@@ -500,11 +505,11 @@ Get ready for thought-provoking debates, bold arguments, and a glimpse into the 
     category: "tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "MICHAEL THOMPSON",
-      role: "Strategic Futures Director",
-      avatar: "/placeholder.svg?height=200&width=200",
-      phone: "+1 (555) 890-1234",
-      email: "michael.t@kronos.futures",
+      name: "Sanchit Gupta",
+      role: "B.Tech | 3rd year",
+      avatar: "/sanchit.png?height=200&width=200",
+      phone: "9140710681",
+      email: "gupta2003sanchit@gmail.com",
     },
   },
   {
