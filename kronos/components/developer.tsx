@@ -221,7 +221,7 @@ const DeveloperTeam: React.FC = () => {
                 />
               </div>
               <div className="member-info">
-                <h3 className="member-name">Vedant Pisal</h3>
+                <h3 className="member-name">Vedant Pisal Deshmukh</h3>
                 <p className="member-role">Developer</p>
                 <div className="social-links">
                   <a
@@ -311,7 +311,7 @@ const DeveloperTeam: React.FC = () => {
                     <FaLinkedinIn />
                   </a>
                   <a
-                    href="https://www.instagram.com/_sar_004"
+                    href="https://www.instagram.com/titan_.dev"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -348,7 +348,7 @@ const DeveloperTeam: React.FC = () => {
                     <FaLinkedinIn />
                   </a>
                   <a
-                    href="https://www.instagram.com/hansika_lalwani/profilecard"
+                    href="https://www.instagram.com/_hansika_lalwani_?igsh=MTV0cDA0azUzMWVqYw=="
                     target="_blank"
                     rel="noopener noreferrer"
                   >

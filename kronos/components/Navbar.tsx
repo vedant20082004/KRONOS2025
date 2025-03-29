@@ -71,7 +71,7 @@ export default function Navbar({ activeSection = "hero" }: NavbarProps) {
         <div className="flex items-center gap-2">
           <div className="relative w-10 h-10 flex items-center justify-center">
             <Image
-              src="/title_logo.png" // Path to the image in the public folder
+              src="/itm_logo.png" // Path to the image in the public folder
               alt="Kronos Logo"
               width={40}
               height={40}

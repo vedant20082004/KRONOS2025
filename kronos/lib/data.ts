@@ -330,7 +330,17 @@ Key Points About Fiesta:
     id: "MAIN-010",
     title: "COSPLAY",
     description:
-      `People will dress up as a character and will have fun. Interested participants will be participating in a fashion show type of small show and whosoever would dress the best will be the winner.`,
+      `🎭 Cosplay Carnival | KRONOS 2025
+Get ready to step into the world of fantasy and fandom! Showcase your creativity and bring your favorite characters to life in:
+
+✨ Solo Cosplay (Rule the Campus with your iconic look!)
+👥 Group Cosplay (Team up for an unforgettable act!)
+📸 Cosplay Photography Contest (Strike a pose, steal the spotlight!)
+🎭 Surprise Performances & Fun Challenges!
+
+🎟 Registrations Open!
+🏆 Exciting Prizes for Best Cosplays!
+`,
     image: "/cosplay.jpg?height=400&width=600",
     date: "08 April, 2025",
     venue: "ITM GOI CAMPUS",
@@ -338,11 +348,11 @@ Key Points About Fiesta:
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "Surbhi Tiwari ",
-      role: "B.Tech | 3rd year",
-      avatar: "/surbhi.png?height=200&width=200",
-      phone: "8770515260",
-      email: "surbhixkira@gmail.com",
+      name: "Yadyamini Saxena ",
+      role: "MBA | 2nd year",
+      avatar: "/yadyaminiSaxena.jpg?height=200&width=200",
+      phone: "9039788950",
+      email: "saxenayadyamini@gmail.com",
     },
   },
   {
@@ -412,7 +422,7 @@ One special "Best Creativity" winner will be awarded a cash prize`,
   },
   {
     id: "MAIN-013",
-    title: "BAND",
+    title: "GOONJ",
     description:
       `GOONJ | KRONOS 2025
 
