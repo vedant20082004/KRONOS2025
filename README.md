@@ -82,8 +82,9 @@ This project is licensed under the MIT License.
 
 For any queries, reach out at [VEDANT PISAL DESHMUKH](mailto\:vedantpisaldeshmukh@gmail.com)
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=vedant20082004&repo=KRONOS2025&theme=github-dark)
-
 
 ![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/vedant20082004/KRONOS2025)
+
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=vedant20082004&repo=KRONOS2025&theme=github-dark)
+
 
