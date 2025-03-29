@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar"
 const events = [
   {
     id: 1,
-    title: "HOLI PARTY",
+    title: "RANG RUSH",
     date: "09-MAR-25",
     description: "Celebrate the festival of colors with music and joy",
     category: "pre",
@@ -25,7 +25,7 @@ const events = [
   {
     id: 6,
     title: "SPORTS EVENT",
-    date: "27-MAR-25 to 10-APR-25",
+    date: "01-APR-25 - 17-APR-25",
     description: "Various sports competitions and tournaments",
     category: "pre",
     gradient: "from-[#0093E9] to-[#80D0C7]",
@@ -49,7 +49,7 @@ const events = [
   {
     id: 5,
     title: "E-SPORTS DAY 1 & DAY 2",
-    date: "18-APR-25 to 20-APR-25",
+    date: "18-APR-25 - 20-APR-25",
     description: "Gaming tournaments and competitions",
     category: "pre",
     gradient: "from-[#4158D0] to-[#C850C0]",
@@ -73,7 +73,7 @@ const events = [
   {
     id: 9,
     title: "WORKSHOPS",
-    date: "7-APR-25 to 20-APR-24",
+    date: "07-APR-25 - 20-APR-24",
     description: "Various skill development workshops",
     category: "pre",
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
@@ -120,7 +120,7 @@ const events = [
   },
   {
     id: 15,
-    title: "BAND DAY 1",
+    title: "BAND DAY 1 [GOONJ]",
     date: "25-APR-25",
     description: "First day of band performances",
     category: "main",
@@ -136,7 +136,7 @@ const events = [
   },
   {
     id: 17,
-    title: "FASHION SHOW",
+    title: "FASHION RUNWAY",
     date: "26-APR-25",
     description: "Style and fashion showcase",
     category: "main",
@@ -152,7 +152,7 @@ const events = [
   },
   {
     id: 19,
-    title: "BAND DAY 2",
+    title: "BAND DAY 2 [GOONJ]",
     date: "26-APR-25",
     description: "Second day of band performances",
     category: "main",
@@ -177,7 +177,7 @@ const events = [
   {
     id: 22,
     title: "HACKATHON",
-    date: "26-APR-25 to 27-APR-25",
+    date: "26-APR-25 - 27-APR-25",
     description: "24-hour coding competition",
     category: "main",
     gradient: "from-[#FF61D2] to-[#FE9090]",
