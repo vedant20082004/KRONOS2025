@@ -288,14 +288,14 @@ export default function TeamPage() {
       name: "PR/Media",
       coordinator: {
         name: "Vaishnavi Bhadauria",
-        role: "oordinator ",
+        role: "Coordinator ",
         image: `/pr & media.jpg`,
       },
       coCoordinators: [
         {
           name: "Mohit Prajapati",
           role: "Co-coordinator ",
-          image: `/pr-mohit.jpg`,
+          image: `/WhatsApp Image 2025-03-30 at 5.10.28 PM.jpeg`,
         },
         {
           name: "Prabhat Verma",
