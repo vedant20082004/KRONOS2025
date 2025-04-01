@@ -244,7 +244,10 @@ export default function KronosTechFest() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(147,112,219,0.1),transparent_70%)] animate-move-slow-reverse"></div>
 
         {/* Tech grid pattern */}
-        <div className="absolute inset-0 bg-[image('/slider-1.jpg')] bg-cover opacity-10"></div>
+        <div
+          className="absolute inset-0 bg-cover opacity-20"
+          style={{ backgroundImage: "url('/slider-1.jpg')" }}
+        ></div>
 
         {/* Floating particles */}
         <div className="absolute inset-0 overflow-hidden">
@@ -292,7 +295,7 @@ export default function KronosTechFest() {
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <Calendar className="w-4 h-4 text-purple-500" />
-                  <span>April 25 - 27, 2025</span>
+                  <span>April 15-17, 2025</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <MapPin className="w-4 h-4 text-purple-500" />

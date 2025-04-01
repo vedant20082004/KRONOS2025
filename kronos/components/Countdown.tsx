@@ -4,33 +4,29 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function Countdown() {
-  const [countdown, setCountdown] = useState({
-    days: 29,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+  const targetDate = new Date("2025-04-25T00:00:00Z").getTime(); // Target date in UTC
+
+  const calculateTimeLeft = () => {
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+
+    if (difference <= 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((difference / (1000 * 60)) % 60);
+    const seconds = Math.floor((difference / 1000) % 60);
+
+    return { days, hours, minutes, seconds };
+  };
+
+  const [countdown, setCountdown] = useState(calculateTimeLeft);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCountdown((prev) => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 };
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        } else if (prev.hours > 0) {
-          return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        } else if (prev.days > 0) {
-          return {
-            ...prev,
-            days: prev.days - 1,
-            hours: 23,
-            minutes: 59,
-            seconds: 59,
-          };
-        }
-        return prev;
-      });
+      setCountdown(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(timer);

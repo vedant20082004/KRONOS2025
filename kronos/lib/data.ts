@@ -58,7 +58,7 @@ A huge thank you to everyone who joined and made this event an absolute blast! ð
     venue: "VSB",
     timing: "12:00 PM - 7:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/2JY2DiCEMs49rNqc7",
     coordinator: {
       name: "Sanidhya Tiwari",
       role: "B.Tech | 3rd year",
@@ -95,7 +95,7 @@ speak}
     venue: "ZERO GRAVITY GROUND",
     timing: "11:00 PM - 03:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/Cs64WQVHaLx89zjHA",
     coordinator: {
       name: "Sneha Saraswat",
       role: "MBA | 2nd year",
@@ -126,7 +126,7 @@ Mystery Games (Surprise challenges await!)
     venue: "Neuman Block",
     timing: "12:00 PM - 07:00 PM",
     category: "tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/gSDm1mzC6JagoKx47",
     coordinator: {
       name: "VEDANT PISAL DESHMUKH",
       role: "B.Tech | 3rd Year",
@@ -180,7 +180,7 @@ Who will seize the moment, outplay the competition, and claim the ultimate title
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
       name: "Shivam Sharma",
-      role: "B.Tech | 2nd year",
+      role: "B.Tech | 3rd year",
       avatar: "/shivam.jpg?height=200&width=200",
       phone: "9329739742",
       email: "30002461213shivam@gmail.com",
@@ -411,7 +411,7 @@ One special "Best Creativity" winner will be awarded a cash prize`,
     venue: "NAAD AMPHITHEATRE",
     timing: "12:00 PM - 03:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/AyD4aJYCW7CMyvrPA",
     coordinator: {
       name: "Vaishnavi Bhadauria",
       role: "B.Tech  | 3rd Year",
@@ -535,7 +535,7 @@ Gear up for an intense coding marathon! Collaborate, innovate, and bring your id
     venue: "Industrial Lab",
     timing: "11:00 AM Onwards",
     category: "tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSdydGU-2gxzlKG3q1RU-S7qzhrxDDVPmWmj1mSrswRqe40AWQ/viewform?usp=dialog",
     coordinator: {
       name: "Ronak Verma",
       role: "B.Tech | 3rd year",
