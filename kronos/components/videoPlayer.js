@@ -5,9 +5,10 @@ import ReactPlayer from "react-player/youtube";
 
 function VideoPlayer() {
   const playlist = [
-    "https://www.youtube.com/watch?v=w_nIjTqjYss&ab_channel=KunalKamra",
-    "https://www.youtube.com/watch?v=CB0wFn94Mr4&ab_channel=VipulGoyal",
-    "https://www.youtube.com/watch?v=EoMVfma05ZM&t=1s&ab_channel=NetflixIndia",
+    "https://www.youtube.com/watch?v=3qFEmtKG1zA&ab_channel=Kronos-ITMGwalior",
+    "https://www.youtube.com/watch?v=Yh7Ez9Qxz2w&ab_channel=Kronos-ITMGwalior",
+    "https://www.youtube.com/watch?v=O7fZN0oqpG8&ab_channel=Kronos-ITMGwalior",
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
