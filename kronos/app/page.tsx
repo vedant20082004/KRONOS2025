@@ -1,6 +1,6 @@
 "use client";
-
-import { useEffect, useState, useRef } from "react";
+import VideoPlayer from "@/components/videoPlayer";
+import { useEffect, useState, useRef, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -357,6 +357,27 @@ export default function KronosTechFest() {
 
       {/* Countdown Timer */}
       <Countdown />
+
+      {/* Video Section */}
+      <section id="video" className="relative z-10 py-10 bg-gray-900 ">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              Watch Our Featured Video
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto mt-4">
+              Dive into the highlights of our tech fest with this exclusive
+              videos and trailers.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-full md:w-3/4 lg:w-1/2 aspect-video">
+            <Suspense fallback={<div>Loading component...</div>}></Suspense>
+              <VideoPlayer />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Events Section */}
       <section
