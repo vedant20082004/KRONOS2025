@@ -16,13 +16,14 @@ const events = [
   },
   {
     id: 2,
-    title: "FLASH MOB",
-    date: "25-MAR-25",
-    description: "A flash mob is a surprise group performance in public.",
+    title: "BEYOND THE LENS (INTIMATION)",
+    date: "01-APR-25",
+    description: "Photography event intimation and briefing session",
     category: "pre",
     gradient: "from-[#A8E6CF] to-[#3D84A8]",
   },
   {
+
     id: 3,
     title: "AD-MAD",
     date: "07-APR-25",
@@ -47,32 +48,50 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
+
     id: 6,
-    title: "FOOTBALL",
-    date: "09-APR-25",
-    description: "Football is a team sport of goals and passes.",
+    title: "SPORTS EVENT",
+    date: "01-APR-25 - 17-APR-25",
+    description: "Various sports competitions and tournaments",
     category: "pre",
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
+
     id: 7,
     title: "ARM WRESTLING",
     date: "09-APR-25",
     description: "Arm wrestling is a strength duel of locked hands.",
+
+    id: 3,
+    title: "AD-MAD",
+    date: "07-APR-25",
+    description: "Creative advertising competition",
+
     category: "pre",
-    gradient: "from-[#0093E9] to-[#80D0C7]",
+    gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
   {
+
     id: 8,
     title: "BEYOND THE LENS",
+
+    id: 4,
+    title: "BEYOND THE LENS (SCREENING)",
+
     date: "09-APR-25",
     description: "Photography competition screening round",
     category: "pre",
     gradient: "from-[#FF61D2] to-[#FE9090]",
   },
   {
+
     id: 9,
     title: "E-SPORTS",
+
+    id: 5,
+    title: "E-SPORTS DAY 1 & DAY 2",
+
     date: "18-APR-25 - 20-APR-25",
     description: "Gaming tournaments and competitions",
     category: "pre",
@@ -81,12 +100,13 @@ const events = [
   {
     id: 10,
     title: "ITM GOT TALENT",
-    date: "21-04-25",
+    date: "21-04-25 to 22-04-25",
     description: "Talent showcase competition",
     category: "pre",
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
   {
+
     id: 11,
     title: "STAND UP COMEDY",
     date: "22-04-25",
@@ -96,13 +116,23 @@ const events = [
   },
   {
     id: 12,
+
+    id: 8,
+
     title: "SPORTS - FINAL",
     date: "23-APR-25",
     description: "Final rounds of sports competitions",
     category: "pre",
     gradient: "from-[#A8E6CF] to-[#3D84A8]",
   },
-
+  {
+    id: 9,
+    title: "WORKSHOPS",
+    date: "07-APR-25 - 20-APR-24",
+    description: "Various skill development workshops",
+    category: "pre",
+    gradient: "from-[#FFD93D] to-[#FF6B6B]",
+  },
   {
     id: 13,
     title: "ROADIES",
@@ -120,7 +150,19 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 15,
+
+
+
+    id: 12,
+    title: "CARNIVAL DAY 1",
+    date: "25-APR-25",
+    description: "First day of carnival festivities",
+    category: "main",
+    gradient: "from-[#0093E9] to-[#80D0C7]",
+  },
+  {
+    id: 13,
+
     title: "FIESTA",
     date: "25-APR-25",
     description: "Cultural celebration and performances",
@@ -136,15 +178,19 @@ const events = [
     gradient: "from-[#A8E6CF] to-[#3D84A8]",
   },
   {
+
     id: 17,
     title: "GOONJ",
     date: "25-APR-25 - 26-APR-25",
+
     description: "First day of band performances",
     category: "main",
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
+ 
   {
-    id: 18,
+    id: 17,
+
     title: "FASHION RUNWAY",
     date: "26-APR-25",
     description: "Style and fashion showcase",
@@ -160,6 +206,14 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
+    id: 19,
+    title: "BAND DAY 2 [GOONJ]",
+    date: "26-APR-25",
+    description: "Second day of band performances",
+    category: "main",
+    gradient: "from-[#FF6B6B] to-[#4ECDC4]",
+  },
+  {
     id: 20,
     title: "TREASURE HUNT",
     date: "26-APR-25",
@@ -169,7 +223,7 @@ const events = [
   },
   {
     id: 21,
-    title: "INNOVATIVE-X",
+    title: "AI-DEBATE ZONE",
     date: "26-APR-25",
     description: "Discussions and debates on artificial intelligence",
     category: "main",
@@ -185,20 +239,14 @@ const events = [
   },
   {
     id: 23,
+
     title: "INTERSTELLAR TALK",
     date: "27-APR-25",
     description: "Technology and innovation discussions",
     category: "main",
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
-  {
-    id: 24,
-    title: "TECH TALK",
-    date: "27-APR-25",
-    description: "Technology and innovation discussions",
-    category: "main",
-    gradient: "from-[#4158D0] to-[#C850C0]",
-  },
+  
   {
     id: 25,
     title: "STARTUP SHOWCASE",
