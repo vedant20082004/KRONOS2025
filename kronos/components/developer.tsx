@@ -221,7 +221,7 @@ const DeveloperTeam: React.FC = () => {
                 />
               </div>
               <div className="member-info">
-                <h3 className="member-name">Vedant Pisal</h3>
+                <h3 className="member-name">Vedant Pisal Deshmukh</h3>
                 <p className="member-role">Developer</p>
                 <div className="social-links">
                   <a

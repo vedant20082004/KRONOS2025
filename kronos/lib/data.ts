@@ -169,7 +169,9 @@ Gear up, take your stance, and let the battle for cricket supremacy begin! 🏏�
 
 The stage is set, and 14+ teams are ready to compete in an intense knockout tournament where only the best will rise to the top! With every match being a do-or-die battle, teams must bring their A-game, skill, and teamwork to stay in the race for the championship.
 
+
 🏅 Glory isn’t the only prize—winners will take home exciting rewards! 🏅
+
 
 Who will seize the moment, outplay the competition, and claim the ultimate title? Let the games begin!`,
     image: "/football.jpeg?height=400&width=600",
@@ -226,6 +228,7 @@ Think you’ve got what it takes? Lock in, power up, and dominate the table! �
 
 Think you’ve got the guts to dish it out and take it? Grab the mic and let the roasting begin! 🔥🎤😆`,
     image: "/itmgottalent.jpeg?height=400&width=600",
+
     date: "21 April, 2025",
     venue: "VSB",
     timing: "02:00 PM - 03:00 PM",
@@ -237,6 +240,7 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
       avatar: "/utkarshmishra.jpg?height=200&width=200",
       phone: "07471168868",
       email: "utkarshmis302@gmail.com",
+
     },
   },
   {
@@ -262,6 +266,8 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
       avatar: "/WhatsApp Image 2025-03-21 at 15.34.21_000b1ee1.jpg",
       phone: "07471168868",
       email: "atharvabhargava74@gmail.com",
+=======
+
     },
   },
 ]
@@ -338,7 +344,9 @@ Key Points About Fiesta:
 
 4. Community Participation – Brings people together in celebration and unity.`,
     image: "/fiesta.jpg?height=400&width=600",
-    date: "25 April, 2025",
+
+    date: "08 April, 2025",
+
     venue: "LIBRARY GARDEN",
     timing: "12:00 PM - 07:00 PM",
     category: "non-tech",
@@ -367,7 +375,9 @@ Get ready to step into the world of fantasy and fandom! Showcase your creativity
 🏆 Exciting Prizes for Best Cosplays!
 `,
     image: "/cosplay.jpg?height=400&width=600",
+
     date: "25 April, 2025",
+
     venue: "ITM GOI CAMPUS",
     timing: "12:00 PM - 07:00 PM",
     category: "non-tech",
@@ -395,6 +405,7 @@ Get ready to immerse yourself in a world of elegance, creativity, and trendsetti
 
 💥Join us for an unforgettable evening of fashion, music, and sophistication`,
     image: "/faishonshow.jpeg?height=400&width=600",
+
     date: "26 April, 2025",
     venue: "NAAD AMPHITHEATRE",
     timing: "06:00 PM - 08:00 PM",
@@ -432,7 +443,9 @@ Five event winners will receive exclusive goodies.
 
 One special "Best Creativity" winner will be awarded a cash prize`,
     image: "/chromaverse.jpeg?height=400&width=600",
+
     date: "26 APRIL, 2025",
+
     venue: "NAAD AMPHITHEATRE",
     timing: "12:00 PM - 03:00 PM",
     category: "non-tech",
