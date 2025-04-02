@@ -37,7 +37,8 @@ A huge thank you to everyone who joined and made this event an absolute blast! �
     venue: "N/A",
     timing: "12:00 PM - 5:00 PM",
     category: "non-tech",
-    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSeL7OzIE83O-pcInI6qfHpdR5bzSV7SphU5XqYZMEbnSLSlog/viewform",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeL7OzIE83O-pcInI6qfHpdR5bzSV7SphU5XqYZMEbnSLSlog/viewform",
     coordinator: {
       name: "Tanya Awasthi ",
       role: "Medical | 3rd year",
@@ -181,6 +182,7 @@ Who will seize the moment, outplay the competition, and claim the ultimate title
       email: "30002461213shivam@gmail.com",
     },
   },
+
   {
     id: "PRE-008",
     title: "ARM WRESTLING  ",
@@ -206,6 +208,33 @@ Think you’ve got what it takes? Lock in, power up, and dominate the table! �
       avatar: "/jatin.png?height=200&width=200",
       phone: "6263592176",
       email: "Jay.mukha13@gmail.com",
+    },
+  },
+  {
+    id: "PRE-007",
+    title: "TUG OF WAR",
+    description: `🔥 Ultimate Test of Strength and Teamwork! 🔥
+
+The ropes are set, the teams are ready, and the battle for dominance begins! In this thrilling Tug of War competition, raw power meets strategy as teams go head-to-head in an intense showdown of strength, coordination, and resilience.
+
+💪 Hold your ground, pull with all your might, and outlast your opponents to claim victory! 💪
+
+🏆 Glory and exciting rewards await the champions! Do you have what it takes to pull your way to the top? Let the tug begin! 🚩
+
+
+Who will seize the moment, outplay the competition, and claim the ultimate title? Let the games begin!`,
+    image: "/football.jpeg?height=400&width=600",
+    date: "09 April, 2025",
+    venue: "Powerplay Turf by Suri, jhansi road, Gwalior",
+    timing: "02:00 PM - 05:00 PM",
+    category: "non-tech",
+    registerLink: "https://forms.gle/jH45x1T7j4MMQMQS7",
+    coordinator: {
+      name: "Shivam Sharma",
+      role: "B.Tech | 3rd year",
+      avatar: "/shivam.jpg?height=200&width=200",
+      phone: "9329739742",
+      email: "30002461213shivam@gmail.com",
     },
   },
   {
@@ -576,7 +605,8 @@ Get ready for a journey across space, science, and speculation—because the uni
     venue: "VSB",
     timing: "10:00 AM Ownwards",
     category: "tech",
-    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSeQ2AqvwH55dC9wHD9TpzNYcTSywk6DO25xVR0Zf1rUpCyZOA/viewform?usp=dialog",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeQ2AqvwH55dC9wHD9TpzNYcTSywk6DO25xVR0Zf1rUpCyZOA/viewform?usp=dialog",
     coordinator: {
       name: "Muskan Gupta ",
       role: "B.Tech | 2nd year",
