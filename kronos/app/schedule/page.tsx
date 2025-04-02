@@ -31,7 +31,7 @@ const events = [
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
   {
-    id: 9,
+    id: 4,
     title: "WORKSHOPS",
     date: "07-APR-25 - 20-APR-24",
     description: "Various skill development workshops",
@@ -39,7 +39,7 @@ const events = [
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
   {
-    id: 6,
+    id: 5,
     title: "CRICKET",
     date: "09-APR-25",
     description: "Cricket is a bat-and-ball game of runs and wickets.",
@@ -55,7 +55,7 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
-    id: 6,
+    id: 7,
     title: "ARM WRESTLING",
     date: "09-APR-25",
     description: "Arm wrestling is a strength duel of locked hands.",
@@ -63,7 +63,7 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
-    id: 4,
+    id: 8,
     title: "BEYOND THE LENS",
     date: "09-APR-25",
     description: "Photography competition screening round",
@@ -71,7 +71,7 @@ const events = [
     gradient: "from-[#FF61D2] to-[#FE9090]",
   },
   {
-    id: 5,
+    id: 9,
     title: "E-SPORTS",
     date: "18-APR-25 - 20-APR-25",
     description: "Gaming tournaments and competitions",
@@ -79,7 +79,7 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 7,
+    id: 10,
     title: "ITM GOT TALENT",
     date: "21-04-25",
     description: "Talent showcase competition",
@@ -87,7 +87,7 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
   {
-    id: 7,
+    id: 11,
     title: "STAND UP COMEDY",
     date: "22-04-25",
     description: "Stand-up comedy is live humor on stage.",
@@ -95,7 +95,7 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
   {
-    id: 8,
+    id: 12,
     title: "SPORTS - FINAL",
     date: "23-APR-25",
     description: "Final rounds of sports competitions",
@@ -104,7 +104,7 @@ const events = [
   },
 
   {
-    id: 10,
+    id: 13,
     title: "ROADIES",
     date: "25-APR-25",
     description: "Adventure and challenge based competition",
@@ -112,7 +112,7 @@ const events = [
     gradient: "from-[#FF61D2] to-[#FE9090]",
   },
   {
-    id: 11,
+    id: 14,
     title: "ESCAPE ROOM",
     date: "25-APR-25",
     description: "Interactive puzzle solving challenge",
@@ -120,7 +120,7 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 13,
+    id: 15,
     title: "FIESTA",
     date: "25-APR-25",
     description: "Cultural celebration and performances",
@@ -128,7 +128,7 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
   {
-    id: 14,
+    id: 16,
     title: "COSPLAY",
     date: "25-APR-25",
     description: "Costume play and character portrayal competition",
@@ -136,7 +136,7 @@ const events = [
     gradient: "from-[#A8E6CF] to-[#3D84A8]",
   },
   {
-    id: 15,
+    id: 17,
     title: "GOONJ",
     date: "25-APR-25 - 26-APR-25",
     description: "First day of band performances",
@@ -144,7 +144,7 @@ const events = [
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
   {
-    id: 17,
+    id: 18,
     title: "FASHION RUNWAY",
     date: "26-APR-25",
     description: "Style and fashion showcase",
@@ -152,7 +152,7 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 18,
+    id: 19,
     title: "CHROMAVERSE",
     date: "26-APR-25",
     description: "Creative arts and design exhibition",
@@ -192,7 +192,7 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 23,
+    id: 24,
     title: "TECH TALK",
     date: "27-APR-25",
     description: "Technology and innovation discussions",
@@ -200,7 +200,7 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 24,
+    id: 25,
     title: "STARTUP SHOWCASE",
     date: "27-APR-25",
     description: "Presentation of innovative business ideas",
@@ -208,7 +208,7 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
-    id: 25,
+    id: 26,
     title: "DJ NIGHT",
     date: "27-APR-25",
     description: "Music and dance celebration",
@@ -216,6 +216,7 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
 ]
+
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState("pre")

@@ -244,7 +244,7 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
     },
   },
   {
-    id: "PRE-009",
+    id: "PRE-010",
     title: "STAND UP COMEDY",
     description:
       `No filters, no mercy—just pure, unfiltered roast comedy! Get ready for a night of savage humor, sharp comebacks, and epic burns as participants take the stage to roast and get roasted!
@@ -266,7 +266,6 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
       avatar: "/WhatsApp Image 2025-03-21 at 15.34.21_000b1ee1.jpg",
       phone: "07471168868",
       email: "atharvabhargava74@gmail.com",
-=======
 
     },
   },
