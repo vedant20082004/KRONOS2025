@@ -8,7 +8,6 @@ import { Calendar, MapPin, ChevronRight, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Countdown from "@/components/Countdown";
 
-// Predefined values for floating particles
 const particleData = [
   {
     top: "4%",
