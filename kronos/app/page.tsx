@@ -372,7 +372,7 @@ export default function KronosTechFest() {
           </div>
           <div className="flex justify-center">
             <div className="w-full md:w-3/4 lg:w-1/2 aspect-video">
-            <Suspense fallback={<div>Loading component...</div>}></Suspense>
+              <Suspense fallback={<div>Loading component...</div>}></Suspense>
               <VideoPlayer />
             </div>
           </div>
@@ -633,7 +633,7 @@ export default function KronosTechFest() {
               OUR PARTNERS
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">
-              Sponsors & Partners
+              Past Sponsors & Partners
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
               Kronos Tech Fest is made possible by these innovative companies

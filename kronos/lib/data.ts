@@ -1,11 +1,10 @@
-import type { Event } from "./types"
+import type { Event } from "./types";
 
 export const preEvents: Event[] = [
   {
     id: "PRE-001",
     title: "RANG RUSH",
-    description:
-      `🎉 RANG RUSH – A Splash of Colors & Unforgettable Memories! 🌈✨
+    description: `🎉 RANG RUSH – A Splash of Colors & Unforgettable Memories! 🌈✨
 
 The KRONOS'25 pre-event, Rang Rush, held on March 9, 2025, at ITM, was a massive success! From vibrant colors to electrifying music, the event was filled with joy, energy, and unforgettable moments.
 
@@ -32,8 +31,7 @@ A huge thank you to everyone who joined and made this event an absolute blast! �
   {
     id: "PRE-002",
     title: "Flash Mob",
-    description:
-      `A flash mob is a sudden, coordinated gathering of people in a public place to perform a specific act—usually a dance, song, or performance—before quickly dispersing. 🎭🎤 These events are often organized via social media 📲 and are meant to surprise and entertain 🤩 bystanders. Flash mobs can be for fun 🎉, artistic expression 🎨, marketing 📢, or social activism ✊.  `,
+    description: `A flash mob is a sudden, coordinated gathering of people in a public place to perform a specific act—usually a dance, song, or performance—before quickly dispersing. 🎭🎤 These events are often organized via social media 📲 and are meant to surprise and entertain 🤩 bystanders. Flash mobs can be for fun 🎉, artistic expression 🎨, marketing 📢, or social activism ✊.  `,
     image: "/flashmob.jpeg?height=400&width=600",
     date: "25 March, 2025",
     venue: "N/A",
@@ -51,10 +49,9 @@ A huge thank you to everyone who joined and made this event an absolute blast! �
   {
     id: "PRE-003",
     title: "BEYOND THE LENS ",
-    description:
-      `Beyond the Lens is a reel and photography competition where creativity meets perspective. Showcase your storytelling skills through stunning visuals and compelling edits. Whether you capture moments through a lens or craft engaging reels, this is your chance to shine. Register now and let your creativity speak!`,
+    description: `Beyond the Lens is a reel and photography competition where creativity meets perspective. Showcase your storytelling skills through stunning visuals and compelling edits. Whether you capture moments through a lens or craft engaging reels, this is your chance to shine. Register now and let your creativity speak!`,
     image: "/beyondthelens.jpeg?height=400&width=600",
-    date: "01 April, 2025",
+    date: "04-11 April, 2025",
     venue: "VSB",
     timing: "12:00 PM - 7:00 PM",
     category: "non-tech",
@@ -62,7 +59,7 @@ A huge thank you to everyone who joined and made this event an absolute blast! �
     coordinator: {
       name: "Sanidhya Tiwari",
       role: "B.Tech | 3rd year",
-      avatar: "/sanidhya.png?height=200&width=200", 
+      avatar: "/sanidhya.png?height=200&width=200",
       phone: "9109740619",
       email: "sanidhyatiwari1510@gmail.com",
     },
@@ -70,8 +67,7 @@ A huge thank you to everyone who joined and made this event an absolute blast! �
   {
     id: "PRE-004",
     title: "AD-MAD",
-    description:
-      `🎗️Ad-mad Show / Kronos 2025
+    description: `🎗️Ad-mad Show / Kronos 2025
 "Unleash your creativity, sell the unsellable, and make ads that amaze! Join the Ad-Mad Show and let your imagination run wild!"
 [Surprising On the spot elimination round for the teams.]
 Total teams to participate - 10 teams including Approx 5 members in each team.
@@ -107,8 +103,7 @@ speak}
   {
     id: "PRE-005",
     title: "E- SPORTS",
-    description:
-      `🏆 E-Sports Arena | KRONOS 2025
+    description: `🏆 E-Sports Arena | KRONOS 2025
 Gear up for the ultimate gaming showdown! Compete in adrenaline-pumping battles across:
 
 BGMI (Squad up for glory!)
@@ -122,7 +117,7 @@ Mystery Games (Surprise challenges await!)
 🎮 Squad Slots Open!
 🔥 Prizes for Top Players`,
     image: "/esports.jpeg?height=400&width=600",
-    date: "16-17 April, 2025",
+    date: "18-20 April, 2025",
     venue: "Neuman Block",
     timing: "12:00 PM - 07:00 PM",
     category: "tech",
@@ -138,8 +133,7 @@ Mystery Games (Surprise challenges await!)
   {
     id: "PRE-006",
     title: "CRICKET",
-    description:
-     `Get ready to witness cricketing glory! Step onto the field, showcase your skills, and lead your team to victory in the ultimate cricket showdown of KRONOS 2025.
+    description: `Get ready to witness cricketing glory! Step onto the field, showcase your skills, and lead your team to victory in the ultimate cricket showdown of KRONOS 2025.
 
 🔥 Format: T20-style matches with intense competition
 ⚡ Team Up: Squad slots open – form your dream team!
@@ -164,8 +158,7 @@ Gear up, take your stance, and let the battle for cricket supremacy begin! 🏏�
   {
     id: "PRE-007",
     title: "FOOTBALL",
-    description:
-      `⚽Football Showdown at Powerplay Turf by Suri! 🏆
+    description: `⚽Football Showdown at Powerplay Turf by Suri! 🏆
 
 The stage is set, and 14+ teams are ready to compete in an intense knockout tournament where only the best will rise to the top! With every match being a do-or-die battle, teams must bring their A-game, skill, and teamwork to stay in the race for the championship.
 
@@ -191,8 +184,7 @@ Who will seize the moment, outplay the competition, and claim the ultimate title
   {
     id: "PRE-008",
     title: "ARM WRESTLING  ",
-    description:
-      `💪 Iron Grip: Arm Wrestling Championship | KRONOS 2025 🏆
+    description: `💪 Iron Grip: Arm Wrestling Championship | KRONOS 2025 🏆
 
 Test your strength, endurance, and determination in the ultimate battle of brute force! Step up to the table, lock hands, and prove you have the strongest grip in KRONOS 2025.
 
@@ -219,8 +211,7 @@ Think you’ve got what it takes? Lock in, power up, and dominate the table! �
   {
     id: "PRE-009",
     title: "ITM GOT TALENT",
-    description:
-      `No filters, no mercy—just pure, unfiltered roast comedy! Get ready for a night of savage humor, sharp comebacks, and epic burns as participants take the stage to roast and get roasted!
+    description: `No filters, no mercy—just pure, unfiltered roast comedy! Get ready for a night of savage humor, sharp comebacks, and epic burns as participants take the stage to roast and get roasted!
 
 🔥 Brace yourself for non-stop laughter!
 😂 Only the wittiest will survive!
@@ -240,14 +231,12 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
       avatar: "/utkarshmishra.jpg?height=200&width=200",
       phone: "07471168868",
       email: "utkarshmis302@gmail.com",
-
     },
   },
   {
     id: "PRE-010",
     title: "STAND UP COMEDY",
-    description:
-      `No filters, no mercy—just pure, unfiltered roast comedy! Get ready for a night of savage humor, sharp comebacks, and epic burns as participants take the stage to roast and get roasted!
+    description: `No filters, no mercy—just pure, unfiltered roast comedy! Get ready for a night of savage humor, sharp comebacks, and epic burns as participants take the stage to roast and get roasted!
 
 🔥 Brace yourself for non-stop laughter!
 😂 Only the wittiest will survive!
@@ -266,10 +255,9 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
       avatar: "/WhatsApp Image 2025-03-21 at 15.34.21_000b1ee1.jpg",
       phone: "07471168868",
       email: "atharvabhargava74@gmail.com",
-
     },
   },
-]
+];
 
 export const mainEvents: Event[] = [
   {
@@ -294,8 +282,7 @@ export const mainEvents: Event[] = [
   {
     id: "MAIN-002",
     title: "ESCAPE ROOM",
-    description:
-      `🏆 Cybersecurity Breach: Stop the Rogue AI! | ITM College, Gwalior
+    description: `🏆 Cybersecurity Breach: Stop the Rogue AI! | ITM College, Gwalior
 Gear up for an intense cybersecurity showdown! Work as ethical hackers to stop a rogue AI before it takes over the university’s main server. Solve tech-based challenges, crack codes, and assemble a final circuit to shut it down.
 
 🔹 Levels:
@@ -327,8 +314,7 @@ Final Round 🔧
   {
     id: "MAIN-009",
     title: "FIESTA",
-    description:
-      `A fiesta is a festive celebration, often associated with Spanish and Latin American cultures. It typically includes music, dance, food, parades, and various cultural or religious activities. Fiestas can be national, regional, or community-based, and they often commemorate historical events, saints, or cultural traditions.
+    description: `A fiesta is a festive celebration, often associated with Spanish and Latin American cultures. It typically includes music, dance, food, parades, and various cultural or religious activities. Fiestas can be national, regional, or community-based, and they often commemorate historical events, saints, or cultural traditions.
 
 Key Points About Fiesta:
 
@@ -361,8 +347,7 @@ Key Points About Fiesta:
   {
     id: "MAIN-010",
     title: "COSPLAY",
-    description:
-      `🎭 Cosplay Carnival | KRONOS 2025
+    description: `🎭 Cosplay Carnival | KRONOS 2025
 Get ready to step into the world of fantasy and fandom! Showcase your creativity and bring your favorite characters to life in:
 
 ✨ Solo Cosplay (Rule the Campus with your iconic look!)
@@ -392,8 +377,7 @@ Get ready to step into the world of fantasy and fandom! Showcase your creativity
   {
     id: "MAIN-011",
     title: "FASHION RUNWAY",
-    description:
-      `Fashion Show(Fashion Runway)|| Kronos 2025
+    description: `Fashion Show(Fashion Runway)|| Kronos 2025
 Get ready to immerse yourself in a world of elegance, creativity, and trendsetting designs at Fashion Runway . Step into a world of glamour, style, and innovation at Fashion Runway , where fashion meets art on the grand runway
 
 👸🤴 Themed Runway walks 
@@ -421,8 +405,7 @@ Get ready to immerse yourself in a world of elegance, creativity, and trendsetti
   {
     id: "MAIN-012",
     title: "CHROMAVERSE",
-    description:
-      `🎨ChromaVerse | Kronos 2025
+    description: `🎨ChromaVerse | Kronos 2025
 Unleash your creativity in our ultimate art and design competition! Participate in five thrilling events:
 
 Face Painting – Transform faces into stunning artistic expressions.
@@ -460,8 +443,7 @@ One special "Best Creativity" winner will be awarded a cash prize`,
   {
     id: "MAIN-013",
     title: "GOONJ",
-    description:
-      `GOONJ | KRONOS 2025
+    description: `GOONJ | KRONOS 2025
 
 GOONJ – Battle of Bands & Rap Cipher🎸🎤  
 
@@ -493,8 +475,7 @@ Whether you’re a group performer or a solo artist, Goonj offers the perfect st
   {
     id: "MAIN-003",
     title: "TREASURE HUNT",
-    description:
-      `🏆 College Treasure Hunt 2024 – Decode, Discover, Dominate! 🏆
+    description: `🏆 College Treasure Hunt 2024 – Decode, Discover, Dominate! 🏆
 
 Get ready for the ultimate adventure! Our Treasure Hunt will take you on an exciting journey across the college campus, where teams will race to solve six mind-boggling riddles leading to hidden clues. The seventh and final stage will be the ultimate test of wit and teamwork!
 
@@ -521,9 +502,8 @@ Think you have what it takes? Gather your squad and get ready to crack the code,
   },
   {
     id: "MAIN-004",
-    title: "AI-DEBATE ZONE",
-    description:
-      `💡 InnovateX | KRONOS 2025
+    title: "INNOVATE-X",
+    description: `💡 InnovateX | KRONOS 2025
 Unleash your creativity and problem-solving skills! Compete in an intense innovation sprint to develop groundbreaking ideas in:
 
 🚀 Technology & AI (Innovate for a smarter world!)
@@ -552,8 +532,7 @@ Unleash your creativity and problem-solving skills! Compete in an intense innova
   {
     id: "MAIN-005",
     title: "HACKATHON",
-    description:
-      `A 36-Hour Hackathon
+    description: `A 36-Hour Hackathon
 Gear up for an intense coding marathon! Collaborate, innovate, and bring your ideas to life in:
 
 💻 Web & Mobile Development (Next-gen apps & platforms!)
@@ -572,7 +551,8 @@ Gear up for an intense coding marathon! Collaborate, innovate, and bring your id
     venue: "Industrial Lab",
     timing: "11:00 AM Onwards",
     category: "tech",
-    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSdydGU-2gxzlKG3q1RU-S7qzhrxDDVPmWmj1mSrswRqe40AWQ/viewform?usp=dialog",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdydGU-2gxzlKG3q1RU-S7qzhrxDDVPmWmj1mSrswRqe40AWQ/viewform?usp=dialog",
     coordinator: {
       name: "Ronak Verma",
       role: "B.Tech | 3rd year",
@@ -584,8 +564,7 @@ Gear up for an intense coding marathon! Collaborate, innovate, and bring your id
   {
     id: "MAIN-006",
     title: "INTERSTELLAR TALK",
-    description:
-      `Step beyond the boundaries of Earth and dive into the mind-bending world of space, sci-fi, and the future of humanity! From black holes to time travel, from extraterrestrial life to AI-powered civilizations—nothing is off-limits!
+    description: `Step beyond the boundaries of Earth and dive into the mind-bending world of space, sci-fi, and the future of humanity! From black holes to time travel, from extraterrestrial life to AI-powered civilizations—nothing is off-limits!
 
 🔥 Explore the unknown – Space, Multiverse, and Beyond
 🛸 Discuss futuristic tech – AI, Quantum Computing & Cosmic Mysteries
@@ -609,8 +588,7 @@ Get ready for a journey across space, science, and speculation—because the uni
   {
     id: "MAIN-007",
     title: "TECH TALK",
-    description:
-      `Tech Talk is event which enhances the skills of an individual through hearing the experience and expertise of the an invited in the Event. `,
+    description: `Tech Talk is event which enhances the skills of an individual through hearing the experience and expertise of the an invited in the Event. `,
     image: "/techtalk.jpeg?height=400&width=600",
     date: "APRIL 27, 2025",
     venue: "VSB",
@@ -628,8 +606,7 @@ Get ready for a journey across space, science, and speculation—because the uni
   {
     id: "MAIN-008",
     title: "STARTUP SHOWCASE",
-    description:
-      `Got a game-changing idea? Startup Showcase is your platform to pitch, present, and inspire! Whether it's a tech innovation, social impact solution, or a next-gen business model, this is where vision meets opportunity.
+    description: `Got a game-changing idea? Startup Showcase is your platform to pitch, present, and inspire! Whether it's a tech innovation, social impact solution, or a next-gen business model, this is where vision meets opportunity.
 
 🔥 Showcase your startup to investors, mentors, and fellow innovators
 💡 Get feedback from industry experts & entrepreneurs
@@ -651,14 +628,11 @@ This is your moment to turn ideas into reality and startups into success! Are yo
       email: "sophia.p@kronos.neuro",
     },
   },
-  
-  
- 
+
   {
     id: "MAIN-014",
     title: "DJ NIGHT",
-    description:
-      `The beats are dropping, the bass is pumping, and the energy is off the charts! Get ready for the most electrifying night of KRONOS 2025 as the DJ takes over the stage with a power-packed mix of EDM, Bollywood, Hip-Hop, and more!
+    description: `The beats are dropping, the bass is pumping, and the energy is off the charts! Get ready for the most electrifying night of KRONOS 2025 as the DJ takes over the stage with a power-packed mix of EDM, Bollywood, Hip-Hop, and more!
 
 🔥 Non-stop music & high-energy beats
 💃 Dance, vibe & lose yourself in the rhythm
@@ -680,4 +654,4 @@ Let the music take control—Are you ready to dance the night away? 🎶🚀🔥
       email: "utkarshmis302@gmail.com",
     },
   },
-]
+];
