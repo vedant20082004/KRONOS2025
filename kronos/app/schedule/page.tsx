@@ -94,14 +94,6 @@ const events = [
     category: "pre",
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
-  {
-    id: 12,
-    title: "SPORTS - FINAL",
-    date: "23-APR-25",
-    description: "Final rounds of sports competitions",
-    category: "pre",
-    gradient: "from-[#A8E6CF] to-[#3D84A8]",
-  },
 
   {
     id: 13,
@@ -216,7 +208,7 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
 ]
-
+  
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState("pre")

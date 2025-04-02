@@ -344,7 +344,7 @@ Key Points About Fiesta:
 4. Community Participation – Brings people together in celebration and unity.`,
     image: "/fiesta.jpg?height=400&width=600",
 
-    date: "08 April, 2025",
+    date: "25 April, 2025",
 
     venue: "LIBRARY GARDEN",
     timing: "12:00 PM - 07:00 PM",
