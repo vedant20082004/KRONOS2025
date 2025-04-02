@@ -8,6 +8,48 @@ import { Calendar, MapPin, ChevronRight, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Countdown from "@/components/Countdown";
 
+export const metadata = {
+  title: "Kronos 2025 - ITM Gwalior Tech Event",
+  description: "Kronos Tech Event 2025 at ITM Gwalior: Join ROADIES, HACKATHON, COSPLAY, and more on April 25-27.",
+  keywords: "Kronos, tech event, ITM Kronos, Gwalior tech fest, Kronos 2025",
+  other: {
+    // General Kronos Tags
+    "kronos": "Kronos tech event at ITM Gwalior, April 25-27, 2025",
+    "tech-event": "Kronos: Premier tech fest with workshops, hackathons, and talks",
+    "itm-kronos": "ITM Kronos tech event in Gwalior, Madhya Pradesh",
+
+    // Event Date and Location
+    "event-date": "Kronos 2025: April 25-27",
+    "event-location": "45XQ+27R, Nh-75, opp. Sithouli Railway Station, Gwalior, Madhya Pradesh 475001",
+    "gwalior-event": "Kronos tech fest at ITM Gwalior, Sithouli",
+
+    // Sub-Event Tags (April 25)
+    "roadies": "ROADIES at Kronos: April 25, 2025, 10:00 PM",
+    "escape-room": "ESCAPE ROOM at Kronos: April 25, 2025, 10:00 PM",
+    "carnival-day-1": "CARNIVAL DAY 1 at Kronos: April 25, 2025, 10:00 AM",
+    "cosplay": "COSPLAY at Kronos: April 25, 2025, free entry",
+
+    // Sub-Event Tags (April 26)
+    "hackathon": "HACKATHON at Kronos: April 26-27, 2025",
+    "fashion-show": "FASHION SHOW at Kronos: April 26, 2025",
+    "treasure-hunt": "TREASURE HUNT at Kronos: April 26, 2025, 10:00 AM",
+
+    // Sub-Event Tags (April 27)
+    "dj-night": "DJ NIGHT at Kronos: April 27, 2025, 5:00 PM",
+    "tech-talk": "TECH TALK at Kronos: April 27, 2025",
+    "startup-showcase": "STARTUP SHOWCASE at Kronos: April 27, 2025",
+
+    // Single-Word Optimization
+    "kronos-event": "Kronos tech event 2025",
+    "tech": "Tech events at Kronos 2025",
+    "gwalior": "Gwalior tech fest Kronos",
+
+    // SEO Boosters
+    "robots": "index, follow",
+    "revisit-after": "7 days",
+  },
+};
+
 const particleData = [
   {
     top: "4%",
