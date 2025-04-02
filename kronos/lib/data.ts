@@ -302,7 +302,7 @@ Final Round 🔧
     venue: "Industrial lab",
     timing: "10:00 PM - 07:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/6eqUgkgSUkLkKmPa7",
     coordinator: {
       name: "Tanishka Chowdhry Saxena",
       role: "B.Tech | 3rd year",
@@ -520,7 +520,7 @@ Unleash your creativity and problem-solving skills! Compete in an intense innova
     venue: "Neuman Block Lab",
     timing: "12:00 PM - 05:00 PM",
     category: "tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/tEhobAGC9DSZA3tf9",
     coordinator: {
       name: "Sanchit Gupta",
       role: "B.Tech | 3rd year",
@@ -576,7 +576,7 @@ Get ready for a journey across space, science, and speculation—because the uni
     venue: "VSB",
     timing: "10:00 AM Ownwards",
     category: "tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSeQ2AqvwH55dC9wHD9TpzNYcTSywk6DO25xVR0Zf1rUpCyZOA/viewform?usp=dialog",
     coordinator: {
       name: "Muskan Gupta ",
       role: "B.Tech | 2nd year",
@@ -594,7 +594,7 @@ Get ready for a journey across space, science, and speculation—because the uni
     venue: "VSB",
     timing: "10:00 AM Ownwards",
     category: "tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/YJz9HoFZeeFbzEko6",
     coordinator: {
       name: "Devansh Sharma ",
       role: "B.Tech | 3rd year",
@@ -619,7 +619,7 @@ This is your moment to turn ideas into reality and startups into success! Are yo
     venue: "VSB",
     timing: "10:00 AM Ownwards",
     category: "tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/DDz14a3vdL7cpY4n9",
     coordinator: {
       name: "DR. SOPHIA PATEL",
       role: "Neurotech Research Director",
