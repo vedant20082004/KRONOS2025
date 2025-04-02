@@ -394,8 +394,7 @@ export default function KronosTechFest() {
               EVENTS
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
-              Dive into a world of innovation with our carefully curated events
-              designed to inspire, educate, and transform.
+            Step into a realm of groundbreaking events that spark creativity, ignite learning, and drive transformation..
             </p>
           </div>
 
@@ -514,8 +513,7 @@ export default function KronosTechFest() {
             </h2>
 
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
-              Learn from the brightest minds and industry leaders who are
-              shaping the future of technology.
+              HERE ARE SOME OF THE PAST CELEBRITY SPEAKERS WHO HAVE GRACED OUR STAGES
             </p>
           </div>
 
