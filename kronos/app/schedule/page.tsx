@@ -23,14 +23,7 @@ const events = [
     gradient: "from-[#A8E6CF] to-[#3D84A8]",
   },
   {
-    id: 6,
-    title: "SPORTS EVENT",
-    date: "01-APR-25 - 17-APR-25",
-    description: "Various sports competitions and tournaments",
-    category: "pre",
-    gradient: "from-[#0093E9] to-[#80D0C7]",
-  },
-  {
+
     id: 3,
     title: "AD-MAD",
     date: "07-APR-25",
@@ -40,22 +33,72 @@ const events = [
   },
   {
     id: 4,
+    title: "WORKSHOPS",
+    date: "07-APR-25 - 20-APR-24",
+    description: "Various skill development workshops",
+    category: "pre",
+    gradient: "from-[#FFD93D] to-[#FF6B6B]",
+  },
+  {
+    id: 5,
+    title: "CRICKET",
+    date: "09-APR-25",
+    description: "Cricket is a bat-and-ball game of runs and wickets.",
+    category: "pre",
+    gradient: "from-[#0093E9] to-[#80D0C7]",
+  },
+  {
+
+    id: 6,
+    title: "SPORTS EVENT",
+    date: "01-APR-25 - 17-APR-25",
+    description: "Various sports competitions and tournaments",
+    category: "pre",
+    gradient: "from-[#0093E9] to-[#80D0C7]",
+  },
+  {
+
+    id: 7,
+    title: "ARM WRESTLING",
+    date: "09-APR-25",
+    description: "Arm wrestling is a strength duel of locked hands.",
+
+    id: 3,
+    title: "AD-MAD",
+    date: "07-APR-25",
+    description: "Creative advertising competition",
+
+    category: "pre",
+    gradient: "from-[#FFD93D] to-[#FF6B6B]",
+  },
+  {
+
+    id: 8,
+    title: "BEYOND THE LENS",
+
+    id: 4,
     title: "BEYOND THE LENS (SCREENING)",
+
     date: "09-APR-25",
     description: "Photography competition screening round",
     category: "pre",
     gradient: "from-[#FF61D2] to-[#FE9090]",
   },
   {
+
+    id: 9,
+    title: "E-SPORTS",
+
     id: 5,
     title: "E-SPORTS DAY 1 & DAY 2",
+
     date: "18-APR-25 - 20-APR-25",
     description: "Gaming tournaments and competitions",
     category: "pre",
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 7,
+    id: 10,
     title: "ITM GOT TALENT",
     date: "21-04-25 to 22-04-25",
     description: "Talent showcase competition",
@@ -63,7 +106,19 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
   {
+
+    id: 11,
+    title: "STAND UP COMEDY",
+    date: "22-04-25",
+    description: "Stand-up comedy is live humor on stage.",
+    category: "pre",
+    gradient: "from-[#FF6B6B] to-[#4ECDC4]",
+  },
+  {
+    id: 12,
+
     id: 8,
+
     title: "SPORTS - FINAL",
     date: "23-APR-25",
     description: "Final rounds of sports competitions",
@@ -79,7 +134,7 @@ const events = [
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
   {
-    id: 10,
+    id: 13,
     title: "ROADIES",
     date: "25-APR-25",
     description: "Adventure and challenge based competition",
@@ -87,7 +142,7 @@ const events = [
     gradient: "from-[#FF61D2] to-[#FE9090]",
   },
   {
-    id: 11,
+    id: 14,
     title: "ESCAPE ROOM",
     date: "25-APR-25",
     description: "Interactive puzzle solving challenge",
@@ -95,6 +150,9 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
+
+
+
     id: 12,
     title: "CARNIVAL DAY 1",
     date: "25-APR-25",
@@ -104,6 +162,7 @@ const events = [
   },
   {
     id: 13,
+
     title: "FIESTA",
     date: "25-APR-25",
     description: "Cultural celebration and performances",
@@ -111,7 +170,7 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
   {
-    id: 14,
+    id: 16,
     title: "COSPLAY",
     date: "25-APR-25",
     description: "Costume play and character portrayal competition",
@@ -119,23 +178,19 @@ const events = [
     gradient: "from-[#A8E6CF] to-[#3D84A8]",
   },
   {
-    id: 15,
-    title: "BAND DAY 1 [GOONJ]",
-    date: "25-APR-25",
+
+    id: 17,
+    title: "GOONJ",
+    date: "25-APR-25 - 26-APR-25",
+
     description: "First day of band performances",
     category: "main",
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
-  {
-    id: 16,
-    title: "CARNIVAL DAY 2",
-    date: "26-APR-25",
-    description: "Second day of carnival festivities",
-    category: "main",
-    gradient: "from-[#FF61D2] to-[#FE9090]",
-  },
+ 
   {
     id: 17,
+
     title: "FASHION RUNWAY",
     date: "26-APR-25",
     description: "Style and fashion showcase",
@@ -143,7 +198,7 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 18,
+    id: 19,
     title: "CHROMAVERSE",
     date: "26-APR-25",
     description: "Creative arts and design exhibition",
@@ -184,14 +239,16 @@ const events = [
   },
   {
     id: 23,
-    title: "INTERSTELLAR TALK/TECH TALK",
+
+    title: "INTERSTELLAR TALK",
     date: "27-APR-25",
     description: "Technology and innovation discussions",
     category: "main",
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
+  
   {
-    id: 24,
+    id: 25,
     title: "STARTUP SHOWCASE",
     date: "27-APR-25",
     description: "Presentation of innovative business ideas",
@@ -199,7 +256,7 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
-    id: 25,
+    id: 26,
     title: "DJ NIGHT",
     date: "27-APR-25",
     description: "Music and dance celebration",
@@ -207,6 +264,7 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
 ]
+
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState("pre")

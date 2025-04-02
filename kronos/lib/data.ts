@@ -237,6 +237,34 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
       avatar: "/utkarshmishra.jpg?height=200&width=200",
       phone: "07471168868",
       email: "utkarshmis302@gmail.com",
+
+
+    },
+  },
+  {
+    id: "PRE-010",
+    title: "STAND UP COMEDY",
+    description:
+      `No filters, no mercy—just pure, unfiltered roast comedy! Get ready for a night of savage humor, sharp comebacks, and epic burns as participants take the stage to roast and get roasted!
+
+🔥 Brace yourself for non-stop laughter!
+😂 Only the wittiest will survive!
+🏆 Prizes for the ultimate Roast Masters!
+
+Think you’ve got the guts to dish it out and take it? Grab the mic and let the roasting begin! 🔥🎤😆`,
+    image: "/itmgottalent.jpeg?height=400&width=600",
+    date: "22 April, 2025",
+    venue: "VSB",
+    timing: "02:00 PM - 03:00 PM",
+    category: "non-tech",
+    registerLink: "https://forms.gle/Wyx4Kdm9ceryMPqS8",
+    coordinator: {
+      name: "Atharva Bhargav",
+      role: "B.Tech | 2nd year",
+      avatar: "/WhatsApp Image 2025-03-21 at 15.34.21_000b1ee1.jpg",
+      phone: "07471168868",
+      email: "atharvabhargava74@gmail.com",
+
     },
   },
 ]
