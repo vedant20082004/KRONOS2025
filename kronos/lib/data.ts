@@ -37,7 +37,7 @@ A huge thank you to everyone who joined and made this event an absolute blast! 
     venue: "N/A",
     timing: "12:00 PM - 5:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSeL7OzIE83O-pcInI6qfHpdR5bzSV7SphU5XqYZMEbnSLSlog/viewform",
     coordinator: {
       name: "Tanya Awasthi ",
       role: "Medical | 3rd year",
@@ -91,7 +91,7 @@ speak}
     venue: "ZERO GRAVITY GROUND",
     timing: "11:00 PM - 03:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.gle/Cs64WQVHaLx89zjHA",
+    registerLink: " https://forms.gle/Cs64WQVHaLx89zjHA",
     coordinator: {
       name: "Sneha Saraswat",
       role: "MBA | 2nd year",
@@ -146,7 +146,7 @@ Gear up, take your stance, and let the battle for cricket supremacy begin! üèè
     venue: "Sports Arena at ITM GOI",
     timing: "12:00 PM - 11:00 AM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/MS4GTWd9ZJzxvezw9",
     coordinator: {
       name: "Utkarsh Mishra",
       role: "B.Tech | 4th year",
@@ -172,7 +172,7 @@ Who will seize the moment, outplay the competition, and claim the ultimate title
     venue: "Powerplay Turf by Suri, jhansi road, Gwalior",
     timing: "02:00 PM - 05:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/jH45x1T7j4MMQMQS7",
     coordinator: {
       name: "Shivam Sharma",
       role: "B.Tech | 3rd year",
@@ -365,7 +365,7 @@ Get ready to step into the world of fantasy and fandom! Showcase your creativity
     venue: "ITM GOI CAMPUS",
     timing: "12:00 PM - 07:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/qzcNCCseN2ZSvicz6",
     coordinator: {
       name: "Yadyamini Saxena ",
       role: "MBA | 2nd year",
@@ -431,7 +431,7 @@ One special "Best Creativity" winner will be awarded a cash prize`,
     venue: "NAAD AMPHITHEATRE",
     timing: "12:00 PM - 03:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.gle/AyD4aJYCW7CMyvrPA",
+    registerLink: " https://forms.gle/AyD4aJYCW7CMyvrPA",
     coordinator: {
       name: "Vaishnavi Bhadauria",
       role: "B.Tech  | 3rd Year",
@@ -463,7 +463,7 @@ Whether you‚Äôre a group performer or a solo artist, Goonj offers the perfect st
     venue: "Newton Block ",
     timing: "02:00 PM - 05:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: " https://forms.gle/HBMbnP1N4u9enVtT8",
     coordinator: {
       name: "Utkarsh Shrivastava",
       role: "B.Tech | 3rd year",
@@ -491,7 +491,7 @@ Think you have what it takes? Gather your squad and get ready to crack the code,
     venue: "ITM Campus",
     timing: "10:00 PM - 07:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://forms.gle/bKZSBsUx2VemnpY39",
     coordinator: {
       name: "Milan Sharma",
       role: "B.Tech | 3rd year",
