@@ -223,18 +223,18 @@ The ropes are set, the teams are ready, and the battle for dominance begins! In 
 
 
 Who will seize the moment, outplay the competition, and claim the ultimate title? Let the games begin!`,
-    image: "/football.jpeg?height=400&width=600",
-    date: "09 April, 2025",
-    venue: "Powerplay Turf by Suri, jhansi road, Gwalior",
+    image: "/tugofwar.jpeg?height=400&width=600",
+    date: "17 April, 2025",
+    venue: "ITM Volleyball ground sithouli, jhansi road, Gwalior",
     timing: "02:00 PM - 05:00 PM",
     category: "non-tech",
     registerLink: "https://forms.gle/jH45x1T7j4MMQMQS7",
     coordinator: {
-      name: "Shivam Sharma",
+      name: "Ashhad Rahman Khan",
       role: "B.Tech | 3rd year",
-      avatar: "/shivam.jpg?height=200&width=200",
-      phone: "9329739742",
-      email: "30002461213shivam@gmail.com",
+      avatar: "/ar.jpg?height=200&width=200",
+      phone: "9343471238",
+      email: "ashhadkhan911@gmail.com",
     },
   },
   {
