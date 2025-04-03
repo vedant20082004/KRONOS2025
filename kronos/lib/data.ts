@@ -228,7 +228,7 @@ Who will seize the moment, outplay the competition, and claim the ultimate title
     venue: "ITM Volleyball ground sithouli, jhansi road, Gwalior",
     timing: "02:00 PM - 05:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.gle/jH45x1T7j4MMQMQS7",
+    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLScEJN8jc9nOpWyLvEHZUX48O3MJlmwXLf7O0k1sT9Dpy36XBw/viewform",
     coordinator: {
       name: "Ashhad Rahman Khan",
       role: "B.Tech | 3rd year",
