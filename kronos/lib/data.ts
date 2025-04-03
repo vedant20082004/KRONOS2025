@@ -368,11 +368,11 @@ Key Points About Fiesta:
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "Yadyamini Saxena ",
-      role: "MBA | 2025",
-      avatar: "/yadyamini.png?height=200&width=200",
-      phone: "09039788950",
-      email: "saxenayadyamini@gmail.com",
+      name: "Nivrati ",
+      role: "MBA | 2nd year",
+      avatar: "/nivrati.jpeg?height=200&width=200",
+      phone: "9755072483",
+      email: "pnivrati432@gmail.com",
     },
   },
   {
