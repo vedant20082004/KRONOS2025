@@ -103,7 +103,7 @@ speak}
   },
   {
     id: "PRE-005",
-    title: "E- SPORTS",
+    title: "E-SPORTS: BATTLFRONT ARENA",
     description: `🏆 E-Sports Arena | KRONOS 2025
 Gear up for the ultimate gaming showdown! Compete in adrenaline-pumping battles across:
 
@@ -111,10 +111,12 @@ BGMI (Squad up for glory!)
 
 Free Fire (Clash for victory!)
 
-PS5 Classics (Tekken 7, FIFA 23, Mortal Kombat)
+PS5 Classics (Tekken, FIFA, Mortal Kombat)
 
 Mystery Games (Surprise challenges await!)
 
+PRIZE UPTO -----> ₹ 30,000/-
+ 
 🎮 Squad Slots Open!
 🔥 Prizes for Top Players`,
     image: "/esports.jpeg?height=400&width=600",
