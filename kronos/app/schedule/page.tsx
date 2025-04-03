@@ -81,15 +81,15 @@ const events = [
   {
     id: 10,
     title: "ITM GOT TALENT",
-    date: "21-04-25",
+    date: "21-APR-25 - 22-APR-25",
     description: "Talent showcase competition",
     category: "pre",
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
   {
     id: 11,
-    title: "STAND UP COMEDY",
-    date: "22-04-25",
+    title: "LAUGHATHON",
+    date: "23-APR-25",
     description: "Stand-up comedy is live humor on stage.",
     category: "pre",
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
@@ -169,7 +169,7 @@ const events = [
   },
   {
     id: 22,
-    title: "HACKATHON",
+    title: "TECHBLITZ",
     date: "26-APR-25 - 27-APR-25",
     description: "24-hour coding competition",
     category: "main",
