@@ -249,22 +249,22 @@ Who will seize the moment, outplay the competition, and claim the ultimate title
 Think you’ve got the guts to dish it out and take it? Grab the mic and let the roasting begin! 🔥🎤😆`,
     image: "/itmgottalent.jpeg?height=400&width=600",
 
-    date: "21 April, 2025",
+    date: "21-22 April, 2025",
     venue: "VSB",
     timing: "02:00 PM - 03:00 PM",
     category: "non-tech",
     registerLink: "https://forms.google.com/neural-workshop",
     coordinator: {
-      name: "Utkarsh Mishra",
-      role: "B.Tech | 4th year",
-      avatar: "/utkarshmishra.jpg?height=200&width=200",
-      phone: "07471168868",
-      email: "utkarshmis302@gmail.com",
+      name: "Atharva Bhargava",
+      role: "B.Tech | 2nd year",
+      avatar: "/WhatsApp Image 2025-03-21 at 15.34.21_000b1ee1.jpg",
+      phone: "9425705529",
+      email: "atharvabhargava74@gmail.com",
     },
   },
   {
     id: "PRE-010",
-    title: "STAND UP COMEDY",
+    title: "Laughathon",
     description: `No filters, no mercy—just pure, unfiltered roast comedy! Get ready for a night of savage humor, sharp comebacks, and epic burns as participants take the stage to roast and get roasted!
 
 🔥 Brace yourself for non-stop laughter!
@@ -273,16 +273,16 @@ Think you’ve got the guts to dish it out and take it? Grab the mic and let the
 
 Think you’ve got the guts to dish it out and take it? Grab the mic and let the roasting begin! 🔥🎤😆`,
     image: "/itmgottalent.jpeg?height=400&width=600",
-    date: "22 April, 2025",
+    date: "23 April, 2025",
     venue: "VSB",
     timing: "02:00 PM - 03:00 PM",
     category: "non-tech",
     registerLink: "https://forms.gle/Wyx4Kdm9ceryMPqS8",
     coordinator: {
-      name: "Atharva Bhargav",
+      name: "Atharva Bhargava",
       role: "B.Tech | 2nd year",
       avatar: "/WhatsApp Image 2025-03-21 at 15.34.21_000b1ee1.jpg",
-      phone: "07471168868",
+      phone: "9425705529",
       email: "atharvabhargava74@gmail.com",
     },
   },
@@ -560,7 +560,7 @@ Unleash your creativity and problem-solving skills! Compete in an intense innova
   },
   {
     id: "MAIN-005",
-    title: "HACKATHON",
+    title: "TECHBLITZ",
     description: `A 36-Hour Hackathon
 Gear up for an intense coding marathon! Collaborate, innovate, and bring your ideas to life in:
 
@@ -581,7 +581,7 @@ Gear up for an intense coding marathon! Collaborate, innovate, and bring your id
     timing: "11:00 AM Onwards",
     category: "tech",
     registerLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdydGU-2gxzlKG3q1RU-S7qzhrxDDVPmWmj1mSrswRqe40AWQ/viewform?usp=dialog",
+      "",
     coordinator: {
       name: "Ronak Verma",
       role: "B.Tech | 3rd year",
