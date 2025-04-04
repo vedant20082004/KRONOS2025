@@ -71,6 +71,14 @@ const events = [
     gradient: "from-[#FF61D2] to-[#FE9090]",
   },
   {
+    id: 7,
+    title: "TUG OF WAR",
+    date: "17-APR-25",
+    description: " Ultimate Test of Strength and Teamwork!",
+    category: "pre",
+    gradient: "from-[#0093E9] to-[#80D0C7]",
+  },
+  {
     id: 9,
     title: "E-SPORTS",
     date: "18-APR-25 - 20-APR-25",
