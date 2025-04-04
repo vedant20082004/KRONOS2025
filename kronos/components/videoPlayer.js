@@ -5,12 +5,12 @@ import ReactPlayer from "react-player/youtube";
 
 function VideoPlayer() {
   const playlist = [
-    "https://www.youtube.com/watch?v=GmCuoujtDnk&ab_channel=SanidhyaTiwari",
-    "https://www.youtube.com/watch?v=2n8qxhiMGRU&ab_channel=SanidhyaTiwari",
-    "https://www.youtube.com/watch?v=_1lMEH2AbIs&ab_channel=SanidhyaTiwari",
-    "https://www.youtube.com/watch?v=HyX0DFJAA9I&ab_channel=SanidhyaTiwari",
-    "https://www.youtube.com/watch?v=UkAk8BueeDc&ab_channel=SanidhyaTiwari",
-    "https://www.youtube.com/watch?v=ITFQH2Tafv4&ab_channel=SanidhyaTiwari",
+    "https://www.youtube.com/watch?v=wX5wx_aOwuI&ab_channel=KRONOSITM",
+    "https://www.youtube.com/watch?v=FoqKGOYajyQ&ab_channel=KRONOSITM",
+    "https://www.youtube.com/watch?v=nATtsu7OayI&ab_channel=KRONOSITM",
+    "https://www.youtube.com/watch?v=GqqNtTdOJcI&ab_channel=KRONOSITM",
+    "https://www.youtube.com/watch?v=6wsgqkObQk8&ab_channel=KRONOSITM",
+    "https://www.youtube.com/watch?v=M6wh7kq20MI&ab_channel=KRONOSITM"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

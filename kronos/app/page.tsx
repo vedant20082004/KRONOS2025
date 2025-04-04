@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, ChevronRight, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Countdown from "@/components/Countdown";
+import PosterSlider from "@/components/posterSlider";
 
 const particleData = [
   {
@@ -378,6 +379,25 @@ export default function KronosTechFest() {
         </div>
       </section>
 
+      {/* Poster Slider Section */}
+      <section id="posters" className="relative z-10 main-h-screen py-10 bg-gray-900">
+        <div className="container mx-auto px-4 h-full">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              Watch Our Featured Posts
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto mt-4">
+              Posts and trailers from our ongoing events.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className=" w-full h-full md:w-3/4 lg:w-1/2">
+              <PosterSlider />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Events Section */}
       <section
         id="events"
@@ -393,7 +413,8 @@ export default function KronosTechFest() {
               EVENTS
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
-            Step into a realm of groundbreaking events that spark creativity, ignite learning, and drive transformation..
+              Step into a realm of groundbreaking events that spark creativity,
+              ignite learning, and drive transformation..
             </p>
           </div>
 
@@ -512,7 +533,8 @@ export default function KronosTechFest() {
             </h2>
 
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
-              HERE ARE SOME OF THE PAST CELEBRITY SPEAKERS WHO HAVE GRACED OUR STAGES
+              HERE ARE SOME OF THE PAST CELEBRITY SPEAKERS WHO HAVE GRACED OUR
+              STAGES
             </p>
           </div>
 
