@@ -305,7 +305,7 @@ export default function Home() {
                     >
                       <Instagram className="w-5 h-5" /></a>
                     <a
-                      href="https://www.youtube.com/@KronosITMGwalior"
+                      href="https://www.youtube.com/channel/UCl_gmIaw0e5lzyYwPfy-y2Q"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-purple-400 transition-colors p-2 bg-[#1a1c2e] rounded-full hover:scale-110 transform duration-300"
