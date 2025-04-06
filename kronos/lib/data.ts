@@ -424,7 +424,7 @@ Get ready to immerse yourself in a world of elegance, creativity, and trendsetti
     venue: "NAAD AMPHITHEATRE",
     timing: "06:00 PM - 08:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://docs.google.com/forms/d/17wwDRPQ0GGydP2U65NwhG_wLCiitSeSm2vevSKtJoIQ/viewform?chromeless=1&edit_requested=true",
     coordinator: {
       name: "Sabhya Chauhan  ",
       role: "MBA | 2nd year",
