@@ -169,7 +169,7 @@ The stage is set, and 14+ teams are ready to compete in an intense knockout tour
 
 Who will seize the moment, outplay the competition, and claim the ultimate title? Let the games begin!`,
     image: "/football.jpeg?height=400&width=600",
-    date: "09 April, 2025",
+    date: "15-17 April, 2025",
     venue: "Powerplay Turf by Suri, jhansi road, Gwalior",
     timing: "02:00 PM - 05:00 PM",
     category: "non-tech",
@@ -560,7 +560,7 @@ Unleash your creativity and problem-solving skills! Compete in an intense innova
   },
   {
     id: "MAIN-005",
-    title: "TECHBLITZ",
+    title: "TECH-BLITZ",
     description: `A 36-Hour Hackathon
 Gear up for an intense coding marathon! Collaborate, innovate, and bring your ideas to life in:
 
@@ -581,7 +581,7 @@ Gear up for an intense coding marathon! Collaborate, innovate, and bring your id
     timing: "11:00 AM Onwards",
     category: "tech",
     registerLink:
-      "",
+      "https://forms.gle/poWzxxRSPhnzyn889",
     coordinator: {
       name: "Ronak Verma",
       role: "B.Tech | 3rd year",
