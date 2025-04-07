@@ -5,6 +5,7 @@ import ReactPlayer from "react-player/youtube";
 
 function VideoPlayer() {
   const playlist = [
+    "https://www.youtube.com/watch?v=jqkJFxnTJbU&ab_channel=KRONOSITM",
     "https://www.youtube.com/shorts/KKAeOpyzO88",
     "https://www.youtube.com/watch?v=wX5wx_aOwuI&ab_channel=KRONOSITM",
     "https://www.youtube.com/watch?v=FoqKGOYajyQ&ab_channel=KRONOSITM",
