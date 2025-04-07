@@ -46,14 +46,7 @@ const events = [
     category: "pre",
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
-  {
-    id: 6,
-    title: "FOOTBALL",
-    date: "09-APR-25",
-    description: "Football is a team sport of goals and passes.",
-    category: "pre",
-    gradient: "from-[#0093E9] to-[#80D0C7]",
-  },
+  
   {
     id: 7,
     title: "ARM WRESTLING",
@@ -69,6 +62,22 @@ const events = [
     description: "Photography competition screening round",
     category: "pre",
     gradient: "from-[#FF61D2] to-[#FE9090]",
+  },
+  {
+    id: 6,
+    title: "FOOTBALL",
+    date: "15-17-APR-25",
+    description: "Football is a team sport of goals and passes.",
+    category: "pre",
+    gradient: "from-[#0093E9] to-[#80D0C7]",
+  },
+  {
+    id: 7,
+    title: "TUG OF WAR",
+    date: "17-APR-25",
+    description: " Ultimate Test of Strength and Teamwork!",
+    category: "pre",
+    gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
     id: 9,
@@ -169,9 +178,9 @@ const events = [
   },
   {
     id: 22,
-    title: "TECHBLITZ",
+    title: "TECH-BLITZ",
     date: "26-APR-25 - 27-APR-25",
-    description: "24-hour coding competition",
+    description: "24-36 hour coding competition",
     category: "main",
     gradient: "from-[#FF61D2] to-[#FE9090]",
   },
