@@ -201,7 +201,7 @@ Think youâ€™ve got what it takes? Lock in, power up, and dominate the table! ðŸ’
     venue: "Sports Arena at ITM GOI",
     timing: "02:00 PM - 05:00 PM",
     category: "non-tech",
-    registerLink: "https://forms.google.com/neural-workshop",
+    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLScnARcBWFS6Nw-OMRG6TWWBywdTATTnbo98mBef21lNDZIuxA/viewform?usp=header",
     coordinator: {
       name: "Jatin Sharma",
       role: "MBA | 2nd year",
