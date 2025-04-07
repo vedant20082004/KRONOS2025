@@ -561,7 +561,7 @@ Unleash your creativity and problem-solving skills! Compete in an intense innova
   {
     id: "MAIN-005",
     title: "TECH-BLITZ",
-    description: `A 36-Hour Hackathon
+    description: `24-36-Hour Hackathon
 Gear up for an intense coding marathon! Collaborate, innovate, and bring your ideas to life in:
 
 💻 Web & Mobile Development (Next-gen apps & platforms!)
@@ -572,7 +572,7 @@ Gear up for an intense coding marathon! Collaborate, innovate, and bring your id
 🎮 Fun Challenges & Surprise Themes!
 
 👨‍💻 Team Size: 4 members per team
-🚀 Slots Available: 20 teams
+🚀 Slots Available: 20-30 teams
 📜 Selection Process: Submit your project presentations, and the best ideas will be shortlisted!
 🔥 Exciting Prizes & Opportunities for Winners!`,
     image: "/hackathon.jpeg?height=400&width=600",
