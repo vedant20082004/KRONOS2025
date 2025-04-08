@@ -22,14 +22,7 @@ const events = [
     category: "pre",
     gradient: "from-[#A8E6CF] to-[#3D84A8]",
   },
-  {
-    id: 3,
-    title: "AD-MAD",
-    date: "07-APR-25",
-    description: "Creative advertising competition",
-    category: "pre",
-    gradient: "from-[#FFD93D] to-[#FF6B6B]",
-  },
+ 
   {
     id: 4,
     title: "WORKSHOPS",
@@ -70,6 +63,14 @@ const events = [
     description: "Football is a team sport of goals and passes.",
     category: "pre",
     gradient: "from-[#0093E9] to-[#80D0C7]",
+  },
+  {
+    id: 3,
+    title: "AD-MAD",
+    date: "17-APR-25",
+    description: "Creative advertising competition",
+    category: "pre",
+    gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
   {
     id: 7,

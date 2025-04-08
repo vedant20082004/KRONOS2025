@@ -88,7 +88,7 @@ speak}
 ∆ Poster making material will be provided to each team.
 ∆ Prizes for top 3 teams`,
     image: "/admad.jpeg?height=400&width=600",
-    date: "07 April, 2025",
+    date: "17 April, 2025",
     venue: "ZERO GRAVITY GROUND",
     timing: "11:00 PM - 03:00 PM",
     category: "non-tech",
