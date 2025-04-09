@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { useState, useEffect, useRef } from "react";
-import { cn } from "@/lib/utils";
-import { Card } from "@/components/ui/card";
-import Navbar from "@/components/Navbar";
+import { useState, useEffect, useRef } from "react"
+import { cn } from "@/lib/utils"
+import { Card } from "@/components/ui/card"
+import Navbar from "@/components/Navbar"
 
 const events = [
   {
@@ -22,9 +22,9 @@ const events = [
     category: "pre",
     gradient: "from-[#A8E6CF] to-[#3D84A8]",
   },
- 
+
   {
-    id: 4,
+    id: 3,
     title: "WORKSHOPS",
     date: "07-APR-25 - 20-APR-24",
     description: "Various skill development workshops",
@@ -32,16 +32,16 @@ const events = [
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
   {
-    id: 5,
+    id: 4,
     title: "CRICKET",
     date: "09-APR-25",
     description: "Cricket is a bat-and-ball game of runs and wickets.",
     category: "pre",
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
-  
+
   {
-    id: 7,
+    id: 5,
     title: "ARM WRESTLING",
     date: "09-APR-25",
     description: "Arm wrestling is a strength duel of locked hands.",
@@ -49,7 +49,7 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
-    id: 8,
+    id: 6,
     title: "BEYOND THE LENS",
     date: "09-APR-25",
     description: "Photography competition screening round",
@@ -57,7 +57,7 @@ const events = [
     gradient: "from-[#FF61D2] to-[#FE9090]",
   },
   {
-    id: 6,
+    id: 7,
     title: "FOOTBALL",
     date: "15-17-APR-25",
     description: "Football is a team sport of goals and passes.",
@@ -65,7 +65,7 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
-    id: 3,
+    id: 8,
     title: "AD-MAD",
     date: "17-APR-25",
     description: "Creative advertising competition",
@@ -73,7 +73,7 @@ const events = [
     gradient: "from-[#FFD93D] to-[#FF6B6B]",
   },
   {
-    id: 7,
+    id: 9,
     title: "TUG OF WAR",
     date: "17-APR-25",
     description: " Ultimate Test of Strength and Teamwork!",
@@ -81,7 +81,7 @@ const events = [
     gradient: "from-[#0093E9] to-[#80D0C7]",
   },
   {
-    id: 9,
+    id: 10,
     title: "E-SPORTS",
     date: "18-APR-25 - 20-APR-25",
     description: "Gaming tournaments and competitions",
@@ -89,7 +89,7 @@ const events = [
     gradient: "from-[#4158D0] to-[#C850C0]",
   },
   {
-    id: 10,
+    id: 11,
     title: "ITM GOT TALENT",
     date: "21-APR-25 - 22-APR-25",
     description: "Talent showcase competition",
@@ -97,7 +97,7 @@ const events = [
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
   {
-    id: 11,
+    id: 12,
     title: "LAUGHATHON",
     date: "23-APR-25",
     description: "Stand-up comedy is live humor on stage.",
@@ -217,28 +217,28 @@ const events = [
     category: "main",
     gradient: "from-[#FF6B6B] to-[#4ECDC4]",
   },
-];
+]
 
 export default function Home() {
-  const [activeCategory, setActiveCategory] = useState("pre");
-  const [isChangingCategory, setIsChangingCategory] = useState(false);
-  const [animatedEvents, setAnimatedEvents] = useState<number[]>([]);
-  const timelineRef = useRef<HTMLDivElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [activeCategory, setActiveCategory] = useState("pre")
+  const [isChangingCategory, setIsChangingCategory] = useState(false)
+  const [animatedEvents, setAnimatedEvents] = useState<number[]>([])
+  const timelineRef = useRef<HTMLDivElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null)
 
   // Handle category change with animation
   const handleCategoryChange = (category: string) => {
-    if (category === activeCategory) return;
+    if (category === activeCategory) return
 
-    setIsChangingCategory(true);
+    setIsChangingCategory(true)
     setTimeout(() => {
-      setActiveCategory(category);
-      setAnimatedEvents([]);
+      setActiveCategory(category)
+      setAnimatedEvents([])
       setTimeout(() => {
-        setIsChangingCategory(false);
-      }, 100);
-    }, 500);
-  };
+        setIsChangingCategory(false)
+      }, 100)
+    }, 500)
+  }
 
   // Add intersection observer for timeline animation
   useEffect(() => {
@@ -246,65 +246,65 @@ export default function Home() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-timeline-appear");
+            entry.target.classList.add("animate-timeline-appear")
           }
-        });
+        })
       },
-      { threshold: 0.1 }
-    );
+      { threshold: 0.1 },
+    )
 
-    const timelineElements = document.querySelectorAll(".timeline-item");
-    timelineElements.forEach((el) => observer.observe(el));
+    const timelineElements = document.querySelectorAll(".timeline-item")
+    timelineElements.forEach((el) => observer.observe(el))
 
     return () => {
-      timelineElements.forEach((el) => observer.unobserve(el));
-    };
-  }, [activeCategory, isChangingCategory]);
+      timelineElements.forEach((el) => observer.unobserve(el))
+    }
+  }, [activeCategory, isChangingCategory])
 
   // Add event to animated list when it appears
   const handleEventAppear = (id: number) => {
     if (!animatedEvents.includes(id)) {
-      setAnimatedEvents((prev) => [...prev, id]);
+      setAnimatedEvents((prev) => [...prev, id])
     }
-  };
+  }
 
   // Canvas background animation (similar to team page)
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+    const canvas = canvasRef.current
+    if (!canvas) return
 
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    const ctx = canvas.getContext("2d")
+    if (!ctx) return
 
     // Set canvas dimensions
     const setCanvasDimensions = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
+    }
 
-    setCanvasDimensions();
-    window.addEventListener("resize", setCanvasDimensions);
+    setCanvasDimensions()
+    window.addEventListener("resize", setCanvasDimensions)
 
     // Particle class
     class Particle {
-      x: number;
-      y: number;
-      size: number;
-      speedX: number;
-      speedY: number;
-      color: string;
-      alpha: number;
-      alphaSpeed: number;
+      x: number
+      y: number
+      size: number
+      speedX: number
+      speedY: number
+      color: string
+      alpha: number
+      alphaSpeed: number
 
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 0.5;
-        this.speedX = (Math.random() - 0.5) * 0.3;
-        this.speedY = (Math.random() - 0.5) * 0.3;
-        this.color = this.getRandomColor();
-        this.alpha = Math.random() * 0.5 + 0.1;
-        this.alphaSpeed = Math.random() * 0.01 + 0.005;
+        this.x = Math.random() * canvas.width
+        this.y = Math.random() * canvas.height
+        this.size = Math.random() * 3 + 0.5
+        this.speedX = (Math.random() - 0.5) * 0.3
+        this.speedY = (Math.random() - 0.5) * 0.3
+        this.color = this.getRandomColor()
+        this.alpha = Math.random() * 0.5 + 0.1
+        this.alphaSpeed = Math.random() * 0.01 + 0.005
       }
 
       getRandomColor() {
@@ -312,67 +312,64 @@ export default function Home() {
           "rgba(168, 85, 247, 0.7)", // Purple
           "rgba(236, 72, 153, 0.7)", // Pink
           "rgba(255, 255, 255, 0.7)", // White
-        ];
-        return colors[Math.floor(Math.random() * colors.length)];
+        ]
+        return colors[Math.floor(Math.random() * colors.length)]
       }
 
       update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
+        this.x += this.speedX
+        this.y += this.speedY
 
         // Bounce off edges
         if (this.x > canvas.width || this.x < 0) {
-          this.speedX = -this.speedX;
+          this.speedX = -this.speedX
         }
         if (this.y > canvas.height || this.y < 0) {
-          this.speedY = -this.speedY;
+          this.speedY = -this.speedY
         }
 
         // Pulsate alpha
-        this.alpha += this.alphaSpeed;
+        this.alpha += this.alphaSpeed
         if (this.alpha > 0.7 || this.alpha < 0.1) {
-          this.alphaSpeed = -this.alphaSpeed;
+          this.alphaSpeed = -this.alphaSpeed
         }
       }
 
       draw() {
-        if (!ctx) return;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = this.color.replace("0.7", this.alpha.toString());
-        ctx.fill();
+        if (!ctx) return
+        ctx.beginPath()
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
+        ctx.fillStyle = this.color.replace("0.7", this.alpha.toString())
+        ctx.fill()
       }
     }
 
     // Create particles
-    const particlesArray: Particle[] = [];
-    const numberOfParticles = Math.min(
-      100,
-      Math.floor((window.innerWidth * window.innerHeight) / 10000)
-    );
+    const particlesArray: Particle[] = []
+    const numberOfParticles = Math.min(100, Math.floor((window.innerWidth * window.innerHeight) / 10000))
 
     for (let i = 0; i < numberOfParticles; i++) {
-      particlesArray.push(new Particle());
+      particlesArray.push(new Particle())
     }
 
     // Connect particles with lines
     function connect() {
-      if (!ctx) return;
-      const maxDistance = 150;
+      if (!ctx) return
+      const maxDistance = 150
       for (let a = 0; a < particlesArray.length; a++) {
         for (let b = a; b < particlesArray.length; b++) {
-          const dx = particlesArray[a].x - particlesArray[b].x;
-          const dy = particlesArray[a].y - particlesArray[b].y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
+          const dx = particlesArray[a].x - particlesArray[b].x
+          const dy = particlesArray[a].y - particlesArray[b].y
+          const distance = Math.sqrt(dx * dx + dy * dy)
 
           if (distance < maxDistance) {
-            const opacity = 1 - distance / maxDistance;
-            ctx.strokeStyle = `rgba(168, 85, 247, ${opacity * 0.2})`;
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-            ctx.stroke();
+            const opacity = 1 - distance / maxDistance
+            ctx.strokeStyle = `rgba(168, 85, 247, ${opacity * 0.2})`
+            ctx.lineWidth = 1
+            ctx.beginPath()
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y)
+            ctx.lineTo(particlesArray[b].x, particlesArray[b].y)
+            ctx.stroke()
           }
         }
       }
@@ -380,48 +377,39 @@ export default function Home() {
 
     // Animation loop
     function animate() {
-      if (!ctx || !canvas) return;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (!ctx || !canvas) return
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       // Draw gradient background
-      const gradient = ctx.createLinearGradient(
-        0,
-        0,
-        canvas.width,
-        canvas.height
-      );
-      gradient.addColorStop(0, "rgba(10, 10, 20, 1)");
-      gradient.addColorStop(1, "rgba(0, 0, 0, 1)");
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height)
+      gradient.addColorStop(0, "rgba(10, 10, 20, 1)")
+      gradient.addColorStop(1, "rgba(0, 0, 0, 1)")
+      ctx.fillStyle = gradient
+      ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       // Update and draw particles
       for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].update();
-        particlesArray[i].draw();
+        particlesArray[i].update()
+        particlesArray[i].draw()
       }
 
-      connect();
-      requestAnimationFrame(animate);
+      connect()
+      requestAnimationFrame(animate)
     }
 
-    animate();
+    animate()
 
     return () => {
-      window.removeEventListener("resize", setCanvasDimensions);
-    };
-  }, []);
+      window.removeEventListener("resize", setCanvasDimensions)
+    }
+  }, [])
 
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-[#0f1117] text-white p-5 relative overflow-hidden">
         {/* Canvas Background */}
-        <canvas
-          ref={canvasRef}
-          className="absolute inset-0 w-full h-full z-0"
-          style={{ position: "fixed" }}
-        />
+        <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-0" style={{ position: "fixed" }} />
 
         {/* Animated Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10 pointer-events-none"></div>
@@ -630,9 +618,7 @@ export default function Home() {
             <button
               className={cn(
                 "relative group px-8 py-4 overflow-hidden rounded-lg transition-all duration-500",
-                activeCategory === "pre"
-                  ? "text-white"
-                  : "text-white/70 hover:text-white"
+                activeCategory === "pre" ? "text-white" : "text-white/70 hover:text-white",
               )}
               onClick={() => handleCategoryChange("pre")}
             >
@@ -641,9 +627,7 @@ export default function Home() {
               <div
                 className={cn(
                   "absolute inset-0 opacity-0 transition-opacity duration-500",
-                  activeCategory === "pre"
-                    ? "opacity-100"
-                    : "group-hover:opacity-40"
+                  activeCategory === "pre" ? "opacity-100" : "group-hover:opacity-40",
                 )}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-lg"></div>
@@ -654,33 +638,25 @@ export default function Home() {
               <span
                 className={cn(
                   "absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-purple-500 transition-all duration-500",
-                  activeCategory === "pre"
-                    ? "w-8 h-8"
-                    : "group-hover:w-6 group-hover:h-6"
+                  activeCategory === "pre" ? "w-8 h-8" : "group-hover:w-6 group-hover:h-6",
                 )}
               ></span>
               <span
                 className={cn(
                   "absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-purple-500 transition-all duration-500",
-                  activeCategory === "pre"
-                    ? "w-8 h-8"
-                    : "group-hover:w-6 group-hover:h-6"
+                  activeCategory === "pre" ? "w-8 h-8" : "group-hover:w-6 group-hover:h-6",
                 )}
               ></span>
               <span
                 className={cn(
                   "absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-purple-500 transition-all duration-500",
-                  activeCategory === "pre"
-                    ? "w-8 h-8"
-                    : "group-hover:w-6 group-hover:h-6"
+                  activeCategory === "pre" ? "w-8 h-8" : "group-hover:w-6 group-hover:h-6",
                 )}
               ></span>
               <span
                 className={cn(
                   "absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-purple-500 transition-all duration-500",
-                  activeCategory === "pre"
-                    ? "w-8 h-8"
-                    : "group-hover:w-6 group-hover:h-6"
+                  activeCategory === "pre" ? "w-8 h-8" : "group-hover:w-6 group-hover:h-6",
                 )}
               ></span>
 
@@ -688,7 +664,7 @@ export default function Home() {
               <span
                 className={cn(
                   "absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-500",
-                  activeCategory === "pre" ? "w-full" : "group-hover:w-3/4"
+                  activeCategory === "pre" ? "w-full" : "group-hover:w-3/4",
                 )}
               ></span>
 
@@ -696,7 +672,7 @@ export default function Home() {
               <span
                 className={cn(
                   "relative z-10 font-bold tracking-widest text-lg transition-all duration-500",
-                  activeCategory === "pre" ? "text-glow-purple" : ""
+                  activeCategory === "pre" ? "text-glow-purple" : "",
                 )}
               >
                 PRE EVENT
@@ -711,9 +687,7 @@ export default function Home() {
             <button
               className={cn(
                 "relative group px-8 py-4 overflow-hidden rounded-lg transition-all duration-500",
-                activeCategory === "main"
-                  ? "text-white"
-                  : "text-white/70 hover:text-white"
+                activeCategory === "main" ? "text-white" : "text-white/70 hover:text-white",
               )}
               onClick={() => handleCategoryChange("main")}
             >
@@ -722,9 +696,7 @@ export default function Home() {
               <div
                 className={cn(
                   "absolute inset-0 opacity-0 transition-opacity duration-500",
-                  activeCategory === "main"
-                    ? "opacity-100"
-                    : "group-hover:opacity-40"
+                  activeCategory === "main" ? "opacity-100" : "group-hover:opacity-40",
                 )}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-lg"></div>
@@ -735,33 +707,25 @@ export default function Home() {
               <span
                 className={cn(
                   "absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-purple-500 transition-all duration-500",
-                  activeCategory === "main"
-                    ? "w-8 h-8"
-                    : "group-hover:w-6 group-hover:h-6"
+                  activeCategory === "main" ? "w-8 h-8" : "group-hover:w-6 group-hover:h-6",
                 )}
               ></span>
               <span
                 className={cn(
                   "absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-purple-500 transition-all duration-500",
-                  activeCategory === "main"
-                    ? "w-8 h-8"
-                    : "group-hover:w-6 group-hover:h-6"
+                  activeCategory === "main" ? "w-8 h-8" : "group-hover:w-6 group-hover:h-6",
                 )}
               ></span>
               <span
                 className={cn(
                   "absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-purple-500 transition-all duration-500",
-                  activeCategory === "main"
-                    ? "w-8 h-8"
-                    : "group-hover:w-6 group-hover:h-6"
+                  activeCategory === "main" ? "w-8 h-8" : "group-hover:w-6 group-hover:h-6",
                 )}
               ></span>
               <span
                 className={cn(
                   "absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-purple-500 transition-all duration-500",
-                  activeCategory === "main"
-                    ? "w-8 h-8"
-                    : "group-hover:w-6 group-hover:h-6"
+                  activeCategory === "main" ? "w-8 h-8" : "group-hover:w-6 group-hover:h-6",
                 )}
               ></span>
 
@@ -769,7 +733,7 @@ export default function Home() {
               <span
                 className={cn(
                   "absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-500",
-                  activeCategory === "main" ? "w-full" : "group-hover:w-3/4"
+                  activeCategory === "main" ? "w-full" : "group-hover:w-3/4",
                 )}
               ></span>
 
@@ -777,7 +741,7 @@ export default function Home() {
               <span
                 className={cn(
                   "relative z-10 font-bold tracking-widest text-lg transition-all duration-500",
-                  activeCategory === "main" ? "text-glow-purple" : ""
+                  activeCategory === "main" ? "text-glow-purple" : "",
                 )}
               >
                 MAIN EVENT
@@ -794,7 +758,7 @@ export default function Home() {
             ref={timelineRef}
             className={cn(
               "relative max-w-full sm:max-w-4xl mx-auto min-h-[300px] sm:min-h-[400px]",
-              isChangingCategory ? "category-fade-out" : "category-fade-in"
+              isChangingCategory ? "category-fade-out" : "category-fade-in",
             )}
           >
             {/* Static vertical timeline line without animations */}
@@ -806,21 +770,21 @@ export default function Home() {
               {events
                 .filter((event) => event.category === activeCategory)
                 .map((event, index) => {
-                  const isEven = index % 2 === 0;
+                  const isEven = index % 2 === 0
                   const animationClass = isEven
                     ? isEven
                       ? "animate-[moveright_0.8s_ease-out_forwards]"
                       : "animate-[moveleft_0.8s_ease-out_forwards]"
                     : isEven
-                    ? "animate-[movedown_0.8s_ease-out_forwards]"
-                    : "animate-[moveup_0.8s_ease-out_forwards]";
+                      ? "animate-[movedown_0.8s_ease-out_forwards]"
+                      : "animate-[moveup_0.8s_ease-out_forwards]"
 
                   return (
                     <div
                       key={event.id}
                       className={cn(
                         "flex flex-col sm:flex-row items-start timeline-item opacity-0",
-                        isEven ? "sm:justify-start" : "sm:justify-end"
+                        isEven ? "sm:justify-start" : "sm:justify-end",
                       )}
                       style={{ animationDelay: `${index * 0.15}s` }}
                       onAnimationEnd={() => handleEventAppear(event.id)}
@@ -837,22 +801,18 @@ export default function Home() {
                           "border border-slate-700 hover:border-slate-600",
                           "rounded-xl overflow-hidden shadow-lg shadow-slate-900/50",
                           "backdrop-blur-xl transition-all duration-500",
-                          animationClass
+                          animationClass,
                         )}
                       >
                         <div
                           className={cn(
                             "absolute inset-0 bg-gradient-to-r opacity-10 group-hover:opacity-20 transition-opacity duration-700",
-                            event.gradient
+                            event.gradient,
                           )}
                         />
 
                         {/* Top border */}
-                        <div
-                          className={cn(
-                            "absolute top-0 left-0 w-full h-1 bg-slate-600"
-                          )}
-                        />
+                        <div className={cn("absolute top-0 left-0 w-full h-1 bg-slate-600")} />
 
                         {/* Corner accents - all four corners */}
                         <div className="absolute top-0 left-0 w-8 h-8 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -881,7 +841,7 @@ export default function Home() {
                         <div className="relative z-10">
                           <h2
                             className={cn(
-                              "text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 tracking-wide sm:tracking-wider text-slate-200 transform transition-transform duration-500 group-hover:scale-105 origin-left"
+                              "text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 tracking-wide sm:tracking-wider text-slate-200 transform transition-transform duration-500 group-hover:scale-105 origin-left",
                             )}
                           >
                             {event.title}
@@ -901,12 +861,12 @@ export default function Home() {
                         </div>
                       </Card>
                     </div>
-                  );
+                  )
                 })}
             </div>
           </div>
         </div>
       </main>
     </>
-  );
+  )
 }
