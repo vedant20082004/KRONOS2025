@@ -359,7 +359,7 @@ export default function KronosTechFest() {
       <Countdown />
 
       {/* Video Section */}
-      <section id="video" className="relative z-10 py-10 bg-gray-900 ">
+      <section id="video" className="relative z-10 py-10 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -380,7 +380,7 @@ export default function KronosTechFest() {
       </section>
 
       {/* Poster Slider Section */}
-      <section id="posters" className="relative z-10 main-h-screen py-10 bg-gray-900">
+      <section id="posters" className="relative z-10 main-h-screen py-10">
         <div className="container mx-auto px-4 h-full">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
