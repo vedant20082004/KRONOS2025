@@ -380,7 +380,10 @@ export default function KronosTechFest() {
       </section>
 
       {/* Poster Slider Section */}
-      <section id="posters" className="relative z-10 main-h-screen py-10 bg-gray-900">
+      <section
+        id="posters"
+        className="relative z-10 main-h-screen py-10 bg-gray-900"
+      >
         <div className="container mx-auto px-4 h-full">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -652,7 +655,7 @@ export default function KronosTechFest() {
               OUR PARTNERS
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">
-              Past Sponsors & Partners
+              Sponsors & Partners
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mt-4">
               Kronos Tech Fest is made possible by these innovative companies
@@ -661,9 +664,86 @@ export default function KronosTechFest() {
           </div>
 
           <div className="space-y-12">
-            {/* Platinum Sponsors */}
+            {/* Main Sponsors */}
             <div className="animate-fade-in-up">
               <h3 className="text-2xl font-bold mb-6 text-center text-purple-500">
+                Present Sponsors
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+                {[
+                  {
+                    name: "Google",
+                    image: "/codingthinker.png",
+                  },
+                  {
+                    name: "Microsoft",
+                    image: "/shoperstop.jpg",
+                  },
+                  {
+                    name: "Amazon",
+                    image: "/images.jpg",
+                  },
+                ].map((sponsor, i) => (
+                  <div
+                    key={i}
+                    className="bg-gradient-to-b from-gray-900 to-gray-800 border border-purple-500/20 rounded-xl p-8 flex items-center justify-center transition-all duration-300 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/20 group"
+                  >
+                    <div className="relative">
+                      {/* Glow effect */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                      {/* Sponsor Image */}
+                      <Image
+                        src={sponsor.image || "/placeholder.svg"}
+                        alt={sponsor.name}
+                        width={300}
+                        height={120}
+                        className="max-h-32 w-auto transition-transform duration-500 group-hover:scale-110 object-contain"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+              {[
+                {
+                  name: "Google",
+                  image: "/jewels.jpg",
+                },
+                {
+                  name: "Microsoft",
+                  image: "/cafe.png",
+                },
+                {
+                  name: "Amazon",
+                  image: "/esports.png",
+                },
+              ].map((sponsor, i) => (
+                <div
+                  key={i}
+                  className="bg-gradient-to-b from-gray-900 to-gray-800 border border-purple-500/20 rounded-xl p-8 flex items-center justify-center transition-all duration-300 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/20 group"
+                >
+                  <div className="relative">
+                    {/* Glow effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                    {/* Sponsor Image */}
+                    <Image
+                      src={sponsor.image || "/placeholder.svg"}
+                      alt={sponsor.name}
+                      width={300}
+                      height={120}
+                      className="max-h-32 w-auto transition-transform duration-500 group-hover:scale-110 object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Platinum Sponsors */}
+            <div className="animate-fade-in-up">
+              <h3 className="text-2xl font-bold mb-6 text-center text-white-500">
                 Platinum Sponsors
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
